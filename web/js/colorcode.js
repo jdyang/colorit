@@ -7,11 +7,4 @@ $(function(){
         },'text');
     };
 
-    $.clipboardReady(function(){
-        $("#copy").click(function(){
-            $.clipboard( "You clicked on a link and copied this text!" );
-            return false;
-        });
-    }, { swfpath: "/swf/jquery.clipboard.swf"} );
-
 });
