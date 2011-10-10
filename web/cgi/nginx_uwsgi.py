@@ -10,9 +10,9 @@
         4:  run the webpy app
 '''
 import os, sys, stat, socket, struct, StringIO, time, traceback
-import web, web.wsgi
+import web, web.wsgi, site_helper
 
-SERVER_PORT         = 20003
+SERVER_PORT         = site_helper.config.APP_PORT
 FOOT_PRINTS_PATH    = None
 ERROR_LOG_PATH      = None
 
@@ -61,7 +61,8 @@ def nginxRunuwsgi(func):
         s_l = socket.fromfd(0, socket.AF_INET, socket.SOCK_STREAM)
         sys.stderr.close()
         try:
-            sys.stderr = open(ERROR_LOG_PATH, "a")
+            if ERROR_LOG_PATH is not None:
+                sys.stderr = open(ERROR_LOG_PATH, "a")
         except:
             pass
     else:
@@ -81,9 +82,6 @@ def nginxRunuwsgi(func):
 
         try:
             request = parseRequest(s_a)
-            #sys.stderr.write( time.strftime( '[%Y-%m-%d %H:%M:%S] ', time.localtime() ) )
-            #sys.stderr.write(str(request) + "\n")
-            #sys.stderr.flush()
         except Exception, e:
             s_a.close()
             sys.stderr.write("Parse request failed!\n")
@@ -99,7 +97,10 @@ def nginxRunuwsgi(func):
             s_a.send("\r\n")
 
             '''write log start'''
-            f_log = open(FOOT_PRINTS_PATH, "a")
+            if FOOT_PRINTS_PATH is not None:
+                f_log = open(FOOT_PRINTS_PATH, "a")
+            else:
+                f_log = None
 
             def quote(s_in):
                 s_out = ""
@@ -117,21 +118,22 @@ def nginxRunuwsgi(func):
                     f_log.write( quote( str(request[k]) ) )
                 f_log.write('"')
 
-            f_log.write( time.strftime( '"%Y-%m-%d/%H:%M:%S"',
-                time.localtime() ) )
-            f_log.write(' "' + quote(request["REMOTE_ADDR"] +
-                ":" + request["REMOTE_PORT"]) + '"')
-            f_log.write(' "' + quote(status.split(" ")[0]) + '"')
+            if f_log is not None:
+                f_log.write( time.strftime( '"%Y-%m-%d/%H:%M:%S"',
+                    time.localtime() ) )
+                f_log.write(' "' + quote(request["REMOTE_ADDR"] +
+                    ":" + request["REMOTE_PORT"]) + '"')
+                f_log.write(' "' + quote(status.split(" ")[0]) + '"')
 
-            writeKey("REQUEST_METHOD")
-            writeKey("REQUEST_URI")
-            writeKey("HTTP_REFERER");
-            writeKey("HTTP_COOKIE");
-            writeKey("HTTP_USER_AGENT");
-            writeKey("request_log");
+                writeKey("REQUEST_METHOD")
+                writeKey("REQUEST_URI")
+                writeKey("HTTP_REFERER");
+                writeKey("HTTP_COOKIE");
+                writeKey("HTTP_USER_AGENT");
+                writeKey("request_log");
 
-            f_log.write("\n")
-            f_log.close()
+                f_log.write("\n")
+                f_log.close()
             '''write log end'''
             #end nginx_start_response
         
