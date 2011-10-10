@@ -1,0 +1,7 @@
+*.pyc
+*~
+sessions
+logs
+*.swp
+*.swo
+upload-testing

@@ -1,0 +1,43 @@
+/*全站通用*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin:0; padding:0; font:12px/1.6 'Helvetica Neue',Helvetica,Arial; }
+body {width:100%; margin: 0 auto; font:12px/1.6 'Helvetica Neue',Helvetica,Arial; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; line-height:20px; }
+pre { margin:0px; padding:0px; }
+pre {white-space:pre-wrap; white-space:-moz-pre-wrap; white-space:-pre-wrap; white-space:-o-pre-wrap; word-wrap:break-word;} /*让pre中的内容自动换行*/
+ul {list-style-type:none;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+a {text-decoration:none;} /*删除a的下划线*/
+a:focus { outline: none; }
+a:hover {cursor:pointer;}
+img {border:none} /*删除图片边框*/
+br{ display:inline; line-height:11px; }
+
+:focus {outline:none;} /*清除webkit的focus边框*/
+
+/*ie text overflow*/
+.ellipsis span { display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; }
+/*ff text overflow
+.ellipsis { clear:both;}
+.ellipsis:after { content:".."; }
+*/
+
+.clearfix { height:0px; clear: both; }
+.clearfix:after { content: "."; display: block; height:0px; clear: both; visibility: hidden; }
+html[xmlns] .clearfix {display: block; height:0px; clear: both; visibility: hidden; }
+* html .clearfix {height: 1%; clear: both; visibility: hidden; }
+
+.hidden {display:none;}
+.rr {float:right;}
+.ll {float:left;}
+.clear {clear:both;}
+
+/*botton style 01(input submit btn style)----begins */
+.btn01 { height:24px; }
+.btn01 input:hover { cursor:pointer; }
+.btn01 input { background-color:#fff;border:none; font-size:13px; background:url(/img/common/icon/zark_botton4_1.gif)  no-repeat; display:block; float:left;  height:24px; padding-left:10px; }
+.btn01 span {display:block; background:url(/img/common/icon/zark_botton4_2.gif) top right no-repeat; width:12px;height:24px; float:left; }  
+/*botton style 01----ends */
+
+/* round corner */
+.corner4px {border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
+.corner8px {border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -o-border-radius:8px; -khtml-border-radius:8px; }
+.corner10px {border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; -khtml-border-radius:10px; }
