@@ -1,9 +1,10 @@
 $(function(){
 
     test = function(){
-        data = {code:$('#blackcode').val(), type:'py'};
+        data = {code:$('#black_code_box').val(), type:'py'};
         $.post('/zarkapi/getcolorcode',data,function(cc){
-            $('#showcolorcode').html(cc);
+            $('#black_code_box').hide();
+            $('#color_code_box').html(cc).show();
         },'text');
     };
 
