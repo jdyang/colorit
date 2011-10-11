@@ -1,5 +1,11 @@
 $(function(){
 
+    //==============zeroclipboard init ===============
+    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
+    CLIPBOARD = new ZeroClipboard.Client();
+    CLIPBOARD.setHandCursor( true )
+    CLIPBOARD.glue( 'd_clip_button', 'd_clip_container' );
+
     //==============language select===============
     SELECTED_LANG = null;
     $('#type_selector').change(function(){
@@ -17,6 +23,7 @@ $(function(){
         $.post('/zarkapi/getcolorcode',data,function(cc){
             $('#black_code_box').hide();
             $('#color_code_box').html(cc).show();
+            CLIPBOARD.setText( $('#color_code_box').html() );
         },'text');
         $('#color_it').html('clean');
         IS_SHOW_COLOR_CODE = true;
@@ -44,6 +51,11 @@ $(function(){
         }
     });
 
+    //==============choose language button===============
+    $('#choose_lang').click(function(){
+        $('#choose_lang_box').toggle();
+    });
+
     //==============choose language box===============
     $('#choose_lang_box li').click(function(){
         SELECTED_LANG = $(this).attr('val');
@@ -51,12 +63,5 @@ $(function(){
         $('#choose_lang_box').hide();
     });
 
-    //==============copy it button===============
-    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
-    var clip = new ZeroClipboard.Client();
-    clip.setText( "Copy me!" );
-    clip.setHandCursor( true )
-    clip.glue( 'd_clip_button', 'd_clip_container' );
-    clip.setText( "Copy me2!" );
 
 });
