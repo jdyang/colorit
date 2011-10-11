@@ -43,12 +43,13 @@ html[xmlns] .clearfix {display: block; height:0px; clear: both; visibility: hidd
 .corner10px {border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; -khtml-border-radius:10px; }
 
 /*--------------------Color Code Home Page Css-----------------------------------*/
-body{ text-align:center; color:#fff;}
+body{ text-align:center; color:#fff; background:url(/img/sky_bg01.jpg) top center fixed;} 
 .top_nav {width:100%; height:30px; background-color:#000;}
 
-.cc_top { width:810px; margin:0 auto; margin-top:80px;}
-.cc_logo { background:url(/img/Color_Code_01.png) top no-repeat; width:343px; height:53px;  float:left;}
-.cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:28px; margin-right:5px; float:right;}
+.cc_top { width:810px; height:71px; margin:0 auto; margin-top:80px; }
+.cc_logo { background:url(/img/Color_Code_01.png) top no-repeat; width:393px; height:71px;  float:left;}
+.cc_logo:hover { background:url(/img/Color_Code_02.png) top no-repeat;}
+.cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:43px; margin-right:5px; float:right;}
 
 .content_box { width:810px; margin:0 auto; margin-top:30px; }
 .code_box {width:740px; float:left; }
