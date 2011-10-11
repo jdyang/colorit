@@ -13,13 +13,11 @@
             <div class="cc_logo"></div>
             <div class="cc_sub_logo"></div>
         </div>
-
-        
         <div class="clearfix"></div>
         <div class="content_box">
-            <div class="code_box">
-                <textarea class="black_code_box corner8px"  id="black_code_box"></textarea>
-                <div class="color_code_box corner8px" id="color_code_box" ></div>
+            <div id="code_box" class="code_box corner8px ">
+                    <textarea class="black_code_box"  id="black_code_box"></textarea>
+                    <div class="color_code_box" id="color_code_box" ></div>
             </div>
             <div class="tool_box corner8px" >
                 <div class="color_it_wrapper">
@@ -43,19 +41,21 @@
                             <li val="py" class="li_py" >Python</li>
                             <li val="sql" class="li_sql" >sql</li>
                             <li val="sh" class="li_sh" >shell</li>
+                            <li val="lua" class="li_lua" >Lua</li>
+                            <li val="perl" class="li_perl" >Perl</li>
                         </ul>
                     </div>
                     <div class="clearfix"><div>
                     <div id="d_clip_container" style="position:relative">
                        <div id="d_clip_button" class="copy_code corner4px">Copy code</div>
                     </div>
-                    <div id="" class="reformat corner4px">
-                        <input type="checkbox" />
+                    <div class="reformat corner4px">
+                        <input id="format" type="checkbox" />
                         <p>Reformat</p>
                     </div>
-                    <div id="" class="show_lines corner4px">
-                        <input type="checkbox" />
-                        <p>Show Lines</p>
+                    <div class="show_lines corner4px">
+                        <input id="number" type="checkbox" />
+                        <p>View Lines</p>
                     </div>
                 </div>
             </div>
