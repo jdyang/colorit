@@ -8,7 +8,7 @@ var ZeroClipboard = {
 	moviePath: 'ZeroClipboard.swf', // URL to movie
 	nextId: 1, // ID of next movie
 	
-	$: function(thingy) {
+	ZeroClipboard$: function(thingy) {
 		// simple DOM lookup utility function
 		if (typeof(thingy) == 'string') thingy = document.getElementById(thingy);
 		if (!thingy.addClass) {
@@ -100,7 +100,7 @@ ZeroClipboard.Client.prototype = {
 	glue: function(elem, appendElem, stylesToAdd) {
 		// glue to DOM element
 		// elem can be ID or actual DOM element object
-		this.domElement = ZeroClipboard.$(elem);
+		this.domElement = ZeroClipboard.ZeroClipboard$(elem);
 		
 		// float just above object, or zIndex 99 if dom element isn't set
 		var zIndex = 99;
@@ -109,7 +109,7 @@ ZeroClipboard.Client.prototype = {
 		}
 		
 		if (typeof(appendElem) == 'string') {
-			appendElem = ZeroClipboard.$(appendElem);
+			appendElem = ZeroClipboard.ZeroClipboard$(appendElem);
 		}
 		else if (typeof(appendElem) == 'undefined') {
 			appendElem = document.getElementsByTagName('body')[0];
@@ -190,7 +190,7 @@ ZeroClipboard.Client.prototype = {
 		// reposition our floating div, optionally to new container
 		// warning: container CANNOT change size, only position
 		if (elem) {
-			this.domElement = ZeroClipboard.$(elem);
+			this.domElement = ZeroClipboard.ZeroClipboard$(elem);
 			if (!this.domElement) this.hide();
 		}
 		
