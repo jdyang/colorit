@@ -49,11 +49,11 @@ body{ text-align:center; color:#fff; background:url(/img/wooden) top center fixe
 .cc_top {  height:71px; margin-left:50px;  margin-top:70px; }
 .cc_logo { background:url(/img/Color_Code_01.png) top no-repeat; width:393px; height:71px;  float:left;}
 .cc_logo:hover { background:url(/img/Color_Code_02.png) top no-repeat;}
-.cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:43px;  float:right;}
+.cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:43px; margin-right:5px; float:right;}
 
-.content_box {width:100%;   margin-top:30px; position:relative; }
+.content_box {width:100%;  margin-top:30px; padding-bottom:100px; float:left; position:relative; }
 .code_box { margin-left:50px; float:left; border:10px solid #d9d9d9; background-color:#000; }
-.code_box .black_code_box {   margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
+.code_box .black_code_box { resize:none; margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
 .code_box .color_code_box { margin:20px; display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; }
 .tool_box { float:right; margin-right:200px; width:126px; height:410px; text-align:center; background-color:#d9d9d9;   }
 .color_it_wrapper { position:relative;}
