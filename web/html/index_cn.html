@@ -8,19 +8,29 @@
         <script type="text/javascript" src="/js/colorcode.js"></script>
     </head>
     <body>
-        color code
-        <a href="javascript:;" onclick="test();">test</a>
-        <input id="copy" type="button" value="复制信息"/>  
-        <textarea style="width:500px; height:300px; " id="blackcode">
-
-        </textarea>
-        <div id="showcolorcode" style="background-color:gray;">
-
+        <div class="top_nav"></div>
+        <div class="cc_top">
+            <div class="cc_logo"></div>
+            <div class="cc_sub_logo"></div>
         </div>
 
+        <!--
         <div id="d_clip_container" style="position:relative">
            <div id="d_clip_button">Copy to Clipboard</div>
         </div>
+        -->
         
+        <div class="clearfix"></div>
+        <div class="content_box">
+            <div class="code_box">
+                <textarea class="black_code_box"  id="blackcode"></textarea>
+                <div class="color_code_box" id="blackcode" ></div>
+            </div>
+            <div class="tool_box" id="showcolorcode">
+                <a class="btn_text" href="javascript:;" onclick="test();">test</a>
+            </div>
+        </div>
+        <div class="ad_sense"></div>
+        <div class="foot"></div>
     </body>
 </html>

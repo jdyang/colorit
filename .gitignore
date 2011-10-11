@@ -6,3 +6,4 @@ logs
 *.swo
 upload-testing
 codes
+.DS_Store
