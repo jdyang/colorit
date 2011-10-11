@@ -51,11 +51,11 @@ body{ text-align:center; color:#fff; background:url(/img/sky_bg01.jpg) top cente
 .cc_logo:hover { background:url(/img/Color_Code_02.png) top no-repeat;}
 .cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:43px; margin-right:5px; float:right;}
 
-.content_box { width:810px; margin:0 auto; margin-top:30px; position:relative; }
-.code_box {width:740px; float:left; }
-.code_box .black_code_box { width:740px; max-width:740px; min-width:740px;  min-height:290px; float:left;  border:10px solid #d9d9d9; border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; -o-border-radius:8px 0 0 8px; -khtml-border-radius:8px 0 0 8px; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
+.content_box { width:760px; margin:0 auto; margin-top:30px; position:relative; }
+.code_box {width:760px; float:left; }
+.code_box .black_code_box { width:760px; max-width:760px; min-width:740px;  min-height:290px; float:left;  border:10px solid #d9d9d9; border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; -o-border-radius:8px 0 0 8px; -khtml-border-radius:8px 0 0 8px; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
 .code_box .color_code_box { width:740px;  max-width:740px; min-width:740px; min-height:290px; border:10px solid #d9d9d9; border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; -o-border-radius:8px 0 0 8px; -khtml-border-radius:8px 0 0 8px; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; }
-.tool_box { float:left; width:50px; height:310px; padding-left:10px; background-color:#d9d9d9; border-radius:0 8px 8px 0; -moz-border-radius:0 8px 8px 0; -webkit-border-radius:0 8px 8px 0; -o-border-radius:0 8px 8px 0; -khtml-border-radius:0 8px 8px 0;  position:absolute; right:-40px;  }
+.tool_box { float:left; width:100px; height:310px; padding-left:10px; background-color:#d9d9d9; border-radius:0 8px 8px 0; -moz-border-radius:0 8px 8px 0; -webkit-border-radius:0 8px 8px 0; -o-border-radius:0 8px 8px 0; -khtml-border-radius:0 8px 8px 0;  position:absolute; right:-40px;  }
 .tool_box .btn_color { display:block; float:right; width:40px; padding:3px 5px; background-color:#448ccb; font-size:16px; color:#fff; text-align:center; margin-top:10px; border-radius:4px 0 0 4px; box-shadow:2px 2px 3px #585858 inset; }
 .tool_box .btn_color:hover {  box-shadow:0 0 0 #585858 inset; }
 
