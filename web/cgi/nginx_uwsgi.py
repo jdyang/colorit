@@ -14,7 +14,7 @@ import web, web.wsgi, site_helper
 
 SERVER_PORT         = site_helper.config.APP_PORT
 FOOT_PRINTS_PATH    = None
-ERROR_LOG_PATH      = None
+ERROR_LOG_PATH      = site_helper.config.ERROR_LOG_PATH
 
 def parseRequest(sock):
     """

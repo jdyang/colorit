@@ -15,7 +15,9 @@ class GetColorCode:
         script_file = site_helper.config.APP_ROOT_PATH+'web/vimscriptin/%s' % self._getFormatFile(i)
         assert(os.path.exists(script_file))
         os.system('cd %s\n vim  -f -s "%s" %s' % ( site_helper.config.APP_ROOT_PATH+'web/codes/', script_file, file_name ))
-        code_string = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name+'.html').read()
+        f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name+'.html')
+        code_string = f.read()
+        f.close()
         code_string = self._stripTag(code_string, 'body')
         return code_string
 

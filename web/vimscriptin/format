@@ -1,1 +1,1 @@
-ggVG=:set nonumber:let g:html_use_css=0:syn on:run! syntax/2html.vim:wq:q!
+ggVG=:set nonumber:let g:html_use_css=0:syn on:run! syntax/2html.vim:wq:q!
