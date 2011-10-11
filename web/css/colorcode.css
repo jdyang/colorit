@@ -52,8 +52,8 @@ body{ text-align:center; color:#fff; background:url(/img/wooden) top center fixe
 .cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:43px; margin-right:10px; float:right;}
 
 .content_box { width:100%; margin-left:50px; margin-top:30px; position:relative; }
-.code_box {width:50%; float:left; }
-.code_box .black_code_box { width:90%; max-width:90%; min-width:90%; padding:20px; min-height:350px; float:left;  border:10px solid #d9d9d9;  background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
+.code_box {width:100%; float:left; }
+.code_box .black_code_box { width:50%; max-width:90%; min-width:90%; padding:20px; min-height:350px; float:left;  border:10px solid #d9d9d9;  background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
 .code_box .color_code_box { display:block; width:90%;  max-width:90%; min-width:90%; min-height:350px; border:10px solid #d9d9d9;  background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; }
 .tool_box { float:left; width:126px; height:410px; text-align:center; background-color:#d9d9d9;   }
 .color_it_wrapper { position:relative;}
