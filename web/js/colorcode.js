@@ -20,7 +20,8 @@ $(function(){
     //==============color it function===============
     colorIt = function(){
         var options = '';
-        //if($('#format').selected());
+        if($('#format:checked').val() !== undefined) options += 'format_';
+        if($('#number:checked').val() !== undefined) options += 'number_';
         data = {code:$('#black_code_box').val(), type:SELECTED_LANG, options:options  };
         $.post('/zarkapi/getcolorcode',data,function(cc){
             $('#black_code_box').hide();
@@ -37,6 +38,7 @@ $(function(){
     cleanCode = function(){
         $('#black_code_box').val('').show();
         $('#color_code_box').html('').hide();
+        $('#code_box').height($('#black_code_box').height()+40);
         $('#color_it').html('color it');
         IS_SHOW_COLOR_CODE = false;
     };
@@ -62,8 +64,17 @@ $(function(){
     //==============choose language box===============
     $('#choose_lang_box li').click(function(){
         SELECTED_LANG = $(this).attr('val');
-        colorIt();
+        if($.trim($('#black_code_box').val()).length>0){
+            colorIt();
+        };
         $('#choose_lang_box').hide();
+    });
+
+    //==============checkbox change event===============
+    $('#format, #number').change(function(){
+        if (IS_SHOW_COLOR_CODE === true){
+            colorIt();
+        }
     });
 
     //==============布局===============
