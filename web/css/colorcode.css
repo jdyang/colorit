@@ -46,10 +46,10 @@ html[xmlns] .clearfix {display: block; height:0px; clear: both; visibility: hidd
 body{ text-align:center; color:#fff; background:url(/img/wooden) top center fixed; overflow-y:scroll;}
 .top_nav {width:100%; height:30px; background-color:#000; }
 
-.cc_top { width:50%; height:71px; margin-left:50px;  margin-top:70px; }
+.cc_top {  height:71px; margin-left:50px;  margin-top:70px; }
 .cc_logo { background:url(/img/Color_Code_01.png) top no-repeat; width:393px; height:71px;  float:left;}
 .cc_logo:hover { background:url(/img/Color_Code_02.png) top no-repeat;}
-.cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:43px; margin-right:10px; float:right;}
+.cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; width:229px; height:25px; margin-top:43px;  float:right;}
 
 .content_box {width:100%;   margin-top:30px; position:relative; }
 .code_box { margin-left:50px; float:left; border:10px solid #d9d9d9; background-color:#000; }
