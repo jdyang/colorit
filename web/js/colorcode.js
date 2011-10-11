@@ -1,11 +1,11 @@
 $(function(){
 
     //==============language select===============
-    COLOR_IT_IS_READY = false;
+    SELECTED_LANG = null;
     $('#type_selector').change(function(){
         if($('#type_selector').val() != ''){
             $('#color_it').removeClass('btn_color_forbid').addClass('btn_color_free ');
-            COLOR_IT_IS_READY = true;
+            SELECTED_LANG = $('#type_selector').val();
         }else{
             $('#color_it').removeClass('btn_color_free ').addClass('btn_color_forbid');
         }
@@ -13,12 +13,15 @@ $(function(){
 
     //==============color it button===============
     $('#color_it').click(function(){
-        if (COLOR_IT_IS_READY === true){
+        if (SELECTED_LANG !== null){
             data = {code:$('#black_code_box').val(), type:'py'};
             $.post('/zarkapi/getcolorcode',data,function(cc){
                 $('#black_code_box').hide();
                 $('#color_code_box').html(cc).show();
             },'text');
+        }else{
+            $('#')
+            
         }
     });
 
