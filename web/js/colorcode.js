@@ -63,5 +63,4 @@ $(function(){
         $('#choose_lang_box').hide();
     });
 
-
 });
