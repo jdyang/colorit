@@ -70,7 +70,7 @@ $(function(){
     var client_x = document.documentElement.clientWidth;
     var client_y = document.documentElement.clientHeight;
     var code_box_width = client_x-90-126-200;
-    $('#code_box').width(code_box_width);
+    $('#code_box, #cc_top').width(code_box_width);
     $('#black_code_box, #color_code_box').width(code_box_width-40);
     $('#choose_lang_box').animate({opacity:0.8});
 
