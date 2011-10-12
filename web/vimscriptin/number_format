@@ -1,1 +1,1 @@
-:filetype indent on:set shiftwidth=4ggVG=:set number:let g:html_use_css=0:syn on:run! syntax/2html.vim:wq:q!
+gg=G:set number:let g:html_use_css=0:syn on:run! syntax/2html.vim:wq:q!
