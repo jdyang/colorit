@@ -9,10 +9,13 @@
     <body>
         <div class="top_nav"></div>
         <div id="cc_top" class="cc_top">
-            <div id="cc_logo" class="cc_logo"></div>
-            <div id="headline" class="headline corner20px">
-                <p>To iterate is human, to recurse divine.</p>
-                <span class="headline_tri"></span>
+            <div id="cc_logo" class="cc_logo">
+                <div id="headline" class="headline">
+                    <p class="corner20px">
+                        To iterate is human, to recurse divine.
+                        <span class="headline_tri"></span>
+                    </p>
+                </div>
             </div>
             <div class="cc_sub_logo corner20px"></div>
         </div>
@@ -22,7 +25,7 @@
                     <textarea class="black_code_box" id="black_code_box"></textarea>
                     <div class="color_code_box" id="color_code_box" ></div>
             </div>
-            <div class="tool_box" >
+            <div class="tool_box corner8px" >
                 <div class="color_it_wrapper">
                     <div class="color_it_box">
                         <a id="color_it" class="color_it corner4px" href="javascript:;" >color it!</a>
@@ -72,20 +75,33 @@
                         <div class="clearfix"></div>
                         <div class="lang_input_box">
                             <input id="custom_lang_input" type="text"  value="" class="lang_input " />
-                            <span class="lang_input_tip corner60px">Type suffix, then</br><span class="word_enter">ENTER<span></span>
+                            <div class="lang_input_tip_box">
+                                <span class="lang_input_tip corner60px">Type suffix, then</br><span class="word_enter">ENTER<span></span>
+                                <span class="lang_input_tri"></span>
+                            </div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div id="copy_code_container" style="position:relative">
-                       <div id="copy_code_button" class="copy_code corner4px">Copy code</div>
+                       <div id="copy_code_button" class="copy_code corner4px">
+                           Copy code
+                           <span class="copy_code_tip corner15px"></span>
+                       </div>
                     </div>
+                    <div class="clearfix"></div>
                     <div class="reformat corner4px">
                         <input id="format" type="checkbox" />
                         <p>Reformat</p>
                     </div>
+                    <div class="clearfix"></div>
                     <div class="show_lines corner4px">
                         <input id="number" type="checkbox" />
                         <p>View Lines</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="font_change_wrapper">
+                        <span class="turn_box corner4px">-</span>
+                        <span class="turn_box corner4px">+</span>
                     </div>
                 </div>
             </div>
