@@ -93,7 +93,7 @@ $(function(){
     //==============choose language box===============
     $('#choose_lang_box li').click(function(){
         SELECTED_LANG = $(this).attr('val');
-        if($.trim($('#black_code_box').val()).length>0){
+        if(($.trim($('#black_code_box').val()).length>0) && ($('#black_code_box').attr('firstfocus') !== 'false')){
             colorIt();
         };
         $('#choose_lang_box').hide();
