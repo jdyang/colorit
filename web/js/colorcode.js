@@ -1,10 +1,15 @@
 $(function(){
 
     //==============zeroclipboard init ===============
-    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
+    CAN_COPY_CODE = false;
+    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard10.swf' );
     CLIPBOARD = new ZeroClipboard.Client();
-    CLIPBOARD.setHandCursor( true );
-    CLIPBOARD.glue( 'd_clip_button', 'd_clip_container' );
+    CLIPBOARD.setHandCursor(true);
+    CLIPBOARD.glue( 'copy_code_button', 'copy_code_container' );
+    $('#copy_code_container embed').hide();
+    CLIPBOARD.addEventListener( 'onMouseDown', function(){
+        alert('copyed');
+    } );
 
     //==============language select===============
     SELECTED_LANG = null;
@@ -27,6 +32,10 @@ $(function(){
             $('#black_code_box').hide();
             $('#color_code_box').html(cc).show();
             $('#code_box').height(Math.max($('#black_code_box').height(),$('#color_code_box').height())+40);
+            //set copy code button ready
+            $('#copy_code_button').addClass('copy_code_ready');
+            $('#copy_code_container embed').show();
+            CAN_COPY_CODE = true;
             CLIPBOARD.setText( $('#color_code_box').html() );
         },'text');
         $('#color_it').html('clean');
@@ -41,6 +50,10 @@ $(function(){
         $('#code_box').height($('#black_code_box').height()+40);
         $('#color_it').html('color it');
         IS_SHOW_COLOR_CODE = false;
+        //set copy code button onready
+        $('#copy_code_button').removeClass('copy_code_ready');
+        $('#copy_code_container embed').hide();
+        CAN_COPY_CODE = false;
     };
 
     //==============color it button===============
