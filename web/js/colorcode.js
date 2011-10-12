@@ -106,12 +106,6 @@ $(function(){
     });
     $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
 
-    //==============cc_logo hover event===============
-    $('#cc_logo').mouseover(function(){
-        $('#headline').css('visibility','visible'); //display会引起跳动
-    }).mouseout(function(){
-        $('#headline').css('visibility','hidden');
-    });
     //==============布局===============
     var client_x = document.documentElement.clientWidth;
     var client_y = document.documentElement.clientHeight;
