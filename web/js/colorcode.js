@@ -10,7 +10,7 @@ $(function(){
     SELECTED_LANG = null;
     $('#type_selector').change(function(){
         if($('#type_selector').val() != ''){
-            $('#color_it').removeClass('btn_color_forbid').addClass('btn_color_free ');
+            $('#color_it').removeClass('btn_color_forbid').addClass('btn_color_free');
             SELECTED_LANG = $('#type_selector').val();
         }else{
             $('#color_it').removeClass('btn_color_free ').addClass('btn_color_forbid');
@@ -45,6 +45,12 @@ $(function(){
 
     //==============color it button===============
     $('#color_it').click(function(){
+        //如果还没有输入任何代码，就提示他输入代码
+        if( (($('#black_code_box').attr('firstfocus') === 'false') || ($.trim($('#black_code_box').val().length===0))).toString() === 'true' ){
+            $('#black_code_box').val($('#black_code_box').val()+'Please input your code first!\n');
+            $('#black_code_box').attr('firstfocus','false').css('font-size','24px');
+            return;
+        };
         if (IS_SHOW_COLOR_CODE === false){
             if (SELECTED_LANG !== null){
                 colorIt();
@@ -79,7 +85,7 @@ $(function(){
 
     //==============custom lang input event===============
     $('#custom_lang_input').focus(function(){
-        if ($(this).attr('firstfocus') === undefined){
+        if ($(this).attr('firstfocus') === 'false'){
             $(this).css('color','#000;').attr('firstfocus','true').css('text-align','left').val('');
         }
     }).keypress(function(event){
@@ -90,9 +96,22 @@ $(function(){
             return false;                               
         }
     });
-    $('#custom_lang_input').css('color','gray;').removeAttr('firstfocus').css('text-align','center').val('input your suffix');
+    $('#custom_lang_input').css('color','gray;').attr('firstfocus','false').css('text-align','center').val('input your suffix');
 
+    //==============black_code_box input event===============
+    $('#black_code_box').focus(function(){
+        if ($(this).attr('firstfocus') === 'false'){
+            $(this).attr('firstfocus','true').css('font-size','14px').val('');
+        }
+    });
+    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
 
+    //==============cc_logo hover event===============
+    $('#cc_logo').mouseover(function(){
+        $('#headline').css('visibility','visible'); //display会引起跳动
+    }).mouseout(function(){
+        $('#headline').css('visibility','hidden');
+    });
     //==============布局===============
     var client_x = document.documentElement.clientWidth;
     var client_y = document.documentElement.clientHeight;
