@@ -1,10 +1,15 @@
 $(function(){
 
     //==============zeroclipboard init ===============
-    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
+    CAN_COPY_CODE = false;
+    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard10.swf' );
     CLIPBOARD = new ZeroClipboard.Client();
-    CLIPBOARD.setHandCursor( true );
-    CLIPBOARD.glue( 'd_clip_button', 'd_clip_container' );
+    CLIPBOARD.setHandCursor(true);
+    CLIPBOARD.glue( 'copy_code_button', 'copy_code_container' );
+    $('#copy_code_container embed').hide();
+    CLIPBOARD.addEventListener( 'onMouseDown', function(){
+        alert('copyed');
+    } );
 
     //==============language select===============
     SELECTED_LANG = null;
@@ -27,6 +32,10 @@ $(function(){
             $('#black_code_box').hide();
             $('#color_code_box').html(cc).show();
             $('#code_box').height(Math.max($('#black_code_box').height(),$('#color_code_box').height())+40);
+            //set copy code button ready
+            $('#copy_code_button').addClass('copy_code_ready');
+            $('#copy_code_container embed').show();
+            CAN_COPY_CODE = true;
             CLIPBOARD.setText( $('#color_code_box').html() );
         },'text');
         $('#color_it').html('clean');
@@ -41,6 +50,10 @@ $(function(){
         $('#code_box').height($('#black_code_box').height()+40);
         $('#color_it').html('color it');
         IS_SHOW_COLOR_CODE = false;
+        //set copy code button onready
+        $('#copy_code_button').removeClass('copy_code_ready');
+        $('#copy_code_container embed').hide();
+        CAN_COPY_CODE = false;
     };
 
     //==============color it button===============
@@ -56,24 +69,35 @@ $(function(){
                 colorIt();
             }else{
                 $('#choose_lang_box').toggle();
+                choose_lang_box_toggle_hook();
             }
         }else{
             cleanCode();
         }
     });
 
+    choose_lang_box_toggle_hook = function(){
+        if($('#choose_lang_box').css('display') === 'block'){
+            $('#choose_lang').addClass('choose_lang_active');
+        }else{
+            $('#choose_lang').removeClass('choose_lang_active');
+        };
+    
+    };
     //==============choose language button===============
     $('#choose_lang').click(function(){
         $('#choose_lang_box').toggle();
+        choose_lang_box_toggle_hook();
     });
 
     //==============choose language box===============
     $('#choose_lang_box li').click(function(){
         SELECTED_LANG = $(this).attr('val');
-        if($.trim($('#black_code_box').val()).length>0){
+        if(($.trim($('#black_code_box').val()).length>0) && ($('#black_code_box').attr('firstfocus') !== 'false')){
             colorIt();
         };
         $('#choose_lang_box').hide();
+        choose_lang_box_toggle_hook();
     });
 
     //==============checkbox change event===============
@@ -88,15 +112,21 @@ $(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).css('color','#000;').attr('firstfocus','true').css('text-align','left').val('');
         }
+    }).blur(function(){
+        if ($(this).val() === ''){
+            $(this).css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
+        }
+        
     }).keypress(function(event){
         if(event.keyCode==13) {
             SELECTED_LANG = $(this).val();
             $('#choose_lang_box').hide();
+            choose_lang_box_toggle_hook();
             colorIt();
             return false;                               
         }
     });
-    $('#custom_lang_input').css('color','gray;').attr('firstfocus','false').css('text-align','center').val('input your suffix');
+    $('#custom_lang_input').css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
 
     //==============black_code_box input event===============
     $('#black_code_box').focus(function(){
