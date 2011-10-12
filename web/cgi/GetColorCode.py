@@ -15,10 +15,12 @@ class GetColorCode:
         script_file = site_helper.config.APP_ROOT_PATH+'web/vimscriptin/%s' % self._getFormatFile(i)
         assert(os.path.exists(script_file))
         os.system('cd %s\n vim  -f -s "%s" %s' % ( site_helper.config.APP_ROOT_PATH+'web/codes/', script_file, file_name ))
-        f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name+'.html')
+        f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name+'.xhtml') #当使用let g:html_use_xhtml=1时，生成的后缀名就是xhtml
         code_string = f.read()
         f.close()
         code_string = self._stripTag(code_string, 'body')
+        code_string = code_string.replace('\n','')
+        code_string = '<div style="background-color:#000;color:#45ED00;"><code>%s</code></div>' % code_string
         return code_string
 
     def _stripTag(self, code_string, tag_name):

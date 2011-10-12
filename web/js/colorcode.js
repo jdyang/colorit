@@ -3,7 +3,7 @@ $(function(){
     //==============zeroclipboard init ===============
     ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
     CLIPBOARD = new ZeroClipboard.Client();
-    CLIPBOARD.setHandCursor( true )
+    CLIPBOARD.setHandCursor( true );
     CLIPBOARD.glue( 'd_clip_button', 'd_clip_container' );
 
     //==============language select===============
