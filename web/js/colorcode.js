@@ -56,15 +56,25 @@ $(function(){
                 colorIt();
             }else{
                 $('#choose_lang_box').toggle();
+                choose_lang_box_toggle_hook();
             }
         }else{
             cleanCode();
         }
     });
 
+    choose_lang_box_toggle_hook = function(){
+        if($('#choose_lang_box').css('display') === 'block'){
+            $('#choose_lang').addClass('choose_lang_active');
+        }else{
+            $('#choose_lang').removeClass('choose_lang_active');
+        };
+    
+    };
     //==============choose language button===============
     $('#choose_lang').click(function(){
         $('#choose_lang_box').toggle();
+        choose_lang_box_toggle_hook();
     });
 
     //==============choose language box===============
@@ -74,6 +84,7 @@ $(function(){
             colorIt();
         };
         $('#choose_lang_box').hide();
+        choose_lang_box_toggle_hook();
     });
 
     //==============checkbox change event===============
@@ -88,15 +99,21 @@ $(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).css('color','#000;').attr('firstfocus','true').css('text-align','left').val('');
         }
+    }).blur(function(){
+        if ($(this).val() === ''){
+            $(this).css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
+        }
+        
     }).keypress(function(event){
         if(event.keyCode==13) {
             SELECTED_LANG = $(this).val();
             $('#choose_lang_box').hide();
+            choose_lang_box_toggle_hook();
             colorIt();
             return false;                               
         }
     });
-    $('#custom_lang_input').css('color','gray;').attr('firstfocus','false').css('text-align','center').val('input your suffix');
+    $('#custom_lang_input').css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
 
     //==============black_code_box input event===============
     $('#black_code_box').focus(function(){

@@ -69,7 +69,7 @@ body{ text-align:center; color:#fff;  overflow-y:scroll;   }
 .tool_box .color_it:active { background-color:#ff267c; box-shadow:0 1px 3px #313131 inset;} 
 .tool_box .choose_lang { display: block; float:left; width:10px; margin-left:5px; background-color:#448ccb; text-align:center; padding:5px; height:25px; position:relative;}
 .tool_box .choose_lang:hover { background-color:#2ea2e4;} 
-.tool_box .choose_lang:active { background-color:#2ea2e4; box-shadow:0 1px 3px #313131 inset;} 
+.tool_box .choose_lang_active { background-color:#2ea2e4; box-shadow:0 1px 3px #313131 inset; } 
 .tool_box .choose_lang .lang_tri { border-color:#fff transparent transparent; border-style:solid dashed; border-width:5px; height:0; width:0; position:absolute; top:15px; left:5px; }
 .tool_box .btn_other { display:block; width:80px; margin:0 auto;  padding:5px; background-color:#448ccb; font-size:16px; color:#fff; text-align:center; margin-top:10px;  }
 .tool_box .choose_lang_box {font-size:16px; float:left; background-color:#000; width:270px; margin-left:14px; margin-top:10px;  position:absolute; left:0; z-index:10000; }
