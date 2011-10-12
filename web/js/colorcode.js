@@ -77,6 +77,22 @@ $(function(){
         }
     });
 
+    //==============custom lang input event===============
+    $('#custom_lang_input').focus(function(){
+        if ($(this).attr('firstfocus') === undefined){
+            $(this).css('color','#000;').attr('firstfocus','true').css('text-align','left').val('');
+        }
+    }).keypress(function(event){
+        if(event.keyCode==13) {
+            SELECTED_LANG = $(this).val();
+            $('#choose_lang_box').hide();
+            colorIt();
+            return false;                               
+        }
+    });
+    $('#custom_lang_input').css('color','gray;').removeAttr('firstfocus').css('text-align','center').val('input your suffix');
+
+
     //==============布局===============
     var client_x = document.documentElement.clientWidth;
     var client_y = document.documentElement.clientHeight;
