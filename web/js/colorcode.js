@@ -117,8 +117,7 @@ $(function(){
     }).blur(function(){
         if ($(this).val() === ''){
             $(this).css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
-        }
-        
+        };
     }).keypress(function(event){
         if(event.keyCode==13) {
             SELECTED_LANG = $(this).val();
@@ -135,6 +134,10 @@ $(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).attr('firstfocus','true').css('font-size','14px').val('');
         }
+    }).blur(function(){
+        if ($(this).val() === ''){
+            $(this).attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
+        };
     });
     $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
 
