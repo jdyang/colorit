@@ -50,20 +50,25 @@ html[xmlns] .clearfix {display: block; height:0px; clear: both; visibility: hidd
 body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flowers.jpg) top center no-repeat;   }
 /*.top_nav {width:100%; height:30px; background-color:#000; }*/
 
-.cc_top {  height:71px; margin-left:50px;  margin-top:70px;  }
-.cc_logo { background:url(/img/Color_Code_logo.png) 0 -71px no-repeat; position:relative; width:393px; height:71px; float:left; }
-.headline { display:none; float:left; padding-left:50px; margin-left:350px; height:60px; margin-top:-20px;  }
-.headline p { display:block;  white-space:nowrap; font-size:16px; line-height:30px; color:#fff; background-color:#2ea2e4; height:30px; padding:0 20px; position:relative; }
+.cc_top {  height:71px; margin-left:50px;  margin-top:70px;   }
+.cc_logo { background:url(/img/Color_Code_logo.png) 0 -71px no-repeat; position:relative; width:272px; height:71px; float:left; }
+.headline { display:none; float:left; padding-left:50px; margin-left:270px; height:60px; margin-top:-30px; position:relative; }
+.headline p { display:block;  white-space:nowrap; font-size:16px; line-height:30px; color:#fff; background-color:#2ea2e4; height:30px; padding:0 20px; position:relative; z-index:10000; }
 .headline_tri { border-color:#2ea2e4 transparent transparent; border-style:solid dashed dashed; border-width:15px 18px 0 0; height:0; width:0; position:absolute; top:30px; left:20px; }
+.headline .loading_icon { display:block;  background:url(/img/headline_icon.gif) top left no-repeat; width:53px; height:60px; float:left; position:absolute; left:20px; bottom:-36px;}
 .cc_logo:hover { background:url(/img/Color_Code_logo.png) 0 0 no-repeat;}
 .cc_logo:hover .headline {display:block;} 
 .cc_sub_logo { background:url(/img/Color_Code_03.png) top no-repeat; background-color:#fff; padding:3px 15px; width:229px; height:25px; margin-top:43px;  float:right;}
 
 .content_box {width:100%;  margin-top:30px; padding-bottom:100px; float:left; position:relative; }
-.code_box { margin-left:50px; float:left; border:10px solid #d9d9d9; background-color:#000; box-shadow:2px 4px 3px #313131; -moz-box-shadow:2px 4px 3px #313131; -webkit-box-shadow:2px 4px 3px #313131; -o-box-shadow:2px 4px 3px #313131; -khtml-box-shadow:2px 4px 3px #313131; }
+.code_box { margin-left:50px; float:left; border:10px solid #d9d9d9; background-color:#000; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; }
+.color_code_box_loading_overlay { border:none; background-color:#000; position:absolute; z-index:20; text-align:left; width:600px; height:350px; }
+.color_code_box_loading_overlay .loading_icon_wrapper { position:relative; }
+.color_code_box_loading_overlay .loading_icon { position:absolute; top:30px; background:url(/img/loading.gif) top left no-repeat; width:300px; height:300px; }
 .code_box .black_code_box { resize:none; margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
 .code_box .color_code_box { display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; }
-.tool_box { float:right; margin-right:200px; width:126px; height:410px; text-align:center;  background-color:#d9d9d9; box-shadow:2px 4px 3px #313131; -moz-box-shadow:2px 4px 3px #313131; -webkit-box-shadow:2px 4px 3px #313131; -o-box-shadow:2px 4px 3px #313131; -khtml-box-shadow:2px 4px 3px #313131; }
+.tool_box_overlay { position:absolute; right:200px; z-index:10000; width:126px; height:410px;}
+.tool_box { float:right; margin-right:200px; width:126px; height:410px; text-align:center;  background-color:#d9d9d9; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; }
 .color_it_wrapper { position:relative;}
 .color_it_box { position:relative; margin-left:15px;  margin-top:10px;}
 .tool_box .color_it {  float:left; display:block; width:60px; margin:0 auto;  padding:5px; background-color:#448ccb; font-size:16px; color:#fff; text-align:center; }
