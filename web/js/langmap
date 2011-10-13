@@ -1,0 +1,1542 @@
+PHP
+php.vim
+
+C#
+cs.vim
+
+Expect
+expect.vim
+
+pilrc
+pilrc.vim
+
+elinks
+elinks.vim
+
+FORM
+form.vim
+
+Python
+python.vim
+
+initng
+initng.vim
+
+JAL
+jal.vim
+
+passwd
+passwd.vim
+
+Robots
+robots.vim
+
+Gtkrc (Gtk)
+gtkrc.vim
+
+Icon
+icon.vim
+
+def (Module-Definition)
+def.vim
+
+kscript
+kscript.vim
+
+Debian control files
+debcontrol.vim
+
+sinda85 output
+sindaout.vim
+
+sinda85 compare
+sindacmp.vim
+
+sinda85 input
+sinda.vim
+
+Postfix
+pfmain.vim
+
+pfmain
+pfmain.vim
+
+CWEB
+cweb.vim
+
+ART-IM
+art.vim
+
+CHILL
+chill.vim
+
+gsp (GNU Server Pages)
+gsp.vim
+
+tpp (Text Presentation Program)
+tpp.vim
+
+Sass
+sass.vim
+
+tli (TealInfo source files)
+tli.vim
+
+ld script
+ld.vim
+
+Virata
+virata.vim
+
+Wget
+wget.vim
+
+Logtalk
+logtalk.vim
+
+LOTOS
+lotos.vim
+
+MGL
+mgl.vim
+
+exports
+exports.vim
+
+LDIF/LDAP
+ldif.vim
+
+hitest (Vim highlighting)
+hitest.vim
+
+lsl (Linden Scripting Language)
+lsl.vim
+
+IA-64
+ia64.vim
+
+objc (Objective C)
+objc.vim
+
+objcpp (Objective C++)
+objcpp.vim
+
+aspperl (Active State's PerlScript)
+aspperl.vim
+
+WML (Website MetaLanguage)
+wml.vim
+
+HTML
+html.vim
+
+group (user group file)
+group.vim
+
+ATLAS
+atlas.vim
+
+rst (reStructuredText)
+rst.vim
+
+Datascript
+datascript.vim
+
+bzr (Bazaar commit file)
+bzr.vim
+
+SQL
+sql.vim
+
+SQL Oracel PL/SQL
+sqloracle.vim
+
+plsql (Oracle Procedureal SQL)
+plsql.vim
+
+sqlinformix (SQL, SPL Informix Dynamic Server)
+sqlinformix.vim
+
+CSS
+css.vim
+
+dtml (Zope's DTML)
+dtml.vim
+
+mma (Mathematica)
+mma.vim
+
+SMITH
+smith.vim
+
+gdb (GDB command)
+gdb.vim
+
+msidl (MS IDL)
+msidl.vim
+
+GDMO
+gdmo.vim
+
+iss (Inno Setup File)
+iss.vim
+
+Ruby
+ruby.vim
+
+conf (generic configure file)
+conf.vim
+
+EDIF
+edif.vim
+
+papp
+papp.vim
+
+B
+b.vim
+
+dictdconf
+dictdconf.vim
+
+Jess
+jess.vim
+
+TASM
+tasm.vim
+
+modula3
+modula3.vim
+
+Conary Recipe
+conaryrecipe.vim
+
+Eiffel
+eiffel.vim
+
+XF86Config
+xf86conf.vim
+
+initex (TeX core definition)
+initex.vim
+
+sed
+sed.vim
+
+doxygen
+doxygen.vim
+
+a2ps configuration file
+a2ps.vim
+
+bc
+bc.vim
+
+Racc
+racc.vim
+
+openroad (CA-OpenROAD)
+openroad.vim
+
+services
+services.vim
+
+ant (ANT build file)
+ant.vim
+
+cdrdao TOC file
+cdrtoc.vim
+
+messages (system messages file)
+messages.vim
+
+FlexWiki
+flexwiki.vim
+
+spup (Speedup)
+spup.vim
+
+Zsh shell script
+zsh.vim
+
+Modula2
+modula2.vim
+
+Omnimark
+omnimark.vim
+
+Sieve
+sieve.vim
+
+Smarty Templates
+smarty.vim
+
+Lynx configuration file
+lynx.vim
+
+ProMeLa
+promela.vim
+
+WinBatch/Webbatch
+winbatch.vim
+
+CUDA (NVIDIA Architecture)
+cuda.vim
+
+Liquid
+liquid.vim
+
+ConTeXt typesetting engine
+context.vim
+
+Ratpoison configuration
+ratpoison.vim
+
+cynpp (Cyn++)
+cynpp.vim
+
+fortran (Fortran95 90 77 F elf90)
+fortran.vim
+
+Hamster Scripting Language
+hamster.vim
+
+NSIS script
+nsis.vim
+
+masm (Microsoft Macro Assembler)
+masm.vim
+
+xpm2 (X Pixmap v2)
+xpm2.vim
+
+Quake configuration
+quake.vim
+
+hog (Snort Configuration)
+hog.vim
+
+cfg (Good old CFG)
+cfg.vim
+
+nanorc
+nanorc.vim
+
+CFML
+cf.vim
+
+svn (Subversion commit)
+svn.vim
+
+CVS commit
+cvs.vim
+
+Dot
+dot.vim
+
+csc (Essbase script)
+csc.vim
+
+strace output
+strace.vim
+
+Valgrind Memory Debugger Output
+valgrind.vim
+
+tssop (TSS Command Line)
+tssop.vim
+
+fgl (Informix 4GL)
+fgl.vim
+
+ampl
+ampl.vim
+
+ahdl (Altera AHDL)
+ahdl.vim
+
+dosbatch (MSDOS batch)
+dosbatch.vim
+
+readline (readline configuration)
+readline.vim
+
+takcmp (TAK2, TAK3, TAK2000)
+takcmp.vim
+
+snnsnet (SNNS network)
+snnsnet.vim
+
+mailcap (Mailcap configuration)
+mailcap.vim
+
+cdl (Comshare Dimension)
+cdl.vim
+
+TRASYS input file
+trasys.vim
+
+Jargon
+jargon.vim
+
+ldapconf
+ldapconf.vim
+
+ecd (Embedix Component Description)
+ecd.vim
+
+desktop/directory
+desktop.vim
+
+ASN.1
+asn.vim
+
+Maple V
+maple.vim
+
+git rebase --interactive
+gitrebase.vim
+
+CUPL
+cupl.vim
+
+CTRL-H
+ctrlh.vim
+
+xkb (X Keyboard Extension)
+xkb.vim
+
+slrnsc (Slrn score file)
+slrnsc.vim
+
+AmigaDos
+amiga.vim
+
+Scheme
+scheme.vim
+
+udevrules
+udevrules.vim
+
+rnoweb
+rnoweb.vim
+
+xmodmap definition
+xmodmap.vim
+
+vb (Visual Basic)
+vb.vim
+
+PROLOG
+prolog.vim
+
+asm (Assembler)
+asm.vim
+
+Hercules
+hercules.vim
+
+OCaml
+ocaml.vim
+
+Lex
+lex.vim
+
+lftp configuration file
+lftp.vim
+
+sh (shell)
+sh.vim
+
+mysql
+mysql.vim
+
+Pike
+pike.vim
+
+TADS
+tads.vim
+
+nroff/groff
+nroff.vim
+
+X resources
+xdefaults.vim
+
+xdefaults
+xdefaults.vim
+
+AutoHotkey script file
+autohotkey.vim
+
+AceDB model files
+acedb.vim
+
+Groovy
+groovy.vim
+
+ppwiz (PPWizard)
+ppwiz.vim
+
+TeX (plaintex format)
+plaintex.vim
+
+plaintex
+plaintex.vim
+
+psf
+psf.vim
+
+udevconf
+udevconf.vim
+
+PLP (Perl in HTML)
+plp.vim
+
+gretl
+gretl.vim
+
+VRML97
+vrml.vim
+
+dylanintr (Dylan)
+dylanintr.vim
+
+cdrdaoconf
+cdrdaoconf.vim
+
+RPL/2
+rpl.vim
+
+diva (SKILL for Diva)
+diva.vim
+
+git send-email message
+gitsendemail.vim
+
+Abaqus finite element
+abaqus.vim
+
+Asterisk config file
+asterisk.vim
+
+SDC (Synopsys Design Constraints)
+sdc.vim
+
+SiCAD
+sicad.vim
+
+D
+d.vim
+
+csh (C-shell)
+csh.vim
+
+crontab
+crontab.vim
+
+pov (PoV-Ray Scene)
+pov.vim
+
+JavaScript
+javascript.vim
+
+Spice circuit simulator
+spice.vim
+
+fasm (Flat Assembler)
+fasm.vim
+
+xpm (X Pixmap)
+xpm.vim
+
+dircolors
+dircolors.vim
+
+NASTRAN
+nastran.vim
+
+splint
+splint.vim
+
+dosini
+dosini.vim
+
+Perl 5
+perl.vim
+
+Model
+model.vim
+
+tsalt (Telix SALT Script)
+tsalt.vim
+
+occam
+occam.vim
+
+focexec (Focus Executable)
+focexec.vim
+
+ora (Oracle config files)
+ora.vim
+
+Pine run commands
+pine.vim
+
+modconf (modules configuration file)
+modconf.vim
+
+WSML
+wsml.vim
+
+wsh (Windows Scripting Host)
+wsh.vim
+
+mib (Vim syntax file)
+mib.vim
+
+XSLT
+xslt.vim
+
+ptcap (printcap/termcap database)
+ptcap.vim
+
+RCS
+rcs.vim
+
+Exim
+exim.vim
+
+eximconf
+exim.vim
+
+TeX
+tex.vim
+
+Baan
+baan.vim
+
+DNS
+dns.vim
+
+FrameScript
+framescript.vim
+
+SPECMAN E-LANGUAGE
+specman.vim
+
+Diff (diff output)
+diff.vim
+
+lite
+lite.vim
+
+asmh8300 (Hitachi H-8300h)
+asmh8300.vim
+
+Yacc
+yacc.vim
+
+mel (Maya Extension Language)
+mel.vim
+
+Vim script
+vim.vim
+
+sqlj
+sqlj.vim
+
+viminfo
+viminfo.vim
+
+eRuby
+eruby.vim
+
+FORTH
+forth.vim
+
+Verilog
+verilog.vim
+
+AutoIt
+autoit.vim
+
+reg (Windows Registry)
+registry.vim
+
+WEB Changes
+change.vim
+
+sgml catalog
+catalog.vim
+
+SNOBOL4
+snobol4.vim
+
+ELF
+elf.vim
+
+NQC (Not Quite C)
+nqc.vim
+
+manconf
+manconf.vim
+
+WEB
+web.vim
+
+Blank
+blank.vim
+
+Reva Forth
+reva.vim
+
+pamconf
+pamconf.vim
+
+Mason (Perl embedded in HTML)
+mason.vim
+
+po
+po.vim
+
+vsejcl (JCL job control)
+vsejcl.vim
+
+taskedit (task 42 edit)
+taskedit.vim
+
+rpcgen
+rpcgen.vim
+
+BDF font definition
+bdf.vim
+
+logindefs
+logindefs.vim
+
+hostconf
+hostconf.vim
+
+tags
+tags.vim
+
+slpconf (RFC 2614 configuration)
+slpconf.vim
+
+slpreg  (RFC 2614 registration )
+slpreg.vim
+
+slpspi  (RFC 2614 SPI )
+slpspi.vim
+
+screen configuration file
+screen.vim
+
+xmath
+xmath.vim
+
+SGML
+sgml.vim
+
+fvwm2m4 (FvwmM4 preprocessed Fvwm2)
+fvwm2m4.vim
+
+grads (GrADS scripts)
+grads.vim
+
+Java
+java.vim
+
+dylanlid (Dylan Library Interface)
+dylanlid.vim
+
+Haml
+haml.vim
+
+fdcc or locale files
+fdcc.vim
+
+DCL (Digital Command Language)
+dcl.vim
+
+mmp (Symbian meta-makefile)
+mmp.vim
+
+MS Message
+msmessages.vim
+
+Nginx configuration
+nginx.vim
+
+tssgm (Thermal Synthesizer System)
+tssgm.vim
+
+calendar
+calendar.vim
+
+Matlab
+matlab.vim
+
+rtf (Rich Text Format)
+rtf.vim
+
+Texinfo (macro package for TeX)
+texinfo.vim
+
+Makefile
+make.vim
+
+Focus Master File
+master.vim
+
+eterm configuration
+eterm.vim
+
+ABEL
+abel.vim
+
+PCCTS
+pccts.vim
+
+Dracula
+dracula.vim
+
+kwt (kimwitu++)
+kwt.vim
+
+Asteriskvm
+asteriskvm.vim
+
+wDiff (wordwise diff)
+wdiff.vim
+
+pod (Perl POD format)
+pod.vim
+
+SMCL
+smcl.vim
+
+CMake
+cmake.vim
+
+resolver configuration file
+resolv.vim
+
+sqlanywhere
+sqlanywhere.vim
+
+objcpp
+objcpp.vim
+
+Falcon
+falcon.vim
+
+cuplsim (CUPL simulation)
+cuplsim.vim
+
+verilogams (Verilog-AMS)
+verilogams.vim
+
+Vgrindefs
+vgrindefs.vim
+
+Slice
+slice.vim
+
+CSP (Communication Sequential Processes)
+csp.vim
+
+sysctl configuration
+sysctl.vim
+
+Maxima
+maxima.vim
+
+am (automake file)
+automake.vim
+
+gkrellm theme
+gkrellmrc.vim
+
+lscript (LotusScript)
+lscript.vim
+
+XS (Perl extension interface)
+xs.vim
+
+SDL
+sdl.vim
+
+Coco/R
+coco.vim
+
+cvsrc (cvs RC file)
+cvsrc.vim
+
+sendpr (FreeBSD send-pr)
+sendpr.vim
+
+vmasm (VAX Macro Assembly)
+vmasm.vim
+
+M4
+m4.vim
+
+FoxPro
+foxpro.vim
+
+elmfilt (Elm Filter rules)
+elmfilt.vim
+
+protocols
+protocols.vim
+
+HASTE
+haste.vim
+
+htmlcheetah
+htmlcheetah.vim
+
+lprolog (LambdaProlog)
+lprolog.vim
+
+hb (Hyper Builder)
+hb.vim
+
+PDF
+pdf.vim
+
+SML
+sml.vim
+
+ncf (Novell "NCF" Batch File)
+ncf.vim
+
+aap (A-A-P recipe)
+aap.vim
+
+rc (M$ Resource)
+rc.vim
+
+pfconf (OpenBSD packet filter)
+pf.vim
+
+SAS
+sas.vim
+
+SPYCE
+spyce.vim
+
+hastepreproc (Haste preprocessor)
+hastepreproc.vim
+
+snnsres (SNNS result file)
+snnsres.vim
+
+Cucumber
+cucumber.vim
+
+btm (4Dos batch file)
+btm.vim
+
+Icewm Menu
+icemenu.vim
+
+groff
+groff.vim
+
+tidyrc (HMTL Tidy configuration)
+tidy.vim
+
+dsl (DSSSL)
+dsl.vim
+
+Squid config
+squid.vim
+
+mf (Metafont)
+mf.vim
+
+YAML (YAML Ain't Markup Language)
+yaml.vim
+
+docbk (DocBook)
+docbk.vim
+
+cpp (C++)
+cpp.vim
+
+MMIX
+mmix.vim
+
+bindzone (BIND zone RFC1035)
+bindzone.vim
+
+MOO
+moo.vim
+
+mailaliases (aliases local alias)
+mailaliases.vim
+
+slrnrc (Slrn setup)
+slrnrc.vim
+
+WebMacro
+webmacro.vim
+
+cl (Clever Language)
+cl.vim
+
+sgmllnx (SGML-linuxdoc)
+sgmllnx.vim
+
+ibasic
+ibasic.vim
+
+git (generic git output)
+git.vim
+
+wvdial (WvDial Configuration)
+wvdial.vim
+
+Clipper & FlagShip
+clipper.vim
+
+povini (PoV-Ray conf/init)
+povini.vim
+
+Privoxy actions file
+privoxy.vim
+
+Cynlib(C++)
+cynlib.vim
+
+gnuplot
+gnuplot.vim
+=================
+PIC16F84 Assembler (Microchip's microcontroller)
+pic.vim
+
+Java Properties resource file (*.properties[_*])
+jproperties.vim
+
+Haskell with literate comments, Bird style,
+lhaskell.vim
+
+Stata and/or Mata
+stata.vim
+
+Rebol
+rebol.vim
+
+DocBook SGML
+docbksgml.vim
+
+OpenSSH server configuration file (sshd_config)
+sshdconfig.vim
+
+Man page
+man.vim
+
+avenue
+ave.vim
+
+xinetd.conf(5) configuration file
+xinetd.vim
+
+OpenSSH client configuration file (ssh_config)
+sshconfig.vim
+
+Renderman shader language
+sl.vim
+
+NATURAL
+natural.vim
+
+CRM114
+crm.vim
+
+ChaiScript
+chaiscript.vim
+
+updatedb.conf(5) configuration file
+updatedb.vim
+
+Debian sources.list
+debsources.vim
+
+Vera
+vera.vim
+
+SKILL
+skill.vim
+
+msql
+msql.vim
+
+Simula
+simula.vim
+
+UnrealScript
+uc.vim
+
+Clean
+clean.vim
+
+BASIC
+basic.vim
+
+Microsoft VBScript Web Content (ASP)
+aspvbs.vim
+
+Tcl/Tk
+tcl.vim
+
+Dylan
+dylan.vim
+
+TSS (Thermal Synthesizer System) Command Line
+tsscl.vim
+
+InstallShield Script
+ishd.vim
+
+DocBook XML
+docbkxml.vim
+
+streaming descriptor file
+sd.vim
+
+Lua 4.0, Lua 5.0 and Lua 5.1
+lua.vim
+
+bin using xxd
+xxd.vim
+
+C
+c.vim
+
+Haskell
+haskell.vim
+
+Sather/pSather
+sather.vim
+
+gpg(1) configuration file
+gpg.vim
+
+JSP (Java Server Pages)
+jsp.vim
+
+lilo configuration (lilo.conf)
+lilo.vim
+
+purify log files
+purifylog.vim
+
+XHTML
+xhtml.vim
+
+Mail file
+mail.vim
+
+BibTeX (bibliographic database format for (La)TeX)
+bib.vim
+
+denyhosts configuration file
+denyhosts.vim
+
+SGML (SGML Declaration <!SGML ...>)
+sgmldecl.vim
+
+XML
+xml.vim
+
+MuPAD source
+mupad.vim
+
+lace
+lace.vim
+
+netrc(5) configuration file
+netrc.vim
+
+HTML and M4
+htmlm4.vim
+
+S-Lang
+slang.vim
+
+samba configuration files (smb.conf)
+samba.vim
+
+Century Term Command Script
+cterm.vim
+
+Gedcom
+gedcom.vim
+
+fetchmail(1) RC File
+fetchmail.vim
+
+Web2C TeX texmf.cnf configuration file
+texmf.vim
+
+mplayer(1) configuration file
+mplayerconf.vim
+
+GNU Arch inventory file
+arch.vim
+
+T2 / ROCK Linux .desc
+desc.vim
+
+ipfilter configuration file
+ipfilter.vim
+
+git commit file
+gitcommit.vim
+
+MetaPost
+mp.vim
+
+SNNS pattern file
+snnspat.vim
+
+PPD (PostScript printer description) file
+ppd.vim
+
+Apache configuration (httpd.conf, srm.conf, access.conf, .htaccess)
+apache.vim
+
+sudoers(5) configuration files
+sudoers.vim
+
+Intel hex MCS51
+hex.vim
+
+Motorola 68000 Assembler
+asm68k.vim
+
+Haskell supporting c2hs binding hooks
+chaskell.vim
+
+configure.in script: M4 with sh
+config.vim
+
+Django HTML template
+htmldjango.vim
+
+Eviews (http://www.eviews.com)
+eviews.vim
+
+jgraph (graph plotting utility)
+jgraph.vim
+
+Pyrex
+pyrex.vim
+
+PostScript - all Levels, selectable
+postscr.vim
+
+xa 6502 cross assembler
+a65.vim
+
+Tilde
+tilde.vim
+
+Lisp
+lisp.vim
+
+TAK2, TAK3, TAK2000 thermal modeling input file
+tak.vim
+
+Mutt setup files
+muttrc.vim
+
+Z80 assembler asz80
+z8a.vim
+
+AYacc
+ayacc.vim
+
+SysV-compatible init process control file `inittab'
+inittab.vim
+
+Ch
+ch.vim
+
+generic ChangeLog file
+changelog.vim
+
+VHDL
+vhdl.vim
+
+XQuery
+xquery.vim
+
+Progress 4GL
+progress.vim
+
+Pascal
+pascal.vim
+
+limits(5) configuration file
+limits.vim
+
+Lout
+lout.vim
+
+LifeLines (v 3.0.62) <http://lifelines.sourceforge.net>
+lifelines.vim
+
+Makeindex style file, *.ist
+ist.vim
+
+sendmail
+sm.vim
+
+dict(1) configuration file
+dictconf.vim
+
+XBL 1.0
+xbl.vim
+
+Quickfix window
+qf.vim
+
+ESQL-C
+esqlc.vim
+
+JAM
+jam.vim
+
+RCS log output
+rcslog.vim
+
+Lynx 2.7.1 style file
+lss.vim
+
+Relax NG compact syntax
+rnc.vim
+
+Kyocera PreScribe2e
+prescribe.vim
+
+Monk (See-Beyond Technologies)
+monk.vim
+
+Procmail definition file
+procmail.vim
+
+Vim help file
+help.vim
+
+NASM - The Netwide Assembler (v0.98)
+nasm.vim
+
+XSD (XML Schema)
+xsd.vim
+
+Smalltalk
+st.vim
+
+D script as described in "Solaris Dynamic Tracing Guide",
+dtrace.vim
+
+Perl 6
+perl6.vim
+
+alsaconf(8) configuration file
+alsaconf.vim
+
+Markdown
+markdown.vim
+
+Rexx
+rexx.vim
+
+OPL
+opl.vim
+
+setserial(8) configuration file
+setserial.vim
+
+trustees
+trustees.vim
+
+AML (ARC/INFO Arc Macro Language)
+aml.vim
+
+erlang (ERicsson LANGuage)
+erlang.vim
+
+SPEC: Build/install scripts for Linux RPM packages
+spec.vim
+
+mgp - MaGic Point
+mgp.vim
+
+grub(8) configuration file
+grub.vim
+
+ChordPro (v. 3.6.2)
+chordpro.vim
+
+SVG (Scalable Vector Graphics)
+svg.vim
+
+gp (version 2.4)
+gp.vim
+
+Radiance Scene Description
+radiance.vim
+
+AfLex (from Lex syntax file)
+aflex.vim
+
+IDL (Interface Description Language)
+idl.vim
+
+JavaCC, a Java Compiler Compiler written by JavaSoft
+javacc.vim
+
+SCSS
+scss.vim
+
+HTML/OS by Aestiva
+htmlos.vim
+
+TAK2, TAK3, TAK2000 thermal modeling output file
+takout.vim
+
+Fantom
+fan.vim
+
+PL/M
+plm.vim
+
+Debian changelog files
+debchangelog.vim
+
+abc music notation language
+abc.vim
+
+git config file
+gitconfig.vim
+
+task data
+taskdata.vim
+
+sensors.conf(5) - libsensors configuration file
+sensors.vim
+
+Django template
+django.vim
+
+Inform
+inform.vim
+
+Cheetah template engine
+cheetah.vim
+
+BIND configuration file
+named.vim
+
+tf
+tf.vim
+
+Renderman Interface Bytestream
+rib.vim
+
+login.access(5) configuration file
+loginaccess.vim
+
+pinfo(1) configuration file
+pinfo.vim
+
+Modsim III, by compuware corporation (www.compuware.com)
+modsim3.vim
+
+Motif UIL (User Interface Language)
+uil.vim
+
+FreeBasic
+freebasic.vim
+
+libao.conf(5) configuration file
+libao.vim
+
+Esmtp setup file (based on esmtp 0.5.0)
+esmtprc.vim
+
+Fvwm{1,2} configuration file
+fvwm.vim
+
+terminfo(5) definition
+terminfo.vim
+
+SMIL (Synchronized Multimedia Integration Language)
+smil.vim
+
+awk, nawk, gawk, mawk
+awk.vim
+
+WildPackets EtherPeek Decoder (.dcd) file
+dcd.vim
+
+COBOL
+cobol.vim
+
+KixTart 95, Kix2001 Windows script language http://kixtart.org/
+kix.vim
+
+ESTEREL
+esterel.vim
+
+Latte
+latte.vim
+
+BibTeX Bibliography Style
+bst.vim
+
+udev(8) permissions file
+udevperm.vim
+
+fstab file
+fstab.vim
+
+indent(1) configuration file
+indent.vim
+
+R Help File
+rhelp.vim
+
+R (GNU S)
+r.vim
+
+Remind
+remind.vim
+
+Apache-Style configuration files (proftpd.conf/apache.conf/..)
+apachestyle.vim
+
+VOS CM macro
+voscm.vim
+
+DTD (Document Type Definition for XML)
+dtd.vim
+
+Haskell Cabal Build file
+cabal.vim
+
+LPC
+lpc.vim
+
+3D wavefront's obj file
+obj.vim
+
+LiteStep RC file
+litestep.vim
+
