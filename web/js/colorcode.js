@@ -3,7 +3,7 @@ $(function(){
     CAN_COPY_CODE = false;
     FONT_SIZE = 14;
     //==============zeroclipboard init ===============
-    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard10.swf' );
+    ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
     CLIPBOARD = new ZeroClipboard.Client();
     CLIPBOARD.setHandCursor(true);
     CLIPBOARD.glue( 'copy_code_button', 'copy_code_container' );
@@ -20,7 +20,7 @@ $(function(){
             SELECTED_LANG = $('#type_selector').val();
         }else{
             $('#color_it').removeClass('btn_color_free ').addClass('btn_color_forbid');
-        }
+        };
     });
 
     //==============color it function===============
@@ -37,7 +37,7 @@ $(function(){
             $('#copy_code_button').addClass('copy_code_ready');
             $('#copy_code_container embed').show();
             CAN_COPY_CODE = true;
-            CLIPBOARD.setText( cc );
+            CLIPBOARD.setText(cc);
         },'text');
         $('#color_it').html('clean');
         IS_SHOW_COLOR_CODE = true;
