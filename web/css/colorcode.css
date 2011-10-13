@@ -62,7 +62,7 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .content_box {width:100%;  margin-top:30px; padding-bottom:100px; float:left; position:relative; }
 .code_box { margin-left:50px; float:left; border:10px solid #d9d9d9; background-color:#000; box-shadow:2px 4px 3px #313131; -moz-box-shadow:2px 4px 3px #313131; -webkit-box-shadow:2px 4px 3px #313131; -o-box-shadow:2px 4px 3px #313131; -khtml-box-shadow:2px 4px 3px #313131; }
 .code_box .black_code_box { resize:none; margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
-.code_box .color_code_box { margin:20px; display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; }
+.code_box .color_code_box { display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; }
 .tool_box { float:right; margin-right:200px; width:126px; height:410px; text-align:center;  background-color:#d9d9d9; box-shadow:2px 4px 3px #313131; -moz-box-shadow:2px 4px 3px #313131; -webkit-box-shadow:2px 4px 3px #313131; -o-box-shadow:2px 4px 3px #313131; -khtml-box-shadow:2px 4px 3px #313131; }
 .color_it_wrapper { position:relative;}
 .color_it_box { position:relative; margin-left:15px;  margin-top:10px;}
