@@ -20,7 +20,7 @@ class GetColorCode:
         f.close()
         code_string = self._stripTag(code_string, 'body')
         code_string = code_string.replace('\n','')
-        code_string = '<div style="background-color:#000;"><code style="font-size:14px;margin:20px;color:#45ED00;display:block;">%s</code></div>' % code_string
+        code_string = '<div style="background-color:#000;"><code style="margin:20px;color:#45ED00;display:block;">%s</code></div>' % code_string
         return code_string
 
     def _stripTag(self, code_string, tag_name):

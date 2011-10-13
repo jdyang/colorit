@@ -1,7 +1,8 @@
 $(function(){
 
-    //==============zeroclipboard init ===============
     CAN_COPY_CODE = false;
+    FONT_SIZE = 14;
+    //==============zeroclipboard init ===============
     ZeroClipboard.setMoviePath( '/swf/ZeroClipboard10.swf' );
     CLIPBOARD = new ZeroClipboard.Client();
     CLIPBOARD.setHandCursor(true);
@@ -31,12 +32,12 @@ $(function(){
         $.post('/zarkapi/getcolorcode',data,function(cc){
             $('#black_code_box').hide();
             $('#color_code_box').html(cc).show();
-            $('#code_box').height(Math.max($('#black_code_box').height(),$('#color_code_box').height())+40);
+            $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
             //set copy code button ready
             $('#copy_code_button').addClass('copy_code_ready');
             $('#copy_code_container embed').show();
             CAN_COPY_CODE = true;
-            CLIPBOARD.setText( $('#color_code_box').html() );
+            CLIPBOARD.setText( cc );
         },'text');
         $('#color_it').html('clean');
         IS_SHOW_COLOR_CODE = true;
@@ -135,6 +136,16 @@ $(function(){
         }
     });
     $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
+
+    //==============turn font size event===============
+    $('#turn_font_down, #turn_font_up').click(function(){
+        var turn_value = parseInt($(this).attr('turn_value'));
+        FONT_SIZE  = FONT_SIZE + turn_value;
+        $('#color_code_box > div > code').css('font-size', FONT_SIZE+'px');
+        $('#show_font_size').html(FONT_SIZE+'px');
+        $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
+        CLIPBOARD.setText( $('#color_code_box').html() );
+    });
 
     //==============布局===============
     var client_x = document.documentElement.clientWidth;
