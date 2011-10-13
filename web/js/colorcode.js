@@ -154,7 +154,9 @@ $(function(){
     var code_box_width = client_x-90-126-200;
     $('#code_box').width(code_box_width);
     $('#cc_top').width(code_box_width+20);
-    $('#black_code_box, #color_code_box').width(code_box_width-40);
+    $('#code_box').animate({opacity:0.8});
+    $('#black_code_box, #color_code_box').width(code_box_width-40).animate({opacity:1});
     $('#choose_lang_box').animate({opacity:0.8});
+
 
 });
