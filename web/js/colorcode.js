@@ -8,6 +8,10 @@ $(function(){
     CLIPBOARD.setHandCursor(true);
     CLIPBOARD.glue( 'copy_code_button', 'copy_code_container' );
     $('#copy_code_container embed').hide();
+    CLIPBOARD.addEventListener( 'onMouseDown', function(){
+        $('#copy_code_tip').show().fadeOut(2000);
+    } );
+
 
     //==============language select===============
     SELECTED_LANG = null;
