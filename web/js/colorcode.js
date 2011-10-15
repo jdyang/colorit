@@ -2,6 +2,8 @@ $(function(){
 
     CAN_COPY_CODE = false;
     SELECTED_LANG = null;
+    SMART_INDENT = true;
+    SHOW_LINE_NUMBER = true;
     FONT_SIZE = 14;
     //==============zeroclipboard init ===============
     ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
@@ -17,8 +19,8 @@ $(function(){
     colorIt = function(){
         var options = '';
         $('#color_code_loading_overlay, #tool_box_overlay').show();
-        if($('#format:checked').val() !== undefined) options += 'format_';
-        if($('#number:checked').val() !== undefined) options += 'number_';
+        if( SMART_INDENT ) options += 'format_';
+        if( SHOW_LINE_NUMBER ) options += 'number_';
         data = {code:$('#black_code_box').val(), type:SELECTED_LANG, options:options  };
         $.post('/zarkapi/getcolorcode',data,function(cc){
             $('#black_code_box').hide();
@@ -96,10 +98,29 @@ $(function(){
     });
 
     //==============checkbox change event===============
-    $('#format, #number').change(function(){
+    $('#format, #number').click(function(){
+        var $this = $(this);
+        if($this.attr('id') === 'format'){
+            if($this.html() === 'ON'){
+                $this.html('OFF');
+                SMART_INDENT = false;
+            }else{
+                $this.html('ON');
+                SMART_INDENT = true;
+            }
+        }
+        if($this.attr('id') === 'number'){
+            if($this.html() === 'ON'){
+                $this.html('OFF');
+                SHOW_LINE_NUMBER = false;
+            }else{
+                $this.html('ON');
+                SHOW_LINE_NUMBER = true;
+            }
+        }
         if (IS_SHOW_COLOR_CODE === true){
             colorIt();
-        }
+        };
     });
 
     //==============custom lang input event===============
