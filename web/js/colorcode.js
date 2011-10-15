@@ -205,7 +205,7 @@ $(function(){
     $('#black_code_box, #color_code_box').width(code_box_width-40).animate({opacity:1});
     $('#choose_lang_box').animate({opacity:0.8});
     $('#color_code_loading_overlay').width($('#black_code_box').width()+40).height($('#black_code_box').height()+40);
-    $('#tool_box').animate({opacity:0.85});
+    $('#tool_box, #cc_sub_logo').animate({opacity:0.85});
 
     //==============google adsense===========
     google_ad_client = "ca-pub-3733795682230399";
