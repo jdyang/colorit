@@ -151,7 +151,11 @@ $(function(){
     //==============turn font size event===============
     $('#turn_font_down, #turn_font_up').click(function(){
         var turn_value = parseInt($(this).attr('turn_value'));
-        FONT_SIZE  = FONT_SIZE + turn_value;
+        var new_size = FONT_SIZE + turn_value
+        if (new_size<12 || new_size>24) {
+            return;
+        }
+        FONT_SIZE  = new_size;
         $('#color_code_box > div > code').css('font-size', FONT_SIZE+'px');
         $('#show_font_size').html(FONT_SIZE+'px');
         $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
