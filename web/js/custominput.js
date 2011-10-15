@@ -8,6 +8,10 @@ $(function(){
         scroll          :  false,
         selectFirst     :  true,
         matchSubset     :  false,
-        max             :  5
+        max             :  5,
+        width           :  246
+    }).result(function(event, data, formatted) {
+        CUSTOMLANGENTER();
     });
+
 });
