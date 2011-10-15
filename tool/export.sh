@@ -14,7 +14,7 @@ if [ "x${rev}" == "x" ]; then
 fi
 
 cd /opt/colorcode.git
-git archive "${rev}" -o /tmp/colorcode.tgz colorcode
+git archive "${rev}" -o /tmp/colorcode.tgz
 ret=$?
 
 if [ "x${ret}" != "x0" ]; then
@@ -25,10 +25,10 @@ fi
 cd /opt
 tar xf /tmp/colorcode.tgz
 
-cat /opt/colorcode/conf/colorcode.nginx.conf > /opt/nginx/conf/colorcode.nginx.conf
+cat /opt/colorcode/conf/colorcode.nginx.conf > /etc/nginx/sites-enabled/colorcode.nginx.conf
 
 chown www-data:www-data -R /opt/colorcode
 
-/opt/colorcode/script/spawn-fcgi.sh stop
-/opt/colorcode/script/spawn-fcgi.sh start
+/opt/colorcode/tool/spawn-fcgi.sh stop
+/opt/colorcode/tool/spawn-fcgi.sh start
 /etc/init.d/nginx restart
