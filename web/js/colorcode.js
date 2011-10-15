@@ -5,6 +5,18 @@ $(function(){
     SMART_INDENT = true;
     SHOW_LINE_NUMBER = true;
     FONT_SIZE = 14;
+
+    setSelectedLanguage = function(new_lang){
+        SELECTED_LANG = new_lang;
+        var show_current_language;
+        if(new_lang.indexOf(' ') > 0){
+            show_current_language = new_lang.substring(0,new_lang.indexOf(' '));
+        }else{
+            show_current_language = new_lang;
+        };
+        $('#current_lang').html(show_current_language);
+    };
+
     //==============zeroclipboard init ===============
     ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
     CLIPBOARD = new ZeroClipboard.Client();
@@ -89,7 +101,7 @@ $(function(){
 
     //==============choose language box===============
     $('#choose_lang_box li').click(function(){
-        SELECTED_LANG = $(this).attr('val');
+        setSelectedLanguage($(this).attr('val'));
         if(($.trim($('#black_code_box').val()).length>0) && ($('#black_code_box').attr('firstfocus') !== 'false')){
             colorIt();
         };
@@ -124,6 +136,20 @@ $(function(){
     });
 
     //==============custom lang input event===============
+    CUSTOMLANGENTER = function(){
+        if ($.trim($('#custom_lang_input').val()).length > 0){
+            setSelectedLanguage($('#custom_lang_input').val());
+            $('#choose_lang_box').hide();
+            choose_lang_box_toggle_hook();
+            if( (($('#black_code_box').attr('firstfocus') === 'false') || ($.trim($('#black_code_box').val().length===0))).toString() === 'false' ){
+                colorIt();
+            }
+        }else{
+            $('#custom_lang_input').css('color','gray').attr('firstfocus','false').css('text-align','center').val('or input your suffix/language');
+            $('#choose_lang').focus();
+        };
+    };
+
     $('#custom_lang_input').focus(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).css('color','#000;').attr('firstfocus','true').css('text-align','left').val('');
@@ -134,17 +160,7 @@ $(function(){
         };
     }).keypress(function(event){
         if(event.keyCode==13) {
-            if ($.trim($(this).val()).length > 0){
-                SELECTED_LANG = $(this).val();
-                $('#choose_lang_box').hide();
-                choose_lang_box_toggle_hook();
-                if( (($('#black_code_box').attr('firstfocus') === 'false') || ($.trim($('#black_code_box').val().length===0))).toString() === 'false' ){
-                    colorIt();
-                }
-            }else{
-                $(this).css('color','gray').attr('firstfocus','false').css('text-align','center').val('or input your suffix/language');
-                $('#choose_lang').focus();
-            };
+            CUSTOMLANGENTER();
             return false;
         };
     });
@@ -189,6 +205,7 @@ $(function(){
     $('#black_code_box, #color_code_box').width(code_box_width-40).animate({opacity:1});
     $('#choose_lang_box').animate({opacity:0.8});
     $('#color_code_loading_overlay').width($('#black_code_box').width()+40).height($('#black_code_box').height()+40);
+    $('#tool_box').animate({opacity:0.85});
 
     //==============google adsense===========
     google_ad_client = "ca-pub-3733795682230399";
