@@ -64,7 +64,9 @@ $(function(){
     $('#color_it').click(function(){
         //如果还没有输入任何代码，就提示他输入代码
         if( (($('#black_code_box').attr('firstfocus') === 'false') || ($.trim($('#black_code_box').val().length===0))).toString() === 'true' ){
-            $('#black_code_box').val($('#black_code_box').val()+'Please input your code first!\n');
+            if (IS_BLACK_CODE_BOX_BLUR === false){
+                $('#black_code_box').val($('#black_code_box').val()+'Please input your code first!\n');
+            }
             $('#black_code_box').attr('firstfocus','false').css('font-size','24px');
             return;
         };
@@ -132,6 +134,7 @@ $(function(){
     $('#custom_lang_input').css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
 
     //==============black_code_box input event===============
+    IS_BLACK_CODE_BOX_BLUR = false;
     $('#black_code_box').focus(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).attr('firstfocus','true').css('font-size','14px').val('');
@@ -140,6 +143,8 @@ $(function(){
         if ($(this).val() === ''){
             $(this).attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
         };
+        IS_BLACK_CODE_BOX_BLUR = true;
+        setTimeout(function(){IS_BLACK_CODE_BOX_BLUR = false;}, 100);
     });
     $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
 

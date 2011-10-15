@@ -1018,10 +1018,10 @@ gnuplot.vim
 pic (PIC16F84 Assembler)
 pic.vim
 
-jproperties (Java Properties resource)
+jproperties (Java Properties)
 jproperties.vim
 
-Haskell with literate comments, Bird style,
+lhaskell (Haskell comments)
 lhaskell.vim
 
 Stata and/or Mata
@@ -1030,7 +1030,7 @@ stata.vim
 Rebol
 rebol.vim
 
-DocBook SGML
+docbksgml (DocBook SGML)
 docbksgml.vim
 
 OpenSSH server configuration file (sshd_config)
