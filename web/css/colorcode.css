@@ -62,8 +62,7 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .headline p { display:block;  white-space:nowrap; font-size:16px; line-height:30px; color:#fff; background-color:#2ea2e4; height:30px; padding:0 20px; position:relative; z-index:10000; }
 .headline_tri { border-color:#2ea2e4 transparent transparent; border-style:solid dashed dashed; border-width:15px 18px 0 0; height:0; width:0; position:absolute; top:30px; left:20px; }
 .headline .loading_icon { display:block; background:url(/img/headline_icon.gif) top left no-repeat; width:53px; height:60px; float:left; position:absolute; left:20px; bottom:5px;}
-.headline .lang_support_a { color:#fff; }
-.headline .lang_support_a:hover { text-decoration:underline; }
+.headline .lang_support_a { color:#fff; text-decoration:underline; }
 .cc_logo:hover { background:url(/img/Color_Code_logo.png) 0 0 no-repeat;}
 .cc_logo:hover .headline {display:block;} 
 .cc_sub_logo { color:#797979; font-size:18px; line-height:18px; font-family:"century gothic"; padding:1px 10px;  height:25px; margin-top:45px;  float:right; background-color:#fff; }
