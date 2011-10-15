@@ -154,12 +154,10 @@ $(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).css('color','#000;').attr('firstfocus','true').css('text-align','left').val('');
         };
-        $('#lang_input_tip').css('visibility','visible');
     }).blur(function(){
         if ($.trim($(this).val()) === ''){
             $(this).css('color','gray').attr('firstfocus','false').css('text-align','center').val('or input your suffix/language');
         };
-        $('#lang_input_tip').css('visibility','hidden');
     }).keypress(function(event){
         if(event.keyCode==13) {
             CUSTOMLANGENTER();
