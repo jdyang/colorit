@@ -66,7 +66,7 @@ $(function(){
         if( (($('#black_code_box').attr('firstfocus') === 'false') || ($.trim($('#black_code_box').val().length===0))).toString() === 'true' ){
             if (IS_BLACK_CODE_BOX_BLUR === false){
                 $('#black_code_box').val($('#black_code_box').val()+'Please input your code first!\n');
-            }
+            };
             $('#black_code_box').attr('firstfocus','false').css('font-size','24px');
             return;
         };
@@ -76,10 +76,10 @@ $(function(){
             }else{
                 $('#choose_lang_box').toggle();
                 choose_lang_box_toggle_hook();
-            }
+            };
         }else{
             cleanCode();
-        }
+        };
     });
 
     choose_lang_box_toggle_hook = function(){
@@ -117,28 +117,33 @@ $(function(){
     $('#custom_lang_input').focus(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).css('color','#000;').attr('firstfocus','true').css('text-align','left').val('');
-        }
+        };
     }).blur(function(){
-        if ($(this).val() === ''){
-            $(this).css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
+        if ($.trim($(this).val()) === ''){
+            $(this).css('color','gray').attr('firstfocus','false').css('text-align','center').val('or input your suffix/language');
         };
     }).keypress(function(event){
         if(event.keyCode==13) {
-            SELECTED_LANG = $(this).val();
-            $('#choose_lang_box').hide();
-            choose_lang_box_toggle_hook();
-            colorIt();
-            return false;                               
-        }
+            if ($.trim($(this).val()).length > 0){
+                SELECTED_LANG = $(this).val();
+                $('#choose_lang_box').hide();
+                choose_lang_box_toggle_hook();
+                colorIt();
+            }else{
+                $(this).css('color','gray').attr('firstfocus','false').css('text-align','center').val('or input your suffix/language');
+                $('#choose_lang').focus();
+            };
+            return false;
+        };
     });
-    $('#custom_lang_input').css('color','gray;').attr('firstfocus','false').css('text-align','center').val('or input your suffix');
+    $('#custom_lang_input').css('color','gray').attr('firstfocus','false').css('text-align','center').val('or input your suffix/language');
 
     //==============black_code_box input event===============
     IS_BLACK_CODE_BOX_BLUR = false;
     $('#black_code_box').focus(function(){
         if ($(this).attr('firstfocus') === 'false'){
             $(this).attr('firstfocus','true').css('font-size','14px').val('');
-        }
+        };
     }).blur(function(){
         if ($(this).val() === ''){
             $(this).attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
@@ -151,10 +156,10 @@ $(function(){
     //==============turn font size event===============
     $('#turn_font_down, #turn_font_up').click(function(){
         var turn_value = parseInt($(this).attr('turn_value'));
-        var new_size = FONT_SIZE + turn_value
+        var new_size = FONT_SIZE + turn_value;
         if (new_size<12 || new_size>24) {
             return;
-        }
+        };
         FONT_SIZE  = new_size;
         $('#color_code_box > div > code').css('font-size', FONT_SIZE+'px');
         $('#show_font_size').html(FONT_SIZE+'px');
@@ -181,3 +186,4 @@ $(function(){
     $('body > ins').appendTo($('#ad_sense'));
 
 });
+

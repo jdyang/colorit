@@ -1,1545 +1,516 @@
-PHP
-php
-
-C#
-cs
-
-Expect
-expect
-
-pilrc
-pilrc
-
-elinks
-elinks
-
-FORM
-form
-
-Python
-python
-
-initng
-initng
-
-JAL
-jal
-
-passwd
-passwd
-
-Robots
-robots
-
-Gtkrc (Gtk)
-gtkrc
-
-Icon
-icon
-
-def (Module-Definition)
-def
-
-kscript
-kscript
-
-Debian control files
-debcontrol
-
-sinda85 output
-sindaout
-
-sinda85 compare
-sindacmp
-
-sinda85 input
-sinda
-
-Postfix
-pfmain
-
-pfmain
-pfmain
-
-CWEB
-cweb
-
-ART-IM
-art
-
-CHILL
-chill
-
-gsp (GNU Server Pages)
-gsp
-
-tpp (Text Presentation Program)
-tpp
-
-Sass
-sass
-
-tli (TealInfo source files)
-tli
-
-ld script
-ld
-
-Virata
-virata
-
-Wget
-wget
-
-Logtalk
-logtalk
-
-LOTOS
-lotos
-
-MGL
-mgl
-
-exports
-exports
-
-LDIF/LDAP
-ldif
-
-hitest (Vim highlighting)
-hitest
-
-lsl (Linden Scripting Language)
-lsl
-
-IA-64
-ia64
-
-objc (Objective C)
-objc
-
-objcpp (Objective C++)
-objcpp
-
-aspperl (Active State's PerlScript)
-aspperl
-
-WML (Website MetaLanguage)
-wml
-
-HTML
-html
-
-group (user group file)
-group
-
-ATLAS
-atlas
-
-rst (reStructuredText)
-rst
-
-Datascript
-datascript
-
-bzr (Bazaar commit file)
-bzr
-
-SQL
-sql
-
-SQL Oracel PL/SQL
-sqloracle
-
-plsql (Oracle Procedureal SQL)
-plsql
-
-sqlinformix (SQL, SPL Informix Dynamic Server)
-sqlinformix
-
-CSS
-css
-
-dtml (Zope's DTML)
-dtml
-
-mma (Mathematica)
-mma
-
-SMITH
-smith
-
-gdb (GDB command)
-gdb
-
-msidl (MS IDL)
-msidl
-
-GDMO
-gdmo
-
-iss (Inno Setup File)
-iss
-
-Ruby
-ruby
-
-conf (generic configure file)
-conf
-
-EDIF
-edif
-
-papp
-papp
-
-B
-b
-
-dictdconf
-dictdconf
-
-Jess
-jess
-
-TASM
-tasm
-
-modula3
-modula3
-
-Conary Recipe
-conaryrecipe
-
-Eiffel
-eiffel
-
-XF86Config
-xf86conf
-
-initex (TeX core definition)
-initex
-
-sed
-sed
-
-doxygen
-doxygen
-
-a2ps configuration file
-a2ps
-
-bc
-bc
-
-Racc
-racc
-
-openroad (CA-OpenROAD)
-openroad
-
-services
-services
-
-ant (ANT build file)
-ant
-
-cdrdao TOC file
-cdrtoc
-
-messages (system messages file)
-messages
-
-FlexWiki
-flexwiki
-
-spup (Speedup)
-spup
-
-Zsh shell script
-zsh
-
-Modula2
-modula2
-
-Omnimark
-omnimark
-
-Sieve
-sieve
-
-Smarty Templates
-smarty
-
-Lynx configuration file
-lynx
-
-ProMeLa
-promela
-
-WinBatch/Webbatch
-winbatch
-
-CUDA (NVIDIA Architecture)
-cuda
-
-Liquid
-liquid
-
-ConTeXt typesetting engine
-context
-
-Ratpoison configuration
-ratpoison
-
-cynpp (Cyn++)
-cynpp
-
-fortran (Fortran95 90 77 F elf90)
-fortran
-
-Hamster Scripting Language
-hamster
-
-NSIS script
-nsis
-
-masm (Microsoft Macro Assembler)
-masm
-
-xpm2 (X Pixmap v2)
-xpm2
-
-Quake configuration
-quake
-
-hog (Snort Configuration)
-hog
-
-cfg (Good old CFG)
-cfg
-
-nanorc
-nanorc
-
-CFML
-cf
-
-svn (Subversion commit)
-svn
-
-CVS commit
-cvs
-
-Dot
-dot
-
-csc (Essbase script)
-csc
-
-strace output
-strace
-
-Valgrind Memory Debugger Output
-valgrind
-
-tssop (TSS Command Line)
-tssop
-
-fgl (Informix 4GL)
-fgl
-
-ampl
-ampl
-
-ahdl (Altera AHDL)
-ahdl
-
-dosbatch (MSDOS batch)
-dosbatch
-
-readline (readline configuration)
-readline
-
-takcmp (TAK compare)
-takcmp
-
-snnsnet (SNNS network)
-snnsnet
-
-mailcap (Mailcap configuration)
-mailcap
-
-cdl (Comshare Dimension)
-cdl
-
-TRASYS input file
-trasys
-
-Jargon
-jargon
-
-ldapconf
-ldapconf
-
-ecd (Embedix Component Description)
-ecd
-
-desktop/directory
-desktop
-
-ASN.1
-asn
-
-Maple V
-maple
-
-git rebase --interactive
-gitrebase
-
-CUPL
-cupl
-
-CTRL-H
-ctrlh
-
-xkb (X Keyboard Extension)
-xkb
-
-slrnsc (Slrn score file)
-slrnsc
-
-AmigaDos
-amiga
-
-Scheme
-scheme
-
-udevrules
-udevrules
-
-rnoweb
-rnoweb
-
-xmodmap definition
-xmodmap
-
-vb (Visual Basic)
-vb
-
-PROLOG
-prolog
-
-asm (Assembler)
-asm
-
-Hercules
-hercules
-
-OCaml
-ocaml
-
-Lex
-lex
-
-lftp configuration file
-lftp
-
-sh (shell)
-sh
-
-mysql
-mysql
-
-Pike
-pike
-
-TADS
-tads
-
-nroff/groff
-nroff
-
-X resources
-xdefaults
-
-xdefaults
-xdefaults
-
-AutoHotkey script file
-autohotkey
-
-AceDB model files
-acedb
-
-Groovy
-groovy
-
-ppwiz (PPWizard)
-ppwiz
-
-TeX (plaintex format)
-plaintex
-
-plaintex
-plaintex
-
-psf
-psf
-
-udevconf
-udevconf
-
-PLP (Perl in HTML)
-plp
-
-gretl
-gretl
-
-VRML97
-vrml
-
-dylanintr (Dylan)
-dylanintr
-
-cdrdaoconf
-cdrdaoconf
-
-RPL/2
-rpl
-
-diva (SKILL for Diva)
-diva
-
-git send-email message
-gitsendemail
-
-Abaqus finite element
-abaqus
-
-Asterisk config file
-asterisk
-
-SDC (Synopsys Design Constraints)
-sdc
-
-SiCAD
-sicad
-
-D
-d
-
-csh (C-shell)
-csh
-
-crontab
-crontab
-
-pov (PoV-Ray Scene)
-pov
-
-JavaScript
-javascript
-
-Spice circuit simulator
-spice
-
-fasm (Flat Assembler)
-fasm
-
-xpm (X Pixmap)
-xpm
-
-dircolors
-dircolors
-
-NASTRAN
-nastran
-
-splint
-splint
-
-dosini
-dosini
-
-Perl 5
-perl
-
-Model
-model
-
-tsalt (Telix SALT Script)
-tsalt
-
-occam
-occam
-
-focexec (Focus Executable)
-focexec
-
-ora (Oracle config files)
-ora
-
-Pine run commands
-pine
-
-modconf (modules configuration file)
-modconf
-
-WSML
-wsml
-
-wsh (Windows Scripting Host)
-wsh
-
-mib (Vim syntax file)
-mib
-
-XSLT
-xslt
-
-ptcap (printcap/termcap database)
-ptcap
-
-RCS
-rcs
-
-Exim
-exim
-
-eximconf
-exim
-
-TeX
-tex
-
-Baan
-baan
-
-DNS
-dns
-
-FrameScript
-framescript
-
-SPECMAN E-LANGUAGE
-specman
-
-Diff (diff output)
-diff
-
-lite
-lite
-
-asmh8300 (Hitachi H-8300h)
-asmh8300
-
-Yacc
-yacc
-
-mel (Maya Extension Language)
-mel
-
-Vim script
-vim
-
-sqlj
-sqlj
-
-viminfo
-viminfo
-
-eRuby
-eruby
-
-FORTH
-forth
-
-Verilog
-verilog
-
-AutoIt
-autoit
-
-reg (Windows Registry)
-registry
-
-WEB Changes
-change
-
-sgml catalog
-catalog
-
-SNOBOL4
-snobol4
-
-ELF
-elf
-
-NQC (Not Quite C)
-nqc
-
-manconf
-manconf
-
-WEB
-web
-
-Blank
-blank
-
-Reva Forth
-reva
-
-pamconf
-pamconf
-
-Mason (Perl embedded in HTML)
-mason
-
-po
-po
-
-vsejcl (JCL job control)
-vsejcl
-
-taskedit (task 42 edit)
-taskedit
-
-rpcgen
-rpcgen
-
-BDF font definition
-bdf
-
-logindefs
-logindefs
-
-hostconf
-hostconf
-
-tags
-tags
-
-slpconf (RFC 2614 configuration)
-slpconf
-
-slpreg  (RFC 2614 registration )
-slpreg
-
-slpspi  (RFC 2614 SPI )
-slpspi
-
-screen configuration file
-screen
-
-xmath
-xmath
-
-SGML
-sgml
-
-fvwm2m4 (FvwmM4 preprocessed Fvwm2)
-fvwm2m4
-
-grads (GrADS scripts)
-grads
-
-Java
-java
-
-dylanlid (Dylan Library Interface)
-dylanlid
-
-Haml
-haml
-
-fdcc or locale files
-fdcc
-
-DCL (Digital Command Language)
-dcl
-
-mmp (Symbian meta-makefile)
-mmp
-
-MS Message
-msmessages
-
-Nginx configuration
-nginx
-
-tssgm (Thermal Synthesizer System)
-tssgm
-
-calendar
-calendar
-
-Matlab
-matlab
-
-rtf (Rich Text Format)
-rtf
-
-Texinfo (macro package for TeX)
-texinfo
-
-Makefile
-make
-
-Focus Master File
-master
-
-eterm configuration
-eterm
-
-ABEL
-abel
-
-PCCTS
-pccts
-
-Dracula
-dracula
-
-kwt (kimwitu++)
-kwt
-
-Asteriskvm
-asteriskvm
-
-wDiff (wordwise diff)
-wdiff
-
-pod (Perl POD format)
-pod
-
-SMCL
-smcl
-
-CMake
-cmake
-
-resolver configuration file
-resolv
-
-sqlanywhere
-sqlanywhere
-
-objcpp
-objcpp
-
-Falcon
-falcon
-
-cuplsim (CUPL simulation)
-cuplsim
-
-verilogams (Verilog-AMS)
-verilogams
-
-Vgrindefs
-vgrindefs
-
-Slice
-slice
-
-CSP (Communication Sequential Processes)
-csp
-
-sysctl configuration
-sysctl
-
-Maxima
-maxima
-
-am (automake file)
-automake
-
-gkrellm theme
-gkrellmrc
-
-lscript (LotusScript)
-lscript
-
-XS (Perl extension interface)
-xs
-
-SDL
-sdl
-
-Coco/R
-coco
-
-cvsrc (cvs RC file)
-cvsrc
-
-sendpr (FreeBSD send-pr)
-sendpr
-
-vmasm (VAX Macro Assembly)
-vmasm
-
-M4
-m4
-
-FoxPro
-foxpro
-
-elmfilt (Elm Filter rules)
-elmfilt
-
-protocols
-protocols
-
-HASTE
-haste
-
-htmlcheetah
-htmlcheetah
-
-lprolog (LambdaProlog)
-lprolog
-
-hb (Hyper Builder)
-hb
-
-PDF
-pdf
-
-SML
-sml
-
-ncf (Novell "NCF" Batch File)
-ncf
-
-aap (A-A-P recipe)
-aap
-
-rc (M$ Resource)
-rc
-
-pfconf (OpenBSD packet filter)
-pf
-
-SAS
-sas
-
-SPYCE
-spyce
-
-hastepreproc (Haste preprocessor)
-hastepreproc
-
-snnsres (SNNS result file)
-snnsres
-
-Cucumber
-cucumber
-
-btm (4Dos batch file)
-btm
-
-Icewm Menu
-icemenu
-
-groff
-groff
-
-tidyrc (HMTL Tidy configuration)
-tidy
-
-dsl (DSSSL)
-dsl
-
-Squid config
-squid
-
-mf (Metafont)
-mf
-
-YAML (YAML Ain't Markup Language)
-yaml
-
-docbk (DocBook)
-docbk
-
-cpp (C++)
-cpp
-
-MMIX
-mmix
-
-bindzone (BIND zone RFC1035)
-bindzone
-
-MOO
-moo
-
-mailaliases (aliases local alias)
-mailaliases
-
-slrnrc (Slrn setup)
-slrnrc
-
-WebMacro
-webmacro
-
-cl (Clever Language)
-cl
-
-sgmllnx (SGML-linuxdoc)
-sgmllnx
-
-ibasic
-ibasic
-
-git (generic git output)
-git
-
-wvdial (WvDial Configuration)
-wvdial
-
-Clipper & FlagShip
-clipper
-
-povini (PoV-Ray conf/init)
-povini
-
-Privoxy actions file
-privoxy
-
-Cynlib(C++)
-cynlib
-
-gnuplot
-gnuplot
-
-pic (PIC16F84 Assembler)
-pic
-
-jproperties (Java Properties)
-jproperties
-
-lhaskell (Haskell comments)
-lhaskell
-
-Stata and/or Mata
-stata
-
-Rebol
-rebol
-
-docbksgml (DocBook SGML)
-docbksgml
-
-sshdconfig (OpenSSH configuration)
-sshdconfig
-
-Man page
-man
-
-avenue
-ave
-
-xinetd configuration
-xinetd
-
-sshconfig (OpenSSH configuration)
-sshconfig
-
-sl (Renderman shader)
-sl
-
-NATURAL
-natural
-
-crm (CRM114)
-crm
-
-ChaiScript
-chaiscript
-
-updatedb (updatedb configuration)
-updatedb
-
-sources (Debian sources.list)
-debsources
-
-Vera
-vera
-
-SKILL
-skill
-
-msql
-msql
-
-Simula
-simula
-
-uc (UnrealScript)
-uc
-
-Clean
-clean
-
-BASIC
-basic
-
-aspvbs (VBScript Web Content)
-aspvbs
-
-Tcl/Tk
-tcl
-
-Dylan
-dylan
-
-tsscl (TSS Command Line)
-tsscl
-
-InstallShield Script
-ishd
-
-docbkxml (DocBook XML)
-docbkxml
-
-sd (streaming descriptor)
-sd
-
-Lua
-lua
-
-xxd (bin using xxd)
-xxd
-
-C
-c
-
-Haskell
-haskell
-
-Sather/pSather
-sather
-
-gpg configuration
-gpg
-
-JSP (Java Server Pages)
-jsp
-
-lilo configuration
-lilo
-
-purify log
-purifylog
-
-XHTML
-xhtml
-
-Mail file
-mail
-
-bib (BibTeX)
-bib
-
-denyhosts configuration
-denyhosts
-
-sgmldecl (SGML Declaration)
-sgmldecl
-
-XML
-xml
-
-MuPAD source
-mupad
-
-lace
-lace
-
-netrc configuration
-netrc
-
-htmlm4 (HTML and M4)
-htmlm4
-
-slang (S-Lang)
-slang
-
-samba configuration
-samba
-
-cterm (Century Term)
-cterm
-
-Gedcom
-gedcom
-
-fetchmail RC File
-fetchmail
-
-texmf (Web2C configuration)
-texmf
-
-mplayer configuration
-mplayerconf
-
-arch (GNU Arch inventory)
-arch
-
-desc (T2 / ROCK Linux)
-desc
-
-ipfilter configuration
-ipfilter
-
-gitcommit
-gitcommit
-
-mp (MetaPost)
-mp
-
-snnspat (SNNS pattern)
-snnspat
-
-PPD (PostScript printer description)
-ppd
-
-Apache configuration
-apache
-
-htaccess (Apache configuration)
-apache
-
-sudoers configuration
-sudoers
-
-hex (Intel hex MCS51)
-hex
-
-asm68k (Motorola Assembler)
-asm68k
-
-chaskell (Haskell c2hs hooks)
-chaskell
-
-configure.in script: M4 with sh
-config
-
-htmldjango (Django HTML)
-htmldjango
-
-Eviews
-eviews
-
-jgraph (graph plotting utility)
-jgraph
-
-Pyrex
-pyrex
-
-postscr (PostScript)
-postscr
-
-a65 (xa 6502 cross assembler)
-a65
-
-Tilde
-tilde
-
-Lisp
-lisp
-
-tak (TAK input)
-tak
-
-muttrc (Mutt setup files)
-muttrc
-
-z8a (Z80 assembler asz80)
-z8a
-
-AYacc
-ayacc
-
-inittab (SysV-compatible)
-inittab
-
-Ch
-ch
-
-changelog (generic ChangeLog)
-changelog
-
-VHDL
-vhdl
-
-XQuery
-xquery
-
-Progress 4GL
-progress
-
-Pascal
-pascal
-
-limits configuration
-limits
-
-Lout
-lout
-
-LifeLines
-lifelines
-
-ist (Makeindex style file)
-ist
-
-sm (sendmail)
-sm
-
-dict configuration
-dictconf
-
-XBL 1.0
-xbl
-
-qf (Quickfix window)
-qf
-
-esqlc (ESQL-C)
-esqlc
-
-JAM
-jam
-
-RCS log output
-rcslog
-
-lss (Lynx style file)
-lss
-
-rnc (Relax NG compact syntax)
-rnc
-
-prescribe (Kyocera PreScribe2e)
-prescribe
-
-Monk (See-Beyond Technologies)
-monk
-
-Procmail definition file
-procmail
-
-Vim help file
-help
-
-NASM (The Netwide Assembler)
-nasm
-
-XSD (XML Schema)
-xsd
-
-st (Smalltalk)
-st
-
-dtrace (D script)
-dtrace
-
-Perl 6
-perl6
-
-alsaconf configuration
-alsaconf
-
-Markdown
-markdown
-
-Rexx
-rexx
-
-OPL
-opl
-
-setserial configuration
-setserial
-
-trustees
-trustees
-
-AML (ARC/INFO Arc)
-aml
-
-erlang (ERicsson LANGuage)
-erlang
-
-SPEC (Build/install scripts)
-spec
-
-mgp (MaGic Point)
-mgp
-
-grub configuration
-grub
-
-ChordPro
-chordpro
-
-SVG (Scalable Vector Graphics)
-svg
-
-gp
-gp
-
-Radiance Scene Description
-radiance
-
-AfLex (Lex syntax)
-aflex
-
-IDL (Interface Description Language)
-idl
-
-JavaCC (Java Compiler Compiler)
-javacc
-
-SCSS
-scss
-
-htmlos (HTML/OS by Aestiva)
-htmlos
-
-tak (TAK output)
-takout
-
-Fantom
-fan
-
-plm (PL/M)
-plm
-
-Debian changelog
-debchangelog
-
-abc music notation
-abc
-
-git config file
-gitconfig
-
-task data
-taskdata
-
-sensors (libsensors configuration)
-sensors
-
-Django template
-django
-
-Inform
-inform
-
-Cheetah template engine
-cheetah
-
-named (BIND configuration)
-named
-
-tf
-tf
-
-rib (Renderman Interface Bytestream)
-rib
-
-loginaccess configuration
-loginaccess
-
-pinfo configuration
-pinfo
-
-modsim3 (Modsim III)
-modsim3
-
-uil (Motif User Interface Language)
-uil
-
-FreeBasic
-freebasic
-
-libao configuration
-libao
-
-esmtprc (Esmtp setup file)
-esmtprc
-
-Fvwm configuration
-fvwm
-
-terminfo definition
-terminfo
-
-SMIL (Synchronized Multimedia Integration)
-smil
-
-awk
-awk
-
-dcd (WildPackets EtherPeek Decoder)
-dcd
-
-COBOL
-cobol
-
-KixTart/Kix2001 (Windows script language)
-kix
-
-ESTEREL
-esterel
-
-Latte
-latte
-
-bst (BibTeX Bibliography Style)
-bst
-
-udev permissions
-udevperm
-
-fstab file
-fstab
-
-indent configuration
-indent
-
-rhelp (R Help File)
-rhelp
-
-R (GNU S)
-r
-
-Remind
-remind
-
-ApacheStyle configuration
-apachestyle
-
-voscm (VOS CM macro)
-voscm
-
-DTD (Document Type Definition)
-dtd
-
-cabal (Haskell Cabal Build file)
-cabal
-
-LPC
-lpc
-
-obj (3D wavefront's obj file)
-obj
-
-LiteStep RC file
-litestep
-
+PHP%%php
+C#%%cs
+CSharp%%cs
+Expect%%expect
+pilrc%%pilrc
+elinks%%elinks
+FORM%%form
+Python%%python
+initng%%initng
+JAL%%jal
+passwd%%passwd
+Robots%%robots
+Gtkrc (Gtk)%%gtkrc
+Icon%%icon
+def (Module-Definition)%%def
+kscript%%kscript
+Debian control files%%debcontrol
+sinda85 output%%sindaout
+sinda85 compare%%sindacmp
+sinda85 input%%sinda
+Postfix%%pfmain
+pfmain%%pfmain
+CWEB%%cweb
+ART-IM%%art
+CHILL%%chill
+gsp (GNU Server Pages)%%gsp
+tpp (Text Presentation Program)%%tpp
+Sass%%sass
+tli (TealInfo source files)%%tli
+ld script%%ld
+Virata%%virata
+Wget%%wget
+Logtalk%%logtalk
+LOTOS%%lotos
+MGL%%mgl
+exports%%exports
+LDIF/LDAP%%ldif
+hitest (Vim highlighting)%%hitest
+lsl (Linden Scripting Language)%%lsl
+IA-64%%ia64
+objc (Objective C)%%objc
+objcpp (Objective C++)%%objcpp
+aspperl (Active State's PerlScript)%%aspperl
+WML (Website MetaLanguage)%%wml
+HTML%%html
+group (user group file)%%group
+ATLAS%%atlas
+rst (reStructuredText)%%rst
+Datascript%%datascript
+bzr (Bazaar commit file)%%bzr
+SQL%%sql
+SQL Oracel PL/SQL%%sqloracle
+plsql (Oracle Procedureal SQL)%%plsql
+sqlinformix (SQL, SPL Informix Dynamic Server)%%sqlinformix
+CSS%%css
+dtml (Zope's DTML)%%dtml
+mma (Mathematica)%%mma
+SMITH%%smith
+gdb (GDB command)%%gdb
+msidl (MS IDL)%%msidl
+GDMO%%gdmo
+iss (Inno Setup File)%%iss
+Ruby%%ruby
+conf (generic configure file)%%conf
+EDIF%%edif
+papp%%papp
+B%%b
+dictdconf%%dictdconf
+Jess%%jess
+TASM%%tasm
+modula3%%modula3
+Conary Recipe%%conaryrecipe
+Eiffel%%eiffel
+XF86Config%%xf86conf
+initex (TeX core definition)%%initex
+sed%%sed
+doxygen%%doxygen
+a2ps configuration file%%a2ps
+bc%%bc
+Racc%%racc
+openroad (CA-OpenROAD)%%openroad
+services%%services
+ant (ANT build file)%%ant
+cdrdao TOC file%%cdrtoc
+messages (system messages file)%%messages
+FlexWiki%%flexwiki
+spup (Speedup)%%spup
+Zsh shell script%%zsh
+Modula2%%modula2
+Omnimark%%omnimark
+Sieve%%sieve
+Smarty Templates%%smarty
+Lynx configuration file%%lynx
+ProMeLa%%promela
+WinBatch/Webbatch%%winbatch
+CUDA (NVIDIA Architecture)%%cuda
+Liquid%%liquid
+ConTeXt typesetting engine%%context
+Ratpoison configuration%%ratpoison
+cynpp (Cyn++)%%cynpp
+fortran (Fortran95 90 77 F elf90)%%fortran
+Hamster Scripting Language%%hamster
+NSIS script%%nsis
+masm (Microsoft Macro Assembler)%%masm
+xpm2 (X Pixmap v2)%%xpm2
+Quake configuration%%quake
+hog (Snort Configuration)%%hog
+cfg (Good old CFG)%%cfg
+nanorc%%nanorc
+CFML%%cf
+svn (Subversion commit)%%svn
+CVS commit%%cvs
+Dot%%dot
+csc (Essbase script)%%csc
+strace output%%strace
+Valgrind Memory Debugger Output%%valgrind
+tssop (TSS Command Line)%%tssop
+fgl (Informix 4GL)%%fgl
+ampl%%ampl
+ahdl (Altera AHDL)%%ahdl
+dosbatch (MSDOS batch)%%dosbatch
+readline (readline configuration)%%readline
+takcmp (TAK compare)%%takcmp
+snnsnet (SNNS network)%%snnsnet
+mailcap (Mailcap configuration)%%mailcap
+cdl (Comshare Dimension)%%cdl
+TRASYS input file%%trasys
+Jargon%%jargon
+ldapconf%%ldapconf
+ecd (Embedix Component Description)%%ecd
+desktop/directory%%desktop
+ASN.1%%asn
+Maple V%%maple
+git rebase --interactive%%gitrebase
+CUPL%%cupl
+CTRL-H%%ctrlh
+xkb (X Keyboard Extension)%%xkb
+slrnsc (Slrn score file)%%slrnsc
+AmigaDos%%amiga
+Scheme%%scheme
+udevrules%%udevrules
+rnoweb%%rnoweb
+xmodmap definition%%xmodmap
+vb (Visual Basic)%%vb
+PROLOG%%prolog
+asm (Assembler)%%asm
+Hercules%%hercules
+OCaml%%ocaml
+Lex%%lex
+lftp configuration file%%lftp
+sh (shell)%%sh
+mysql%%mysql
+Pike%%pike
+TADS%%tads
+nroff/groff%%nroff
+X resources%%xdefaults
+xdefaults%%xdefaults
+AutoHotkey script file%%autohotkey
+AceDB model files%%acedb
+Groovy%%groovy
+ppwiz (PPWizard)%%ppwiz
+TeX (plaintex format)%%plaintex
+plaintex%%plaintex
+psf%%psf
+udevconf%%udevconf
+PLP (Perl in HTML)%%plp
+gretl%%gretl
+VRML97%%vrml
+dylanintr (Dylan)%%dylanintr
+cdrdaoconf%%cdrdaoconf
+RPL/2%%rpl
+diva (SKILL for Diva)%%diva
+git send-email message%%gitsendemail
+Abaqus finite element%%abaqus
+Asterisk config file%%asterisk
+SDC (Synopsys Design Constraints)%%sdc
+SiCAD%%sicad
+D%%d
+csh (C-shell)%%csh
+crontab%%crontab
+pov (PoV-Ray Scene)%%pov
+JavaScript%%javascript
+Spice circuit simulator%%spice
+fasm (Flat Assembler)%%fasm
+xpm (X Pixmap)%%xpm
+dircolors%%dircolors
+NASTRAN%%nastran
+splint%%splint
+dosini%%dosini
+Perl5%%perl
+Model%%model
+tsalt (Telix SALT Script)%%tsalt
+occam%%occam
+focexec (Focus Executable)%%focexec
+ora (Oracle config files)%%ora
+Pine run commands%%pine
+modconf (modules configuration file)%%modconf
+WSML%%wsml
+wsh (Windows Scripting Host)%%wsh
+mib (Vim syntax file)%%mib
+XSLT%%xslt
+ptcap (printcap/termcap database)%%ptcap
+RCS%%rcs
+Exim%%exim
+eximconf%%exim
+TeX%%tex
+Baan%%baan
+DNS%%dns
+FrameScript%%framescript
+SPECMAN E-LANGUAGE%%specman
+Diff (diff output)%%diff
+lite%%lite
+asmh8300 (Hitachi H-8300h)%%asmh8300
+Yacc%%yacc
+mel (Maya Extension Language)%%mel
+Vim script%%vim
+sqlj%%sqlj
+viminfo%%viminfo
+eRuby%%eruby
+FORTH%%forth
+Verilog%%verilog
+AutoIt%%autoit
+reg (Windows Registry)%%registry
+WEB Changes%%change
+sgml catalog%%catalog
+SNOBOL4%%snobol4
+ELF%%elf
+NQC (Not Quite C)%%nqc
+manconf%%manconf
+WEB%%web
+Blank%%blank
+Reva Forth%%reva
+pamconf%%pamconf
+Mason (Perl embedded in HTML)%%mason
+po%%po
+vsejcl (JCL job control)%%vsejcl
+taskedit (task 42 edit)%%taskedit
+rpcgen%%rpcgen
+BDF font definition%%bdf
+logindefs%%logindefs
+hostconf%%hostconf
+tags%%tags
+slpconf (RFC 2614 configuration)%%slpconf
+slpreg  (RFC 2614 registration )%%slpreg
+slpspi  (RFC 2614 SPI )%%slpspi
+screen configuration file%%screen
+xmath%%xmath
+SGML%%sgml
+fvwm2m4 (FvwmM4 preprocessed Fvwm2)%%fvwm2m4
+grads (GrADS scripts)%%grads
+Java%%java
+dylanlid (Dylan Library Interface)%%dylanlid
+Haml%%haml
+fdcc or locale files%%fdcc
+DCL (Digital Command Language)%%dcl
+mmp (Symbian meta-makefile)%%mmp
+MS Message%%msmessages
+Nginx configuration%%nginx
+tssgm (Thermal Synthesizer System)%%tssgm
+calendar%%calendar
+Matlab%%matlab
+rtf (Rich Text Format)%%rtf
+Texinfo (macro package for TeX)%%texinfo
+Makefile%%make
+Focus Master File%%master
+eterm configuration%%eterm
+ABEL%%abel
+PCCTS%%pccts
+Dracula%%dracula
+kwt (kimwitu++)%%kwt
+Asteriskvm%%asteriskvm
+wDiff (wordwise diff)%%wdiff
+pod (Perl POD format)%%pod
+SMCL%%smcl
+CMake%%cmake
+resolver configuration file%%resolv
+sqlanywhere%%sqlanywhere
+objcpp%%objcpp
+Falcon%%falcon
+cuplsim (CUPL simulation)%%cuplsim
+verilogams (Verilog-AMS)%%verilogams
+Vgrindefs%%vgrindefs
+Slice%%slice
+CSP (Communication Sequential Processes)%%csp
+sysctl configuration%%sysctl
+Maxima%%maxima
+am (automake file)%%automake
+gkrellm theme%%gkrellmrc
+lscript (LotusScript)%%lscript
+XS (Perl extension interface)%%xs
+SDL%%sdl
+Coco/R%%coco
+cvsrc (cvs RC file)%%cvsrc
+sendpr (FreeBSD send-pr)%%sendpr
+vmasm (VAX Macro Assembly)%%vmasm
+M4%%m4
+FoxPro%%foxpro
+elmfilt (Elm Filter rules)%%elmfilt
+protocols%%protocols
+HASTE%%haste
+htmlcheetah%%htmlcheetah
+lprolog (LambdaProlog)%%lprolog
+hb (Hyper Builder)%%hb
+PDF%%pdf
+SML%%sml
+ncf (Novell NCF Batch File)%%ncf
+aap (A-A-P recipe)%%aap
+rc (M$ Resource)%%rc
+pfconf (OpenBSD packet filter)%%pf
+SAS%%sas
+SPYCE%%spyce
+hastepreproc (Haste preprocessor)%%hastepreproc
+snnsres (SNNS result file)%%snnsres
+Cucumber%%cucumber
+btm (4Dos batch file)%%btm
+Icewm Menu%%icemenu
+groff%%groff
+tidyrc (HMTL Tidy configuration)%%tidy
+dsl (DSSSL)%%dsl
+Squid config%%squid
+mf (Metafont)%%mf
+YAML (YAML Ain't Markup Language)%%yaml
+docbk (DocBook)%%docbk
+cpp (C++)%%cpp
+MMIX%%mmix
+bindzone (BIND zone RFC1035)%%bindzone
+MOO%%moo
+mailaliases (aliases local alias)%%mailaliases
+slrnrc (Slrn setup)%%slrnrc
+WebMacro%%webmacro
+cl (Clever Language)%%cl
+sgmllnx (SGML-linuxdoc)%%sgmllnx
+ibasic%%ibasic
+git (generic git output)%%git
+wvdial (WvDial Configuration)%%wvdial
+Clipper & FlagShip%%clipper
+povini (PoV-Ray conf/init)%%povini
+Privoxy actions file%%privoxy
+Cynlib(C++)%%cynlib
+gnuplot%%gnuplot
+pic (PIC16F84 Assembler)%%pic
+jproperties (Java Properties)%%jproperties
+lhaskell (Haskell comments)%%lhaskell
+Stata and/or Mata%%stata
+Rebol%%rebol
+docbksgml (DocBook SGML)%%docbksgml
+sshdconfig (OpenSSH configuration)%%sshdconfig
+Man page%%man
+avenue%%ave
+xinetd configuration%%xinetd
+sshconfig (OpenSSH configuration)%%sshconfig
+sl (Renderman shader)%%sl
+NATURAL%%natural
+crm (CRM114)%%crm
+ChaiScript%%chaiscript
+updatedb (updatedb configuration)%%updatedb
+sources (Debian sources.list)%%debsources
+Vera%%vera
+SKILL%%skill
+msql%%msql
+Simula%%simula
+uc (UnrealScript)%%uc
+Clean%%clean
+BASIC%%basic
+aspvbs (VBScript Web Content)%%aspvbs
+Tcl/Tk%%tcl
+Dylan%%dylan
+tsscl (TSS Command Line)%%tsscl
+InstallShield Script%%ishd
+docbkxml (DocBook XML)%%docbkxml
+sd (streaming descriptor)%%sd
+Lua%%lua
+xxd (bin using xxd)%%xxd
+C%%c
+Haskell%%haskell
+Sather/pSather%%sather
+gpg configuration%%gpg
+JSP (Java Server Pages)%%jsp
+lilo configuration%%lilo
+purify log%%purifylog
+XHTML%%xhtml
+Mail file%%mail
+bib (BibTeX)%%bib
+denyhosts configuration%%denyhosts
+sgmldecl (SGML Declaration)%%sgmldecl
+XML%%xml
+MuPAD source%%mupad
+lace%%lace
+netrc configuration%%netrc
+htmlm4 (HTML and M4)%%htmlm4
+slang (S-Lang)%%slang
+samba configuration%%samba
+cterm (Century Term)%%cterm
+Gedcom%%gedcom
+fetchmail RC File%%fetchmail
+texmf (Web2C configuration)%%texmf
+mplayer configuration%%mplayerconf
+arch (GNU Arch inventory)%%arch
+desc (T2 / ROCK Linux)%%desc
+ipfilter configuration%%ipfilter
+gitcommit%%gitcommit
+mp (MetaPost)%%mp
+snnspat (SNNS pattern)%%snnspat
+PPD (PostScript printer description)%%ppd
+Apache configuration%%apache
+htaccess (Apache configuration)%%apache
+sudoers configuration%%sudoers
+hex (Intel hex MCS51)%%hex
+asm68k (Motorola Assembler)%%asm68k
+chaskell (Haskell c2hs hooks)%%chaskell
+configure.in script: M4 with sh%%config
+htmldjango (Django HTML)%%htmldjango
+Eviews%%eviews
+jgraph (graph plotting utility)%%jgraph
+Pyrex%%pyrex
+postscr (PostScript)%%postscr
+a65 (xa 6502 cross assembler)%%a65
+Tilde%%tilde
+Lisp%%lisp
+tak (TAK input)%%tak
+muttrc (Mutt setup files)%%muttrc
+z8a (Z80 assembler asz80)%%z8a
+AYacc%%ayacc
+inittab (SysV-compatible)%%inittab
+Ch%%ch
+changelog (generic ChangeLog)%%changelog
+VHDL%%vhdl
+XQuery%%xquery
+Progress 4GL%%progress
+Pascal%%pascal
+limits configuration%%limits
+Lout%%lout
+LifeLines%%lifelines
+ist (Makeindex style file)%%ist
+sm (sendmail)%%sm
+dict configuration%%dictconf
+XBL 1.0%%xbl
+qf (Quickfix window)%%qf
+esqlc (ESQL-C)%%esqlc
+JAM%%jam
+RCS log output%%rcslog
+lss (Lynx style file)%%lss
+rnc (Relax NG compact syntax)%%rnc
+prescribe (Kyocera PreScribe2e)%%prescribe
+Monk (See-Beyond Technologies)%%monk
+Procmail definition file%%procmail
+Vim help file%%help
+NASM (The Netwide Assembler)%%nasm
+XSD (XML Schema)%%xsd
+st (Smalltalk)%%st
+dtrace (D script)%%dtrace
+Perl 6%%perl6
+alsaconf configuration%%alsaconf
+Markdown%%markdown
+Rexx%%rexx
+OPL%%opl
+setserial configuration%%setserial
+trustees%%trustees
+AML (ARC/INFO Arc)%%aml
+erlang (ERicsson LANGuage)%%erlang
+SPEC (Build/install scripts)%%spec
+mgp (MaGic Point)%%mgp
+grub configuration%%grub
+ChordPro%%chordpro
+SVG (Scalable Vector Graphics)%%svg
+gp%%gp
+Radiance Scene Description%%radiance
+AfLex (Lex syntax)%%aflex
+IDL (Interface Description Language)%%idl
+JavaCC (Java Compiler Compiler)%%javacc
+SCSS%%scss
+htmlos (HTML/OS by Aestiva)%%htmlos
+tak (TAK output)%%takout
+Fantom%%fan
+plm (PL/M)%%plm
+Debian changelog%%debchangelog
+abc music notation%%abc
+git config file%%gitconfig
+task data%%taskdata
+sensors (libsensors configuration)%%sensors
+Django template%%django
+Inform%%inform
+Cheetah template engine%%cheetah
+named (BIND configuration)%%named
+tf%%tf
+rib (Renderman Interface Bytestream)%%rib
+loginaccess configuration%%loginaccess
+pinfo configuration%%pinfo
+modsim3 (Modsim III)%%modsim3
+uil (Motif User Interface Language)%%uil
+FreeBasic%%freebasic
+libao configuration%%libao
+esmtprc (Esmtp setup file)%%esmtprc
+Fvwm configuration%%fvwm
+terminfo definition%%terminfo
+SMIL (Synchronized Multimedia Integration)%%smil
+awk%%awk
+dcd (WildPackets EtherPeek Decoder)%%dcd
+COBOL%%cobol
+KixTart/Kix2001 (Windows script language)%%kix
+ESTEREL%%esterel
+Latte%%latte
+bst (BibTeX Bibliography Style)%%bst
+udev permissions%%udevperm
+fstab file%%fstab
+indent configuration%%indent
+rhelp (R Help File)%%rhelp
+R (GNU S)%%r
+Remind%%remind
+ApacheStyle configuration%%apachestyle
+voscm (VOS CM macro)%%voscm
+DTD (Document Type Definition)%%dtd
+cabal (Haskell Cabal Build file)%%cabal
+LPC%%lpc
+obj (3D wavefront's obj file)%%obj
+LiteStep RC file%%litestep

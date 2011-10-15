@@ -2,12 +2,24 @@
 import web, site_helper, os, uuid
 
 class GetColorCode:
+
+    def _readLangMaps():
+        ret_dict = {}
+        for l in open('%s/web/vimfiles/langmap' % site_helper.config.APP_ROOT_PATH):
+            assert(l.count('%%') == 1 and l.count('"') == 0)
+            k,temp,v = l.partition('%%')
+            ret_dict[k.lower()] = v
+        return ret_dict
+    LANGMAP = _readLangMaps()
+
     def POST(self):
         i = web.input()
         web.header('Content-Type','text/plain')
         assert(i.has_key('type') and i.type.strip().isalnum())
         assert(i.has_key('options'))
-        i.type = str(i.type)
+        i.type = str(i.type).strip().lower()
+        assert( self.LANGMAP.has_key(i.type) )
+        i.type = self.LANGMAP[i.type]
         i.options = str(i.options)
         file_name = str(uuid.uuid4())+'.'+i.type.strip()
         f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name,'w')
