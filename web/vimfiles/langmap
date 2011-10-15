@@ -1014,7 +1014,7 @@ cynlib.vim
 
 gnuplot
 gnuplot.vim
-=================
+
 PIC16F84 Assembler (Microchip's microcontroller)
 pic.vim
 
