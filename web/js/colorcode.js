@@ -169,5 +169,6 @@ $(function(){
     google_ad_slot = "4237546774";
     google_ad_width = 125;
     google_ad_height = 125;
+    $('body > ins').appendTo($('#ad_sense'));
 
 });

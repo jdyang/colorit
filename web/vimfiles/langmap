@@ -1015,10 +1015,10 @@ cynlib.vim
 gnuplot
 gnuplot.vim
 
-PIC16F84 Assembler (Microchip's microcontroller)
+pic (PIC16F84 Assembler)
 pic.vim
 
-Java Properties resource file (*.properties[_*])
+jproperties (Java Properties resource)
 jproperties.vim
 
 Haskell with literate comments, Bird style,
