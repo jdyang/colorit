@@ -22,7 +22,7 @@ if [ "x${ret}" != "x0" ]; then
     exit 1
 fi
 
-cd /opt
+cd /opt/colorcode
 tar xf /tmp/colorcode.tgz
 
 cat /opt/colorcode/conf/colorcode.nginx.conf > /etc/nginx/sites-enabled/colorcode.nginx.conf
