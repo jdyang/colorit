@@ -15,7 +15,7 @@ class GetColorCode:
     def POST(self):
         i = web.input()
         web.header('Content-Type','text/plain')
-        assert(i.has_key('type') and i.type.strip().isalnum())
+        assert(i.has_key('type'))
         assert(i.has_key('options'))
         i.type = str(i.type).strip().lower()
         assert( self.LANGMAP.has_key(i.type) )
