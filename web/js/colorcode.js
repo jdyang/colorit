@@ -161,5 +161,10 @@ $(function(){
     $('#black_code_box, #color_code_box').width(code_box_width-40).animate({opacity:1});
     $('#choose_lang_box').animate({opacity:0.8});
 
+    //==============google adsense===========
+    google_ad_client = "ca-pub-3733795682230399";
+    google_ad_slot = "4237546774";
+    google_ad_width = 125;
+    google_ad_height = 125;
 
 });
