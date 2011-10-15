@@ -77,8 +77,8 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .color_code_box_loading_overlay { border:none; position:absolute; z-index:20; text-align:left; width:600px; height:350px; display:none; }
 .color_code_box_loading_overlay .loading_icon_wrapper { position:relative; }
 .color_code_box_loading_overlay .loading_icon { position:absolute; top:20px; right:30px; background:url(/img/loading.gif) top left no-repeat; width:30px; height:5px; }
-.code_box .black_code_box { resize:none; margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; }
-.code_box .color_code_box { display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; }
+.code_box .black_code_box { resize:none; margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; overflow-x:hidden; }
+.code_box .color_code_box { display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; overflow-x:hidden; }
 .tool_box_overlay { position:absolute; right:200px; z-index:10000; width:126px; height:410px; display:none;}
 .tool_box { float:right; margin-right:200px; width:126px; height:410px; text-align:center;  background-color:#d9d9d9; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; position:relative;}
 .color_it_wrapper { position:relative;}
@@ -98,7 +98,7 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .tool_box .choose_lang_box ul li {  margin:8px 0 10px 7px; width:70px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px; }
 .tool_box .choose_lang_box ul li:hover { background-color:#ff267c;  }
 .tool_box .choose_lang_box .lang_input_box { position:relative; }
-.tool_box .choose_lang_box .lang_input  { font-size:14px; color:gray; display:block; width:85%; border:5px solid #ff267c;  padding:4px 4px; text-align:center; margin:0px auto 12px auto;   }
+.tool_box .choose_lang_box .lang_input  { font-size:14px; color:gray; display:block; width:85%; border:5px solid #ff267c;  padding:4px; text-align:center; margin:0px auto 12px auto;   }
 .tool_box .choose_lang_box .lang_input_tip { position:absolute; top:60px; left:0; display:block; width:80px; height:80px;  padding:10px; font-size:16px; color:#fff; background-color:#448ccb;  }
 .lang_input_tri { border-color:transparent transparent #448ccb transparent; border-style:solid dashed; border-width:15px 10px; height:0; width:0; position:absolute; top:-27px; left:40px; }
 .word_enter { color:#fff; text-shadow:1px 1px 1px #000;}

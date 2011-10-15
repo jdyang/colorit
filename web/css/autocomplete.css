@@ -40,9 +40,12 @@
 
 .ac_odd {
 	background-color: #eee;
+    color:#828282;
 }
 
+.ac_even { color:#828282;}
+
 .ac_over {
-	background-color: #0A246A;
+	background-color: #448ccb;
 	color: white;
 }
