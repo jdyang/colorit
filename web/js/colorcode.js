@@ -207,12 +207,6 @@ $(function(){
     $('#color_code_loading_overlay').width($('#black_code_box').width()+40).height($('#black_code_box').height()+40);
     $('#tool_box, #cc_sub_logo').animate({opacity:0.85});
 
-    //==============google adsense===========
-    google_ad_client = "ca-pub-3733795682230399";
-    google_ad_slot = "4237546774";
-    google_ad_width = 125;
-    google_ad_height = 125;
     $('body > ins').appendTo($('#ad_sense'));
-
 });
 

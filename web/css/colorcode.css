@@ -107,7 +107,6 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .tool_box .choose_lang_box .lang_input  { font-size:14px; color:gray; display:block; width:85%; border:5px solid #ff267c;  padding:4px; text-align:center; margin:0px auto 12px auto;   }
 .tool_box .choose_lang_box .lang_input_tip { position:absolute; top:60px; left:0; display:block; width:80px; height:80px;  padding:10px; font-size:16px; color:#fff; background-color:#448ccb; }
 .lang_input_tri { border-color:transparent transparent #448ccb transparent; border-style:solid dashed; border-width:15px 10px; height:0; width:0; position:absolute; top:-27px; left:40px; }
-.lang_input_tip_box {visibility: hidden;}
 .word_enter { color:#fff; text-shadow:1px 1px 1px #000;}
 
 .tool_box .copy_code { width:85px; margin-left:14px; margin-top:10px; padding:5px; background-color:gray; color:#fff; text-align:center; float:left; position:relative; }
