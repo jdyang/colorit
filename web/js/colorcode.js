@@ -1,6 +1,7 @@
 $(function(){
 
     CAN_COPY_CODE = false;
+    SELECTED_LANG = null;
     FONT_SIZE = 14;
     //==============zeroclipboard init ===============
     ZeroClipboard.setMoviePath( '/swf/ZeroClipboard.swf' );
@@ -11,18 +12,6 @@ $(function(){
     CLIPBOARD.addEventListener( 'onMouseDown', function(){
         $('#copy_code_tip').show().fadeOut(2000);
     } );
-
-
-    //==============language select===============
-    SELECTED_LANG = null;
-    $('#type_selector').change(function(){
-        if($('#type_selector').val() != ''){
-            $('#color_it').removeClass('btn_color_forbid').addClass('btn_color_free');
-            SELECTED_LANG = $('#type_selector').val();
-        }else{
-            $('#color_it').removeClass('btn_color_free ').addClass('btn_color_forbid');
-        };
-    });
 
     //==============color it function===============
     colorIt = function(){
@@ -128,7 +117,9 @@ $(function(){
                 SELECTED_LANG = $(this).val();
                 $('#choose_lang_box').hide();
                 choose_lang_box_toggle_hook();
-                colorIt();
+                if( (($('#black_code_box').attr('firstfocus') === 'false') || ($.trim($('#black_code_box').val().length===0))).toString() === 'false' ){
+                    colorIt();
+                }
             }else{
                 $(this).css('color','gray').attr('firstfocus','false').css('text-align','center').val('or input your suffix/language');
                 $('#choose_lang').focus();
