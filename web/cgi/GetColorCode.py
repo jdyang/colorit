@@ -4,6 +4,7 @@ import web, site_helper, os, uuid
 class GetColorCode:
     def POST(self):
         i = web.input()
+        web.header('Content-Type','text/plain')
         assert(i.has_key('type') and i.type.strip().isalnum())
         assert(i.has_key('options'))
         i.type = str(i.type)
@@ -12,9 +13,9 @@ class GetColorCode:
         f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name,'w')
         f.write(i.code.encode('utf8'))
         f.close()
-        script_file = site_helper.config.APP_ROOT_PATH+'web/vimscriptin/%s' % self._getFormatFile(i)
+        script_file = site_helper.config.APP_ROOT_PATH+'web/vimfiles/vimscriptin/%s' % self._getFormatFile(i)
         assert(os.path.exists(script_file))
-        os.system('cd %s\n vim  -f -s "%s" %s' % ( site_helper.config.APP_ROOT_PATH+'web/codes/', script_file, file_name ))
+        os.system('cd %s\n vim  -u "%s" -f -s "%s" "%s"' % ( site_helper.config.APP_ROOT_PATH+'web/codes/', site_helper.config.APP_ROOT_PATH+'web/vimfiles/vimrc', script_file, file_name ))
         f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name+'.xhtml') #当使用let g:html_use_xhtml=1时，生成的后缀名就是xhtml
         code_string = f.read()
         f.close()
