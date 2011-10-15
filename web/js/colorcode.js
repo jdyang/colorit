@@ -27,6 +27,7 @@ $(function(){
     //==============color it function===============
     colorIt = function(){
         var options = '';
+        $('#color_code_loading_overlay, #tool_box_overlay').show();
         if($('#format:checked').val() !== undefined) options += 'format_';
         if($('#number:checked').val() !== undefined) options += 'number_';
         data = {code:$('#black_code_box').val(), type:SELECTED_LANG, options:options  };
@@ -38,6 +39,7 @@ $(function(){
             $('#copy_code_button').addClass('copy_code_ready');
             $('#copy_code_container embed').show();
             CAN_COPY_CODE = true;
+            $('#color_code_loading_overlay, #tool_box_overlay').hide();
             CLIPBOARD.setText(cc);
         },'text');
         $('#color_it').html('clean');
