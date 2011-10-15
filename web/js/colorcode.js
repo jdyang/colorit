@@ -113,20 +113,22 @@ $(function(){
     $('#format, #number').click(function(){
         var $this = $(this);
         if($this.attr('id') === 'format'){
-            if($this.html() === 'ON'){
-                $this.html('OFF');
+            var $span = $this.find('span');
+            if($span.html() === 'ON'){
+                $span.html('OFF');
                 SMART_INDENT = false;
             }else{
-                $this.html('ON');
+                $span.html('ON');
                 SMART_INDENT = true;
             }
         }
         if($this.attr('id') === 'number'){
-            if($this.html() === 'ON'){
-                $this.html('OFF');
+            var $span = $this.find('span');
+            if($span.html() === 'ON'){
+                $span.html('OFF');
                 SHOW_LINE_NUMBER = false;
             }else{
-                $this.html('ON');
+                $span.html('ON');
                 SHOW_LINE_NUMBER = true;
             }
         }
