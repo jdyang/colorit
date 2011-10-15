@@ -2,9 +2,12 @@
 <html lang="zh-CN">
     <head>
         <link rel="stylesheet" href="/css/colorcode.css" type="text/css" media="screen" charset="utf-8"/>
+        <link rel="stylesheet" href="/css/autocomplete.css" type="text/css" media="screen" charset="utf-8"/>
         <script type="text/javascript" src="/js/ZeroClipboard.js"></script>
         <script type="text/javascript" src="/js/jquery-1.5.1.js"></script>
         <script type="text/javascript" src="/js/colorcode.js"></script>
+        <script type="text/javascript" src="/js/autocomplete.js"></script>
+        <script type="text/javascript" src="/js/custominput.js"></script>
         <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
     </head>
     <body>
@@ -13,7 +16,7 @@
             <div id="cc_logo" class="cc_logo">
                 <div id="headline" class="headline">
                     <p class="corner20px">
-                        We now support <a class="lang_support_a">hundreds of code types</a>, try your suffix ASAP and have fun !
+                        We now support <a class="lang_support_a" href="/suportlanguage.html" target="_blank">hundreds of code types</a>, try your type and have fun !
                         <span class="headline_tri"></span>
                     </p>
                 <span class="loading_icon corner8px"></span>
@@ -57,42 +60,30 @@
                     <div id="choose_lang_box" class="choose_lang_box corner8px hidden">
                         <span class="default_type corner4px">choose code language</span>
                         <ul id="type_selector" >
-                            <li val="html" class="li_html" >Html</li>
-                            <li val="js" class="li_js" >JavaScript</li>
-                            <li val="css" class="li_css" >CSS</li>
-                            <li val="py" class="li_py" >Python</li>
-                            <li val="perl" class="li_pl" >Perl</li>
-                            <li val="rb" class="li_rb" >Ruby</li>
-                            <li val="php" class="li_php" >PHP</li>
-                            <li val="c" class="li_c" >C</li>
-                            <li val="cpp" class="li_cpp" >C++</li>
-                            <li val="" class="li_objectivec" >Objectiv-C</li>
-                            <li val="java" class="li_java" >Java</li>
-                            <li val="cs" class="li_cs" >C#</li>
-                            <li val="jsp" class="li_jsp" >JSP</li>
-                            <li val="pas" class="li_pas" >Pascal</li>
-                            <li val="sql" class="li_sql" >SQL</li>
-                            <li val="sh" class="li_sh" >Shell</li>
-                            <li val="lisp" class="li_lisp" >Lisp</li>
-                            <li val="" class="li_" >Scheme</li>
-                            <li val="" class="li_" >AWK</li>
-                            <li val="nginx" class="li_nginx" >Nginx</li>
-                            <li val="" class="li_" >Apache</li>
-                            <li val="as" class="li_as" >ActionScript</li>
-                            <li val="bas" class="li_bas" >Basic</li>
-                            <li val="lua" class="li_lua" >Lua</li>
-                            <li val="" class="li_" >RPG</li>
-                            <li val="" class="li_" >Ada</li>
-                            <li val="asm" class="li_asm" >Assembly*</li>
-                            <li val="matlab" class="li_matlab" >MATLAB</li>
-                            <li val="make" class="li_make" >Makefile</li>
-                            <li val="" class="li_" >D</li>
-                            <li val="" class="li_" >Go</li>
-                            <li val="" class="li_" >Logo</li>
-                            <li val="" class="li_" >R</li>
-                            <li val="" class="li_" >Fortan</li>
-                            <li val="" class="li_" >APL</li>
-                            <li val="" class="li_" >Smalltalk</li>
+                            <li val="Html" >Html</li>
+                            <li val="JavaScript" >JavaScript</li>
+                            <li val="CSS" >CSS</li>
+                            <li val="Python" >Python</li>
+                            <li val="Perl5" >Perl</li>
+                            <li val="Ruby" >Ruby</li>
+                            <li val="PHP" >PHP</li>
+                            <li val="C" >C</li>
+                            <li val="cpp (C++)" >C++</li>
+                            <li val="objc (Objective C)" >Objectiv-C</li>
+                            <li val="Java" >Java</li>
+                            <li val="C#" >C#</li>
+                            <li val="JSP (Java Server Pages)" >JSP</li>
+                            <li val="Pascal" >Pascal</li>
+                            <li val="SQL" >SQL</li>
+                            <li val="sh (shell)" >Shell</li>
+                            <li val="Lisp" >Lisp</li>
+                            <li val="Scheme" >Scheme</li>
+                            <li val="AWK" >AWK</li>
+                            <li val="Nginx configuration" >Nginx</li>
+                            <li val="Apache configuration" >Apache</li>
+                            <li val="Basic" >Basic</li>
+                            <li val="MATLAB" >MATLAB</li>
+                            <li val="Makefile" >Makefile</li>
                         </ul>
                         <div class="clearfix"></div>
                         <div class="lang_input_box">
