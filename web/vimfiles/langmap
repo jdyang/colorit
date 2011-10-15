@@ -361,7 +361,7 @@ dosbatch.vim
 readline (readline configuration)
 readline.vim
 
-takcmp (TAK2, TAK3, TAK2000)
+takcmp (TAK compare)
 takcmp.vim
 
 snnsnet (SNNS network)
@@ -1033,7 +1033,7 @@ rebol.vim
 docbksgml (DocBook SGML)
 docbksgml.vim
 
-OpenSSH server configuration file (sshd_config)
+sshdconfig (OpenSSH configuration)
 sshdconfig.vim
 
 Man page
@@ -1042,28 +1042,28 @@ man.vim
 avenue
 ave.vim
 
-xinetd.conf(5) configuration file
+xinetd configuration
 xinetd.vim
 
-OpenSSH client configuration file (ssh_config)
+sshconfig (OpenSSH configuration)
 sshconfig.vim
 
-Renderman shader language
+sl (Renderman shader)
 sl.vim
 
 NATURAL
 natural.vim
 
-CRM114
+crm (CRM114)
 crm.vim
 
 ChaiScript
 chaiscript.vim
 
-updatedb.conf(5) configuration file
+updatedb (updatedb configuration)
 updatedb.vim
 
-Debian sources.list
+sources (Debian sources.list)
 debsources.vim
 
 Vera
@@ -1078,7 +1078,7 @@ msql.vim
 Simula
 simula.vim
 
-UnrealScript
+uc (UnrealScript)
 uc.vim
 
 Clean
@@ -1087,7 +1087,7 @@ clean.vim
 BASIC
 basic.vim
 
-Microsoft VBScript Web Content (ASP)
+aspvbs (VBScript Web Content)
 aspvbs.vim
 
 Tcl/Tk
@@ -1096,22 +1096,22 @@ tcl.vim
 Dylan
 dylan.vim
 
-TSS (Thermal Synthesizer System) Command Line
+tsscl (TSS Command Line)
 tsscl.vim
 
 InstallShield Script
 ishd.vim
 
-DocBook XML
+docbkxml (DocBook XML)
 docbkxml.vim
 
-streaming descriptor file
+sd (streaming descriptor)
 sd.vim
 
-Lua 4.0, Lua 5.0 and Lua 5.1
+Lua
 lua.vim
 
-bin using xxd
+xxd (bin using xxd)
 xxd.vim
 
 C
@@ -1123,16 +1123,16 @@ haskell.vim
 Sather/pSather
 sather.vim
 
-gpg(1) configuration file
+gpg configuration
 gpg.vim
 
 JSP (Java Server Pages)
 jsp.vim
 
-lilo configuration (lilo.conf)
+lilo configuration
 lilo.vim
 
-purify log files
+purify log
 purifylog.vim
 
 XHTML
@@ -1141,13 +1141,13 @@ xhtml.vim
 Mail file
 mail.vim
 
-BibTeX (bibliographic database format for (La)TeX)
+bib (BibTeX)
 bib.vim
 
-denyhosts configuration file
+denyhosts configuration
 denyhosts.vim
 
-SGML (SGML Declaration <!SGML ...>)
+sgmldecl (SGML Declaration)
 sgmldecl.vim
 
 XML
@@ -1159,76 +1159,79 @@ mupad.vim
 lace
 lace.vim
 
-netrc(5) configuration file
+netrc configuration
 netrc.vim
 
-HTML and M4
+htmlm4 (HTML and M4)
 htmlm4.vim
 
-S-Lang
+slang (S-Lang)
 slang.vim
 
-samba configuration files (smb.conf)
+samba configuration
 samba.vim
 
-Century Term Command Script
+cterm (Century Term)
 cterm.vim
 
 Gedcom
 gedcom.vim
 
-fetchmail(1) RC File
+fetchmail RC File
 fetchmail.vim
 
-Web2C TeX texmf.cnf configuration file
+texmf (Web2C configuration)
 texmf.vim
 
-mplayer(1) configuration file
+mplayer configuration
 mplayerconf.vim
 
-GNU Arch inventory file
+arch (GNU Arch inventory)
 arch.vim
 
-T2 / ROCK Linux .desc
+desc (T2 / ROCK Linux)
 desc.vim
 
-ipfilter configuration file
+ipfilter configuration
 ipfilter.vim
 
-git commit file
+gitcommit
 gitcommit.vim
 
-MetaPost
+mp (MetaPost)
 mp.vim
 
-SNNS pattern file
+snnspat (SNNS pattern)
 snnspat.vim
 
-PPD (PostScript printer description) file
+PPD (PostScript printer description)
 ppd.vim
 
-Apache configuration (httpd.conf, srm.conf, access.conf, .htaccess)
+Apache configuration
 apache.vim
 
-sudoers(5) configuration files
+htaccess (Apache configuration)
+apache.vim
+
+sudoers configuration
 sudoers.vim
 
-Intel hex MCS51
+hex (Intel hex MCS51)
 hex.vim
 
-Motorola 68000 Assembler
+asm68k (Motorola Assembler)
 asm68k.vim
 
-Haskell supporting c2hs binding hooks
+chaskell (Haskell c2hs hooks)
 chaskell.vim
 
 configure.in script: M4 with sh
 config.vim
 
-Django HTML template
+htmldjango (Django HTML)
 htmldjango.vim
 
-Eviews (http://www.eviews.com)
+Eviews
 eviews.vim
 
 jgraph (graph plotting utility)
@@ -1237,10 +1240,10 @@ jgraph.vim
 Pyrex
 pyrex.vim
 
-PostScript - all Levels, selectable
+postscr (PostScript)
 postscr.vim
 
-xa 6502 cross assembler
+a65 (xa 6502 cross assembler)
 a65.vim
 
 Tilde
@@ -1249,25 +1252,25 @@ tilde.vim
 Lisp
 lisp.vim
 
-TAK2, TAK3, TAK2000 thermal modeling input file
+tak (TAK input)
 tak.vim
 
-Mutt setup files
+muttrc (Mutt setup files)
 muttrc.vim
 
-Z80 assembler asz80
+z8a (Z80 assembler asz80)
 z8a.vim
 
 AYacc
 ayacc.vim
 
-SysV-compatible init process control file `inittab'
+inittab (SysV-compatible)
 inittab.vim
 
 Ch
 ch.vim
 
-generic ChangeLog file
+changelog (generic ChangeLog)
 changelog.vim
 
 VHDL
@@ -1282,31 +1285,31 @@ progress.vim
 Pascal
 pascal.vim
 
-limits(5) configuration file
+limits configuration
 limits.vim
 
 Lout
 lout.vim
 
-LifeLines (v 3.0.62) <http://lifelines.sourceforge.net>
+LifeLines
 lifelines.vim
 
-Makeindex style file, *.ist
+ist (Makeindex style file)
 ist.vim
 
-sendmail
+sm (sendmail)
 sm.vim
 
-dict(1) configuration file
+dict configuration
 dictconf.vim
 
 XBL 1.0
 xbl.vim
 
-Quickfix window
+qf (Quickfix window)
 qf.vim
 
-ESQL-C
+esqlc (ESQL-C)
 esqlc.vim
 
 JAM
@@ -1315,13 +1318,13 @@ jam.vim
 RCS log output
 rcslog.vim
 
-Lynx 2.7.1 style file
+lss (Lynx style file)
 lss.vim
 
-Relax NG compact syntax
+rnc (Relax NG compact syntax)
 rnc.vim
 
-Kyocera PreScribe2e
+prescribe (Kyocera PreScribe2e)
 prescribe.vim
 
 Monk (See-Beyond Technologies)
@@ -1333,22 +1336,22 @@ procmail.vim
 Vim help file
 help.vim
 
-NASM - The Netwide Assembler (v0.98)
+NASM (The Netwide Assembler)
 nasm.vim
 
 XSD (XML Schema)
 xsd.vim
 
-Smalltalk
+st (Smalltalk)
 st.vim
 
-D script as described in "Solaris Dynamic Tracing Guide",
+dtrace (D script)
 dtrace.vim
 
 Perl 6
 perl6.vim
 
-alsaconf(8) configuration file
+alsaconf configuration
 alsaconf.vim
 
 Markdown
@@ -1360,67 +1363,67 @@ rexx.vim
 OPL
 opl.vim
 
-setserial(8) configuration file
+setserial configuration
 setserial.vim
 
 trustees
 trustees.vim
 
-AML (ARC/INFO Arc Macro Language)
+AML (ARC/INFO Arc)
 aml.vim
 
 erlang (ERicsson LANGuage)
 erlang.vim
 
-SPEC: Build/install scripts for Linux RPM packages
+SPEC (Build/install scripts)
 spec.vim
 
-mgp - MaGic Point
+mgp (MaGic Point)
 mgp.vim
 
-grub(8) configuration file
+grub configuration
 grub.vim
 
-ChordPro (v. 3.6.2)
+ChordPro
 chordpro.vim
 
 SVG (Scalable Vector Graphics)
 svg.vim
 
-gp (version 2.4)
+gp
 gp.vim
 
 Radiance Scene Description
 radiance.vim
 
-AfLex (from Lex syntax file)
+AfLex (Lex syntax)
 aflex.vim
 
 IDL (Interface Description Language)
 idl.vim
 
-JavaCC, a Java Compiler Compiler written by JavaSoft
+JavaCC (Java Compiler Compiler)
 javacc.vim
 
 SCSS
 scss.vim
 
-HTML/OS by Aestiva
+htmlos (HTML/OS by Aestiva)
 htmlos.vim
 
-TAK2, TAK3, TAK2000 thermal modeling output file
+tak (TAK output)
 takout.vim
 
 Fantom
 fan.vim
 
-PL/M
+plm (PL/M)
 plm.vim
 
-Debian changelog files
+Debian changelog
 debchangelog.vim
 
-abc music notation language
+abc music notation
 abc.vim
 
 git config file
@@ -1429,7 +1432,7 @@ gitconfig.vim
 task data
 taskdata.vim
 
-sensors.conf(5) - libsensors configuration file
+sensors (libsensors configuration)
 sensors.vim
 
 Django template
@@ -1441,55 +1444,55 @@ inform.vim
 Cheetah template engine
 cheetah.vim
 
-BIND configuration file
+named (BIND configuration)
 named.vim
 
 tf
 tf.vim
 
-Renderman Interface Bytestream
+rib (Renderman Interface Bytestream)
 rib.vim
 
-login.access(5) configuration file
+loginaccess configuration
 loginaccess.vim
 
-pinfo(1) configuration file
+pinfo configuration
 pinfo.vim
 
-Modsim III, by compuware corporation (www.compuware.com)
+modsim3 (Modsim III)
 modsim3.vim
 
-Motif UIL (User Interface Language)
+uil (Motif User Interface Language)
 uil.vim
 
 FreeBasic
 freebasic.vim
 
-libao.conf(5) configuration file
+libao configuration
 libao.vim
 
-Esmtp setup file (based on esmtp 0.5.0)
+esmtprc (Esmtp setup file)
 esmtprc.vim
 
-Fvwm{1,2} configuration file
+Fvwm configuration
 fvwm.vim
 
-terminfo(5) definition
+terminfo definition
 terminfo.vim
 
-SMIL (Synchronized Multimedia Integration Language)
+SMIL (Synchronized Multimedia Integration)
 smil.vim
 
-awk, nawk, gawk, mawk
+awk
 awk.vim
 
-WildPackets EtherPeek Decoder (.dcd) file
+dcd (WildPackets EtherPeek Decoder)
 dcd.vim
 
 COBOL
 cobol.vim
 
-KixTart 95, Kix2001 Windows script language http://kixtart.org/
+KixTart/Kix2001 (Windows script language)
 kix.vim
 
 ESTEREL
@@ -1498,19 +1501,19 @@ esterel.vim
 Latte
 latte.vim
 
-BibTeX Bibliography Style
+bst (BibTeX Bibliography Style)
 bst.vim
 
-udev(8) permissions file
+udev permissions
 udevperm.vim
 
 fstab file
 fstab.vim
 
-indent(1) configuration file
+indent configuration
 indent.vim
 
-R Help File
+rhelp (R Help File)
 rhelp.vim
 
 R (GNU S)
@@ -1519,22 +1522,22 @@ r.vim
 Remind
 remind.vim
 
-Apache-Style configuration files (proftpd.conf/apache.conf/..)
+ApacheStyle configuration
 apachestyle.vim
 
-VOS CM macro
+voscm (VOS CM macro)
 voscm.vim
 
-DTD (Document Type Definition for XML)
+DTD (Document Type Definition)
 dtd.vim
 
-Haskell Cabal Build file
+cabal (Haskell Cabal Build file)
 cabal.vim
 
 LPC
 lpc.vim
 
-3D wavefront's obj file
+obj (3D wavefront's obj file)
 obj.vim
 
 LiteStep RC file
