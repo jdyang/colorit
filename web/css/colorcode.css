@@ -65,7 +65,13 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .headline .lang_support_a { color:#fff; text-decoration:underline; }
 .cc_logo:hover { background:url(/img/Color_Code_logo.png) 0 0 no-repeat;}
 .cc_logo:hover .headline {display:block;} 
-.cc_sub_logo { color:#797979; font-size:18px; line-height:22px; font-family:"century gothic"; padding:1px 10px;  height:25px; margin-top:45px;  float:right; background-color:#fff; }
+.contact_icon { height:22px; margin-top:49px; margin-right:5px; float:right; }
+.contact_icon a { display:block; }
+.contact_icon .suggest { width:45px; height:26px;  float:left; background:url(/img/icon_suggest.png) top center no-repeat;  }
+.contact_icon .facebook { width:21px; height:21px;  float:left; background:url(/img/icon_facebook.png) top center no-repeat; margin-left:10px; }
+.contact_icon .twitter { width:21px; height:21px;  float:left; background:url(/img/icon_twitter.png) top center no-repeat; margin-left:10px; }
+.contact_icon .douban { width:21px; height:21px;  float:left; background:url(/img/icon_douban.png) top center no-repeat; margin-left:10px; }
+.cc_sub_logo { color:#797979; font-size:18px; line-height:22px; font-family:"century gothic"; padding:1px 10px;  height:25px; margin-top:45px; margin-right:10px; float:right; background-color:#fff; }
 .cc_sub_logo span {display:block; float:left;}
 .cc_sub_logo .t01 { color:#474898; padding-left:5px; }
 .cc_sub_logo .t02 { color:#e51f27; }
@@ -77,16 +83,17 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .cc_sub_logo .t08 { color:#de0d7f; }
 .cc_sub_logo .t09 { color:#e21e26; padding-right:5px;}
 
-.content_box {width:100%;  margin-top:30px; padding-bottom:100px; float:left; position:relative; }
+.content_box {width:100%;  margin-top:30px; margin-bottom:100px; float:left; position:relative; }
 .code_box { margin-left:50px; float:left; border:10px solid #fff; background-color:#000; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; }
 .color_code_box_loading_overlay { border:none; position:absolute; z-index:20; text-align:left; width:600px; height:350px; display:none; }
 .color_code_box_loading_overlay .loading_icon_wrapper { position:relative; }
 .color_code_box_loading_overlay .loading_icon { position:absolute; top:20px; right:30px; background:url(/img/loading.gif) top left no-repeat; width:30px; height:5px; }
 .code_box .black_code_box { resize:none; margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; overflow-x:hidden; }
 .code_box .color_code_box { display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; overflow-x:hidden; }
+.team_info {width:213px; height:11px; background:url(/img/team_info.png) top left no-repeat; float:right; margin-right:20px; margin-bottom:15px; }
 
 .tool_box_overlay { position:absolute; right:200px; z-index:10000; width:126px; height:410px; display:none;}
-.tool_box { float:right; margin-right:200px; width:126px; height:410px; text-align:center; background-color:#fff; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; position:relative;}
+.tool_box { float:right; margin-right:200px; width:126px; height:436px; text-align:center; background-color:#fff; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; position:relative;}
 .color_it_wrapper { position:relative;}
 .color_it_box { position:relative; margin-left:15px;  margin-top:10px;}
 .tool_box .color_it {  float:left; display:block; width:60px; margin:0 auto;  padding:5px; background-color:#448ccb; font-size:16px; color:#fff; text-align:center; }
@@ -131,4 +138,5 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .font_change_wrapper .turn_box:hover { background-color:#2ea2e4;}
 .font_change_wrapper .turn_box:active { background-color:#2ea2e4; box-shadow:0 1px 3px #313131 inset; }
 
-.ad_sense { width:126px; height:125px;  }
+.ad_sense { width:126px; height:125px; margin-top:10px; background-color:gray;  }
+
