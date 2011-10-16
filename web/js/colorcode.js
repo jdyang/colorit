@@ -1,4 +1,8 @@
 $(function(){
+    //===============refuse ie6================
+    if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
+        window.location.href = '/ie6error.html';
+    };
 
     //===============init================
     CAN_COPY_CODE = false;
@@ -28,35 +32,58 @@ $(function(){
         $('#copy_code_tip').show().fadeOut(2000);
     } );
 
+
+
     //==============color it function===============
-    colorIt = function(){
+    getPostOptions = function(){
         var options = '';
-        $('#color_code_loading_overlay, #tool_box_overlay').show();
         if( SMART_INDENT ) options += 'format_';
         if( SHOW_LINE_NUMBER ) options += 'number_';
-        data = {code:$('#black_code_box').val(), type:SELECTED_LANG, options:options  };
-        $.post('/zarkapi/getcolorcode',data,function(cc){
-            $('#black_code_box').hide();
-            $('#color_code_box').html(cc).show();
-            $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
-            //set copy code button ready
-            $('#copy_code_button').addClass('copy_code_ready');
-            $('#copy_code_container embed').show();
-            CAN_COPY_CODE = true;
-            $('#color_code_loading_overlay, #tool_box_overlay').hide();
-            CLIPBOARD.setText(cc);
-        },'text');
-        $('#color_it').html('clean');
+        return options;
+    }
+
+    colorIt = function(){
+        $('#error_tip').hide();
+        $('#color_code_loading_overlay, #tool_box_overlay').show();
+        data = {code:$('#black_code_box').val(), type:SELECTED_LANG, options:getPostOptions()  };
+        $.ajax({
+            cache           :   false,
+            data            :   data,
+            dataType        :   'text',
+            timeout         :   30000,
+            type            :   'POST',
+            url             :   '/zarkapi/getcolorcode',
+            success         :   function (cc, textStatus) {
+                $('#black_code_box').hide();
+                $('#color_code_box').html(cc).show();
+                $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
+                //set copy code button ready
+                $('#copy_code_button').addClass('copy_code_ready');
+                $('#copy_code_container embed').show();
+                CAN_COPY_CODE = true;
+                $('#color_it').html('clean');
+                $('#color_code_loading_overlay, #tool_box_overlay').hide();
+                CLIPBOARD.setText(cc);
+            },
+            error           :   function (XMLHttpRequest, textStatus) {
+                CAN_COPY_CODE = false;
+                $('#error_tip').show();
+                $('#color_it').html('clean');
+                $('#color_code_loading_overlay, #tool_box_overlay').hide();
+            }
+        });
+        $('#color_it').html('coloring');
         IS_SHOW_COLOR_CODE = true;
     }
 
     //==============clean code function===============
     IS_SHOW_COLOR_CODE = false;
     cleanCode = function(){
+        $('#error_tip').hide();
         $('#black_code_box').val('').show();
         $('#color_code_box').html('').hide();
         $('#code_box').height($('#black_code_box').height()+40);
-        $('#color_it').html('color it');
+        $('#color_it').html('color it!');
         IS_SHOW_COLOR_CODE = false;
         //set copy code button onready
         $('#copy_code_button').removeClass('copy_code_ready');
@@ -93,6 +120,12 @@ $(function(){
             $('#choose_lang').removeClass('choose_lang_active');
         };
     };
+
+    //==============try again button===============
+    $('#try_again_btn').click(function(){
+        colorIt();
+        return false;
+    });
 
     //==============choose language button===============
     $('#choose_lang').click(function(){
@@ -183,7 +216,7 @@ $(function(){
         IS_BLACK_CODE_BOX_BLUR = true;
         setTimeout(function(){IS_BLACK_CODE_BOX_BLUR = false;}, 100);
     });
-    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
+    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n\nYou can copy colourful code to your blog or email.\n\nOr just read here.');
 
     //==============turn font size event===============
     $('#turn_font_down, #turn_font_up').click(function(){
@@ -211,6 +244,7 @@ $(function(){
     $('#color_code_loading_overlay').width($('#black_code_box').width()+40).height($('#black_code_box').height()+40);
     $('#tool_box, #cc_sub_logo').animate({opacity:0.85});
     $('body > ins').appendTo($('#ad_sense'));
+
 
 });
 
