@@ -96,7 +96,7 @@ $(function(){
         //如果还没有输入任何代码，就提示他输入代码
         if( (($('#black_code_box').attr('firstfocus') === 'false') || ($.trim($('#black_code_box').val().length===0))).toString() === 'true' ){
             if (IS_BLACK_CODE_BOX_BLUR === false){
-                $('#black_code_box').val($('#black_code_box').val()+'Please input your code first!\n');
+                $('#black_code_box').val($('#black_code_box').val()+'Please input your code first!\n\n');
             };
             $('#black_code_box').attr('firstfocus','false').css('font-size','24px');
             return;
@@ -211,12 +211,12 @@ $(function(){
         };
     }).blur(function(){
         if ($(this).val() === ''){
-            $(this).attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
+            $(this).attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n\n');
         };
         IS_BLACK_CODE_BOX_BLUR = true;
         setTimeout(function(){IS_BLACK_CODE_BOX_BLUR = false;}, 100);
     });
-    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n\nYou can copy colourful code to your blog or email.\n\nOr just read here.');
+    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n\nYou can copy colourful code to your blog or email.\n\nOr just read here.\n\n');
 
     //==============turn font size event===============
     $('#turn_font_down, #turn_font_up').click(function(){
