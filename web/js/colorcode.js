@@ -39,6 +39,7 @@ $(function(){
     }
 
     colorIt = function(){
+        $('#error_tip').hide();
         $('#color_code_loading_overlay, #tool_box_overlay').show();
         data = {code:$('#black_code_box').val(), type:SELECTED_LANG, options:getPostOptions()  };
         $.ajax({
@@ -52,7 +53,6 @@ $(function(){
                 $('#black_code_box').hide();
                 $('#color_code_box').html(cc).show();
                 $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
-                $('#error_tip').hide();
                 //set copy code button ready
                 $('#copy_code_button').addClass('copy_code_ready');
                 $('#copy_code_container embed').show();
