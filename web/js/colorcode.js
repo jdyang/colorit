@@ -216,7 +216,7 @@ $(function(){
         IS_BLACK_CODE_BOX_BLUR = true;
         setTimeout(function(){IS_BLACK_CODE_BOX_BLUR = false;}, 100);
     });
-    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n');
+    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n\nYou can copy colourful code to your blog or email.\n\nOr just read here.');
 
     //==============turn font size event===============
     $('#turn_font_down, #turn_font_up').click(function(){
