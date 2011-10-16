@@ -245,6 +245,5 @@ $(function(){
     $('#tool_box, #cc_sub_logo').animate({opacity:0.85});
     $('body > ins').appendTo($('#ad_sense'));
 
-
 });
 
