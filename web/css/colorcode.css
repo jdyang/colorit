@@ -152,3 +152,5 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .donate { display:block; width:95px; height:25px;  background:url(/img/donate.png) 0 0 no-repeat; background-color:#6eb221;}
 .donate:active {  box-shadow:0 1px 3px #313131 inset; }
 .donate:hover {  background:url(/img/donate.png) 0 -25px no-repeat; background-color:#6eb221;}
+
+#topcontrol { width:48px; height:48px; right:200px; bottom:50px; }
