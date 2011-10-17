@@ -52,7 +52,7 @@ $(function(){
             dataType        :   'text',
             timeout         :   30000,
             type            :   'POST',
-            url             :   '/zarkapi/getcolorcode',
+            url             :   '/getcolorcode',
             success         :   function (cc, textStatus) {
                 $('#black_code_box').hide();
                 $('#color_code_box').html(cc).show();
@@ -74,7 +74,7 @@ $(function(){
         });
         $('#color_it').html('coloring');
         IS_SHOW_COLOR_CODE = true;
-    }
+    };
 
     //==============clean code function===============
     IS_SHOW_COLOR_CODE = false;
@@ -111,6 +111,7 @@ $(function(){
         }else{
             cleanCode();
         };
+        return false;
     });
 
     choose_lang_box_toggle_hook = function(){
