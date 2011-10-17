@@ -1,8 +1,3 @@
-//===============refuse ie6================
-if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
-    window.location.href = '/ie6error.html';
-};
-
 $(function(){
 
     //===============init================
