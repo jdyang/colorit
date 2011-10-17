@@ -3,6 +3,9 @@ import web, site_helper, os, uuid
 
 class GetColorCode:
 
+    def GET(self):
+        return 'a'
+
     def _readLangMaps():
         ret_dict = {}
         for l in open('%s/web/vimfiles/langmap' % site_helper.config.APP_ROOT_PATH):
