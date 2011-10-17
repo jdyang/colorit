@@ -56,7 +56,7 @@ html[xmlns] .clearfix {display: block; height:0px; clear: both; visibility: hidd
 body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flowers.jpg) top center no-repeat;   }
 /*.top_nav {width:100%; height:30px; background-color:#000; }*/
 
-.cc_top {  height:71px; margin-left:50px;  margin-top:70px;   }
+.cc_top {  height:71px; margin-left:50px; display:inline;  margin-top:70px; position:relative;  }
 .cc_logo { background:url(/img/Color_Code_logo.png) 0 -71px no-repeat; position:relative; width:272px; height:71px; float:left; }
 .headline { display:none; float:left; padding-left:50px; margin-left:270px; height:100px; margin-top:-30px; position:relative; }
 .headline p { display:block;  white-space:nowrap; font-size:16px; line-height:30px;  color:#fff; background-color:#2ea2e4; height:30px; padding:0 20px; position:relative; z-index:10000; }
@@ -67,15 +67,15 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .cc_logo:hover .headline {display:block;} 
 .contact_icon { height:22px; margin-top:49px; margin-right:5px; float:right; }
 .contact_icon a { display:block; }
-.contact_icon .suggest { width:45px; height:26px;  float:left; background:url(/img/icon_suggest.png) top center no-repeat; position:relative; }
-.contact_icon .suggest .show_email_box { height:65px; width:200px; position:absolute; z-index:10000; bottom:-65px; right:0; background-color:#fff; color:#585858; font-size:12px; text-align:left; line-height:18px; display:none;  padding:5px 10px 0 10px; box-shadow:1px 2px 4px #313131;  }
-.contact_icon .suggest:hover .show_email_box {display:block; }
-.our_email { color:#00c;  display:block; margin-top:2px;}
+.contact_icon .suggest_box { float:left; }
+.contact_icon .suggest { width:45px; height:26px; float:right; background:url(/img/icon_suggest.png) top center no-repeat;  }
+.contact_icon .suggest_box .show_email_box { height:85px; width:200px;  background-color:#fff; color:#585858; font-size:12px; text-align:left; line-height:18px; display:block;  padding:5px 10px 0 10px; box-shadow:1px 2px 4px #313131; position:relative; z-index:10000; }
+.our_email { color:#00c; display:block; margin-top:2px;}
 .our_email .icon_email {width:16px; height:16px; background:url(/img/icon_gmail.jpeg) top no-repeat; display:block; float:left; margin-right:10px;}
 .contact_icon .facebook { width:21px; height:21px;  float:left; background:url(/img/icon_facebook.png) top center no-repeat; margin-left:10px; }
 .contact_icon .twitter { width:21px; height:21px;  float:left; background:url(/img/icon_twitter.png) top center no-repeat; margin-left:10px; }
 .contact_icon .douban { width:21px; height:21px;  float:left; background:url(/img/icon_douban.png) top center no-repeat; margin-left:10px; }
-.cc_sub_logo { color:#797979; font-size:18px; line-height:22px; font-family:"century gothic"; padding:1px 10px;  height:25px; margin-top:45px; margin-right:10px; float:right; background-color:#fff; }
+.cc_sub_logo { color:#797979; font-size:18px; line-height:22px; font-family:"century gothic"; padding:1px 10px;  height:25px; margin-top:45px;   background-color:#fff; position:absolute; right:100px; } 
 .cc_sub_logo span {display:block; float:left;}
 .cc_sub_logo .t01 { color:#474898; padding-left:5px; }
 .cc_sub_logo .t02 { color:#e51f27; }
@@ -87,17 +87,17 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .cc_sub_logo .t08 { color:#de0d7f; }
 .cc_sub_logo .t09 { color:#e21e26; padding-right:5px;}
 
-.content_box {width:100%;  margin-top:30px; margin-bottom:100px; float:left; position:relative; }
+.content_box {width:100%; margin-top:30px; margin-bottom:100px; float:left; position:relative; }
 .code_box { margin-left:50px; float:left; border:10px solid #fff; background-color:#000; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; position:relative;}
 .color_code_box_loading_overlay { border:none; position:absolute; z-index:20; text-align:left; width:600px; height:350px; display:none; }
 .color_code_box_loading_overlay .loading_icon_wrapper { position:relative; }
 .color_code_box_loading_overlay .loading_icon { position:absolute; top:20px; right:30px; background:url(/img/loading.gif) top left no-repeat; width:30px; height:5px; }
+.code_box .error_tip { position:absolute; top:15px; right:20px; padding:2px 10px; background-color:#fff; }
+.code_box .error_tip span { color:#363636;  }
+.code_box .error_tip a { color:red; text-decoration:underline;  }
 .code_box .black_code_box { resize:none; margin:20px;  height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; overflow-x:hidden; }
 .code_box .color_code_box { display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; overflow-x:hidden; }
-.code_box .error_tip { position:absolute; top:15px; right:20px;}
-.code_box .error_tip span { color:#d9d9d9;  }
-.code_box .error_tip a { color:red; text-decoration:underline;  }
-.team_info {width:213px; height:11px; background:url(/img/team_info.png) top left no-repeat; right:20px; bottom:15px; position:absolute; z-index:10000;  }
+.team_info {width:213px; height:11px; background:url(/img/team_info.png) top left no-repeat; right:20px; bottom:15px;  position:absolute; z-index:10000;  }
 
 .tool_box_overlay { position:absolute; right:200px; z-index:10000; width:126px; height:410px; display:none;}
 .tool_box { float:right; margin-right:200px; width:126px; height:410px; text-align:center; background-color:#fff; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; position:relative;}
