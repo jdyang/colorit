@@ -68,7 +68,7 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .contact_icon { height:22px; margin-top:49px; margin-right:5px; float:right; }
 .contact_icon a { display:block; }
 .contact_icon .suggest { width:45px; height:26px;  float:left; background:url(/img/icon_suggest.png) top center no-repeat; position:relative; }
-.contact_icon .suggest .show_email_box { height:85px; width:200px; position:absolute; z-index:10000; bottom:-85px; right:0; background-color:#fff; color:#585858; font-size:12px; text-align:left; line-height:18px; display:none;  padding:5px 10px 0 10px; box-shadow:1px 2px 4px #313131;  }
+.contact_icon .suggest .show_email_box { height:65px; width:200px; position:absolute; z-index:10000; bottom:-65px; right:0; background-color:#fff; color:#585858; font-size:12px; text-align:left; line-height:18px; display:none;  padding:5px 10px 0 10px; box-shadow:1px 2px 4px #313131;  }
 .contact_icon .suggest:hover .show_email_box {display:block; }
 .our_email { color:#00c;  display:block; margin-top:2px;}
 .our_email .icon_email {width:16px; height:16px; background:url(/img/icon_gmail.jpeg) top no-repeat; display:block; float:left; margin-right:10px;}
