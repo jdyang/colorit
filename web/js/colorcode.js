@@ -1,8 +1,9 @@
+//===============refuse ie6================
+if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
+    window.location.href = '/ie6error.html';
+};
+
 $(function(){
-    //===============refuse ie6================
-    if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) {
-        window.location.href = '/ie6error.html';
-    };
 
     //===============init================
     CAN_COPY_CODE = false;
@@ -56,6 +57,7 @@ $(function(){
             success         :   function (cc, textStatus) {
                 $('#black_code_box').hide();
                 $('#color_code_box').html(cc).show();
+                $('#color_code_box > div > code').css('font-size', FONT_SIZE+'px');
                 $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
                 //set copy code button ready
                 $('#copy_code_button').addClass('copy_code_ready');
