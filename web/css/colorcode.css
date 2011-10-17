@@ -68,8 +68,9 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .contact_icon { height:22px; margin-top:49px; margin-right:5px; float:right; }
 .contact_icon a { display:block; }
 .contact_icon .suggest_box { float:left; }
+.contact_icon .suggest_box:hover .show_email_box { display:block; }
 .contact_icon .suggest { width:45px; height:26px; float:right; background:url(/img/icon_suggest.png) top center no-repeat;  }
-.contact_icon .suggest_box .show_email_box { height:85px; width:200px;  background-color:#fff; color:#585858; font-size:12px; text-align:left; line-height:18px; display:block;  padding:5px 10px 0 10px; box-shadow:1px 2px 4px #313131; position:relative; z-index:10000; }
+.contact_icon .suggest_box .show_email_box { height:70px; width:200px;  background-color:#fff; color:#585858; font-size:12px; text-align:left; line-height:18px; display:none;  padding:5px 10px 0 10px; box-shadow:1px 2px 4px #313131; position:relative; z-index:10000; }
 .our_email { color:#00c; display:block; margin-top:2px;}
 .our_email .icon_email {width:16px; height:16px; background:url(/img/icon_gmail.jpeg) top no-repeat; display:block; float:left; margin-right:10px;}
 .contact_icon .facebook { width:21px; height:21px;  float:left; background:url(/img/icon_facebook.png) top center no-repeat; margin-left:10px; }
