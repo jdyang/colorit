@@ -14,6 +14,7 @@ $(function(){
         CUSTOMLANGENTER();
     });
 
-    //==============scroll top event=============
+    //==============scroll top position=============
+    $('#topcontrol').css({width:'48px', height:'48px', right:'200px', bottom:'100px'});
 
 });
