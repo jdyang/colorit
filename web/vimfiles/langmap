@@ -514,3 +514,4 @@ cabal (Haskell Cabal Build file)%%cabal
 LPC%%lpc
 obj (3D wavefront's obj file)%%obj
 LiteStep RC file%%litestep
+aspx (ASP.Net)%%aspnet

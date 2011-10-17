@@ -3,9 +3,6 @@ import web, site_helper, os, uuid
 
 class GetColorCode:
 
-    def GET(self):
-        return 'a'
-
     def _readLangMaps():
         ret_dict = {}
         for l in open('%s/web/vimfiles/langmap' % site_helper.config.APP_ROOT_PATH):
@@ -26,7 +23,7 @@ class GetColorCode:
         i.options = str(i.options)
         file_name = str(uuid.uuid4())+'.'+i.type
         f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name,'w')
-        f.write(i.code.encode('utf8'))
+        f.write(i.code.encode('utf8').replace('＜','<').replace('＞','>'))
         f.close()
         script_file = site_helper.config.APP_ROOT_PATH+'web/vimfiles/vimscriptin/%s' % self._getFormatFile(i)
         assert(os.path.exists(script_file))
