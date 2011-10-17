@@ -145,7 +145,7 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .font_change_wrapper .turn_box:hover { background-color:#2ea2e4;}
 .font_change_wrapper .turn_box:active { background-color:#2ea2e4; box-shadow:0 1px 3px #313131 inset; }
 
-.ad_sense { width:126px; height:125px; margin-top:10px; background-color:gray;  }
+.ad_sense { width:126px; height:125px; margin-top:10px;  }
 
 .donate_box  {  width:95px; height:25px;  margin:0 auto; margin-top:5px;text-align:center;}
 .donate { display:block; width:95px; height:25px;  background:url(/img/donate.png) 0 0 no-repeat; background-color:#6eb221;}
