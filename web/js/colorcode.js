@@ -43,8 +43,6 @@ $(function(){
         $('#copy_code_tip').show().fadeOut(2000);
     } );
 
-
-
     //==============color it function===============
     getPostOptions = function(){
         var options = '';
@@ -252,7 +250,8 @@ $(function(){
     $('#code_box').width(code_box_width);
     $('#cc_top').width(code_box_width+20);
     $('#code_box').animate({opacity:0.8});
-    $('#black_code_box, #color_code_box').width(code_box_width-40).animate({opacity:1});
+    $('#black_code_box').width(code_box_width-40).animate({opacity:1});
+    $('#color_code_box').width(code_box_width).animate({opacity:1});
     $('#choose_lang_box').animate({opacity:0.8});
     $('#color_code_loading_overlay').width($('#black_code_box').width()+40).height($('#black_code_box').height()+40);
     $('#tool_box, #cc_sub_logo').animate({opacity:0.85});
