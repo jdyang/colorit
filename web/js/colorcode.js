@@ -72,6 +72,7 @@ $(function(){
                 $('#copy_code_container embed').show();
                 CAN_COPY_CODE = true;
                 $('#color_it').html('clean');
+                if($.browser.msie) $('#color_it').corner('5px'); // ie hack
                 $('#color_code_loading_overlay, #tool_box_overlay').hide();
                 CLIPBOARD.setText(cc);
             },
@@ -79,10 +80,12 @@ $(function(){
                 CAN_COPY_CODE = false;
                 $('#error_tip').show();
                 $('#color_it').html('clean');
+                if($.browser.msie) $('#color_it').corner('5px'); // ie hack
                 $('#color_code_loading_overlay, #tool_box_overlay').hide();
             }
         });
         $('#color_it').html('coloring');
+        if($.browser.msie) $('#color_it').corner('5px'); // ie hack
         IS_SHOW_COLOR_CODE = true;
     };
 
@@ -94,6 +97,7 @@ $(function(){
         $('#color_code_box').html('').hide();
         $('#code_box').height($('#black_code_box').height()+40);
         $('#color_it').html('color it!');
+        if($.browser.msie) $('#color_it').corner('5px'); // ie hack
         IS_SHOW_COLOR_CODE = false;
         //set copy code button onready
         $('#copy_code_button').removeClass('copy_code_ready');

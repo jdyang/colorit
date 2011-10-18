@@ -72,6 +72,7 @@ var scrolltotop={
 				mainobj.togglecontrol()
 			})
             mainobj.$control.hide();
+            mainobj.$control.css('background-color','#fff');
 		})
 	}
 }
