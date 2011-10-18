@@ -5,6 +5,15 @@ if ($.browser.msie && ($.browser.version == "6.0") && (!$.support.style)) {
 
 $(function(){
 
+    //===============ie corner================
+    if ($.browser.msie) {
+        $('.corner4px').corner('5px');
+        $('.corner8px').corner('10px');
+        $('.corner10px').corner('10px');
+        $('.corner15px').corner('15px');
+        $('.corner20px').corner('15px');
+    };
+
     //===============init================
     CAN_COPY_CODE = false;
     SELECTED_LANG = null;
