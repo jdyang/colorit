@@ -5,6 +5,16 @@ if ($.browser.msie && ($.browser.version == "6.0") && (!$.support.style)) {
 
 $(function(){
 
+    //===============ie hack================
+    if ($.browser.msie) {
+        $('.corner4px').corner('5px');
+        $('.corner8px').corner('10px');
+        $('.corner10px').corner('10px');
+        $('.corner15px').corner('15px');
+        $('.corner20px').corner('15px');
+        $('.choose_lang_box ul li').corner('5px');
+    };
+
     //===============init================
     CAN_COPY_CODE = false;
     SELECTED_LANG = null;
@@ -248,7 +258,11 @@ $(function(){
     $('#tool_box, #cc_sub_logo').animate({opacity:0.85});
     //$('body > ins').appendTo($('#ad_sense'));
 
-    //==============others===============
+    //===============ie hack================
+    if ($.browser.msie) {
+        $('#code_box').css('border','10px solid #fff;');
+        $('#show_email_box').css('border','1px solid #585858;');
+    }
 
 });
 

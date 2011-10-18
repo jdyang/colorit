@@ -9,8 +9,15 @@
         <meta http-equiv="windows-Target" content="_top"/>
         <link rel="stylesheet" href="/css/colorcode.css" type="text/css" media="screen" charset="utf-8"/>
         <link rel="stylesheet" href="/css/autocomplete.css" type="text/css" media="screen" charset="utf-8"/>
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/css/ie7csshack.css" type="text/css" media="screen" charset="utf-8"/>
+        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="/css/ie8csshack.css" type="text/css" media="screen" charset="utf-8"/>
+        <![endif]-->
         <script type="text/javascript" src="/js/ZeroClipboard.js"></script>
         <script type="text/javascript" src="/js/jquery-1.5.1.js"></script>
+        <script type="text/javascript" src="/js/jquery.corner.js"></script>
         <script type="text/javascript" src="/js/colorcode.js"></script>
         <script type="text/javascript" src="/js/autocomplete.js"></script>
         <script type="text/javascript" src="/js/scrolltopcontrol.js"></script>
@@ -19,6 +26,8 @@
         <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
         -->
         <script type="text/javascript" src="/js/analytics.js"></script>
+
+
     </head>
     <body>
         <div class="top_nav"></div>
@@ -36,7 +45,7 @@
                 <div class="suggest_box">
                     <a class="suggest"></a>
                     <div class="clearfix"></div>    
-                    <span class="show_email_box corner8px">
+                    <span id="show_email_box" class="show_email_box corner8px">
                         <p>Your precious advice and bug report makes our software better.</p>
                         <div class="clearfix"></div>
                         <span class="our_email"><span class="icon_email"></span>SDJLLYH@gmail.com</span>
@@ -75,9 +84,43 @@
                 </div>
                 <textarea id="black_code_box" class="black_code_box" ></textarea>
                 <div id="color_code_box" class="color_code_box" ></div>
-                <div class="team_info corner8px"></div>
+                <div class="team_info"></div>
             </div>
             <div id="tool_box_overlay" class="tool_box_overlay corner8px"></div>
+            <div id="choose_lang_box" class="choose_lang_box corner8px hidden">
+                <span class="default_type corner4px">choose code language</span>
+                <ul id="type_selector" >
+                    <li val="HTML" >HTML</li>
+                    <li val="JavaScript" >JavaScript</li>
+                    <li val="CSS" >CSS</li>
+                    <li val="PHP" >PHP</li>
+                    <li val="Python" >Python</li>
+                    <li val="Perl5" >Perl</li>
+                    <li val="C" >C</li>
+                    <li val="cpp (C++)" >C++</li>
+                    <li val="objc (Objective C)" >Objectiv-C</li>
+                    <li val="Java" >Java</li>
+                    <li val="C#" >C#</li>
+                    <li val="Ruby" >Ruby</li>
+                    <li val="JSP (Java Server Pages)" >JSP</li>
+                    <li val="aspx (ASP.Net)" >ASP.Net</li>
+                    <li val="Pascal" >Pascal</li>
+                    <li val="SQL" >SQL</li>
+                    <li val="sh (shell)" >Shell</li>
+                    <li val="Scheme" >Scheme</li>
+                    <li val="AWK" >AWK</li>
+                    <li val="Nginx configuration" >Nginx</li>
+                    <li val="Apache configuration" >Apache</li>
+                    <li val="Basic" >Basic</li>
+                    <li val="MATLAB" >MATLAB</li>
+                    <li val="Makefile" >Makefile</li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="lang_input_box">
+                    <input id="custom_lang_input" type="text"  value="" class="lang_input " />
+                    <span class="fill_blank"></span>
+                </div>
+            </div>
             <div id="tool_box" class="tool_box corner8px" >
                 <div class="color_it_wrapper">
                     <div class="color_it_box">
@@ -86,43 +129,9 @@
                             <span class="lang_tri"></span>
                         </a>
                     </div>
+                </div>
                     <div class="clearfix"></div>
-                    <div id="choose_lang_box" class="choose_lang_box corner8px hidden">
-                        <span class="default_type corner4px">choose code language</span>
-                        <ul id="type_selector" >
-                            <li val="HTML" >HTML</li>
-                            <li val="JavaScript" >JavaScript</li>
-                            <li val="CSS" >CSS</li>
-                            <li val="PHP" >PHP</li>
-                            <li val="Python" >Python</li>
-                            <li val="Perl5" >Perl</li>
-                            <li val="C" >C</li>
-                            <li val="cpp (C++)" >C++</li>
-                            <li val="objc (Objective C)" >Objectiv-C</li>
-                            <li val="Java" >Java</li>
-                            <li val="C#" >C#</li>
-                            <li val="Ruby" >Ruby</li>
-                            <li val="JSP (Java Server Pages)" >JSP</li>
-                            <li val="aspx (ASP.Net)" >ASP.Net</li>
-                            <li val="Pascal" >Pascal</li>
-                            <li val="SQL" >SQL</li>
-                            <li val="sh (shell)" >Shell</li>
-                            <li val="Scheme" >Scheme</li>
-                            <li val="AWK" >AWK</li>
-                            <li val="Nginx configuration" >Nginx</li>
-                            <li val="Apache configuration" >Apache</li>
-                            <li val="Basic" >Basic</li>
-                            <li val="MATLAB" >MATLAB</li>
-                            <li val="Makefile" >Makefile</li>
-                        </ul>
-                        <div class="clearfix"></div>
-                        <div class="lang_input_box">
-                            <input id="custom_lang_input" type="text"  value="" class="lang_input " />
-                            <span class="fill_blank"></span>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div id="copy_code_container" style="position:relative">
+                    <div id="copy_code_container" style="float:left;position:relative">
                        <div id="copy_code_button" class="copy_code unselectable corner4px">
                            Copy code
                            <span id="copy_code_tip" class="copy_code_tip corner15px">OK</span>
@@ -148,7 +157,6 @@
                         <p id="show_font_size" class="show_font_size unselectable">14px</p>
                         <a id="turn_font_up" turn_value="2" href="javascript:;" class="turn_box corner4px">+</a>
                     </div>
-                </div>
                 <div class="clearfix"></div>
                 <div id="ad_sense" class="ad_sense"></div>
                 <div class="clearfix"></div>

@@ -1,0 +1,9 @@
+.cc_top {margin-left:-300px; z-index:100;}
+.contact_icon .suggest_box  {width:45px; }
+.contact_icon .show_email_box { margin-left:-170px; border:1px solid #000;  }
+.content_box  { z-index:50; }
+.code_box .black_code_box { margin-left:-25px;} 
+.color_it_wrapper { z-index:200;}
+.choose_lang_box { z-index:100;}
+.tool_box { z-index:50;}
+.choose_lang_box .default_type {  margin:12px 10px 10px 10px; width:240px; float:left; }
