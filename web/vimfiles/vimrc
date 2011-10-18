@@ -90,24 +90,3 @@ set tabstop=4
 set smartindent
 set expandtab
 set shiftwidth=4
-set autowrite
-
-" html settings
-" autocmd FileType html imap ......
-imap <d <div></div>O
-imap <u <ul></ul>O<li></li>
-imap <f <form action="" method="POST" ></form>k$4F"a
-imap <a <a href="" ></a>F<i
-imap <i <input type="text" name="" />2F"a
-imap <t <textarea cols=80 rows=10 name="" ></textarea>2F"a
-imap <p <p></p>F>a
-imap c= class=""i
-
-:map \c lb"tyw/cssfile:wgf/t
-:map \j lb"tyw/jsfile:wgf/t
-:map \p lb"tyw/pythonfile:wgf/t
-:map \h lb"tyw/htmlfile:wgf/t
-:map \m lb"tyw/modelfile:wgf/t
-:map <F2> :wa
-:map <F1> :wa:tabnew:r !/opt/zark/web/cgi/testing/test_all.py:q!
-
