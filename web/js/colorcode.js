@@ -75,7 +75,7 @@ $(function(){
                 $('#color_code_loading_overlay, #tool_box_overlay').hide();
                 CLIPBOARD.setText(cc);
                 //remove color code box background color, only for IE7
-                $('#color_code_box').removeCss('background-color');
+                $('#color_code_box > div').removeCss('background-color');
             },
             error           :   function (XMLHttpRequest, textStatus) {
                 CAN_COPY_CODE = false;
