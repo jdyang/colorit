@@ -21,14 +21,14 @@ class GetColorCode:
         assert( self.LANGMAP.has_key(i.type) )
         i.type = self.LANGMAP[i.type]
         i.options = str(i.options)
-        file_name = str(uuid.uuid4())+'.'+i.type
+        file_name = str(uuid.uuid4()) # 这里不能添加奇怪的后缀名，否则vim会出错，引起vim不退出
         f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name,'w')
         f.write(i.code.encode('utf8').replace('＜','<').replace('＞','>'))
         f.close()
         script_file = site_helper.config.APP_ROOT_PATH+'web/vimfiles/vimscriptin/%s' % self._getFormatFile(i)
         assert(os.path.exists(script_file))
         os.chdir(site_helper.config.APP_ROOT_PATH+'web/codes/')
-        os.system('vim  -u "%s" +"set filetype=%s" +"let html_no_rendering=1" -f -s "%s" "%s"' % ( site_helper.config.APP_ROOT_PATH+'web/vimfiles/vimrc', i.type, script_file, file_name ))
+        os.system('vim  -u "%s" +"set filetype=%s" +"let html_no_rendering=1" -s "%s" "%s"' % ( site_helper.config.APP_ROOT_PATH+'web/vimfiles/vimrc', i.type, script_file, file_name ) )
         f = open(site_helper.config.APP_ROOT_PATH+'web/codes/'+file_name+'.xhtml') #当使用let g:html_use_xhtml=1时，生成的后缀名就是xhtml
         code_string = f.read()
         f.close()
