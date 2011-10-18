@@ -89,14 +89,14 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .cc_sub_logo .t09 { color:#e21e26; padding-right:5px;}
 
 .content_box {width:100%; margin-top:30px; margin-bottom:300px; float:left; position:relative; }
-.code_box { margin-left:50px; float:left; border:10px solid #fff; background-color:#000; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; position:relative; overflow:scroll; overflow-x:hidden;}
+.code_box { margin-left:50px; float:left; border:10px solid #fff; background-color:#000; box-shadow:1px 2px 4px #313131; -moz-box-shadow:1px 2px 4px #313131; -webkit-box-shadow:1px 2px 4px #313131; -o-box-shadow:1px 2px 4px #313131; -khtml-box-shadow:1px 2px 4px #313131; position:relative; overflow:hidden; overflow-x:hidden;}
 .color_code_box_loading_overlay { border:none; position:absolute; z-index:20; text-align:left; width:600px; height:350px; display:none; }
 .color_code_box_loading_overlay .loading_icon_wrapper { position:relative; }
-.color_code_box_loading_overlay .loading_icon { position:absolute; top:20px; right:30px; background:url(/img/loading.gif) top left no-repeat; width:30px; height:5px; }
+.color_code_box_loading_overlay .loading_icon { position:absolute; top:20px; right:50px; background:url(/img/loading.gif) top left no-repeat; width:30px; height:5px; }
 .code_box .error_tip { position:absolute; top:15px; right:20px; padding:2px 10px; background-color:#fff; }
-.code_box .error_tip span { color:#363636;  }
+.code_box .error_tip span { color:#363636; }
 .code_box .error_tip a { color:red; text-decoration:underline;  }
-.code_box .black_code_box { resize:none; margin:20px; height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; overflow-x:hidden; }
+.code_box .black_code_box { resize:none; padding-left:20px; height:390px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:auto; overflow-x:hidden; }
 .code_box .color_code_box { display:block; border:none; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; overflow-x:hidden; }
 .team_info {width:213px; height:11px; background:url(/img/team_info.png) top left no-repeat; right:30px; bottom:25px; position:fixed; z-index:10000;  }
 

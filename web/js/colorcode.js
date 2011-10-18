@@ -222,12 +222,12 @@ $(function(){
         };
     }).blur(function(){
         if ($(this).val() === ''){
-            $(this).attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n\n');
+            $(this).attr('firstfocus','false').css('font-size','24px').val('\nInput your code and color it!\n\n');
         };
         IS_BLACK_CODE_BOX_BLUR = true;
         setTimeout(function(){IS_BLACK_CODE_BOX_BLUR = false;}, 100);
     });
-    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('Input your code and color it!\n\nYou can copy colourful code to your blog or email.\n\nOr just read here.\n\n');
+    $('#black_code_box').attr('firstfocus','false').css('font-size','24px').val('\nInput your code and color it!\n\nYou can copy colourful code to your blog or email.\n\nOr just read here.\n\n');
 
     //==============turn font size event===============
     $('#turn_font_down, #turn_font_up').click(function(){
@@ -250,7 +250,7 @@ $(function(){
     $('#code_box').width(code_box_width);
     $('#cc_top').width(code_box_width+20);
     $('#code_box').animate({opacity:0.8});
-    $('#black_code_box').width(code_box_width-40).animate({opacity:1});
+    $('#black_code_box').width(code_box_width-20).animate({opacity:1});
     $('#color_code_box').width(code_box_width).animate({opacity:1});
     $('#choose_lang_box').animate({opacity:0.8});
     $('#color_code_loading_overlay').width($('#black_code_box').width()+40).height($('#black_code_box').height()+40);
