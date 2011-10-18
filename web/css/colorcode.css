@@ -97,7 +97,7 @@ body{ text-align:center; color:#fff;  overflow-y:scroll; background:url(/img/flo
 .code_box .error_tip span { color:#363636;  }
 .code_box .error_tip a { color:red; text-decoration:underline;  }
 .code_box .black_code_box { resize:none; margin:20px; height:350px; border:none; float:left; background-color:#000; color:#45ed00; font-size:24px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; overflow-y:hidden; overflow-x:hidden; }
-.code_box .color_code_box { display:block; border:none; background-color:#000; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; overflow-x:hidden; }
+.code_box .color_code_box { display:block; border:none; color:#45ed00; font-size:14px; font-family:Andale Mono, Courier New, Helvetica, Arial; line-height:20px; position:absolute; z-index:10; text-align:left; display: none; overflow-x:hidden; }
 .team_info {width:213px; height:11px; background:url(/img/team_info.png) top left no-repeat; right:20px; bottom:15px;  position:absolute; z-index:10000;  }
 
 .tool_box_overlay { position:absolute; right:200px; z-index:10000; width:126px; height:410px; display:none;}
