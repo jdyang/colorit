@@ -17,7 +17,7 @@ var scrolltotop={
 
 	scrollup:function(){
 		if (!this.cssfixedsupport) //if control is positioned using JavaScript
-			this.$control.css({opacity:0}) //hide control immediately after clicking it
+			this.$control.css({opacity:1}) //hide control immediately after clicking it
 		var dest=isNaN(this.setting.scrollto)? this.setting.scrollto : parseInt(this.setting.scrollto)
 		if (typeof dest=="string" && jQuery('#'+dest).length==1) //check element set by string exists
 			dest=jQuery('#'+dest).offset().top
@@ -39,11 +39,13 @@ var scrolltotop={
 			this.keepfixed()
 		this.state.shouldvisible=(scrolltop>=this.setting.startline)? true : false
 		if (this.state.shouldvisible && !this.state.isvisible){
-			this.$control.stop().animate({opacity:1}, this.setting.fadeduration[0])
+			//this.$control.stop().animate({opacity:1}, this.setting.fadeduration[0])
+			this.$control.fadeIn();
 			this.state.isvisible=true
 		}
 		else if (this.state.shouldvisible==false && this.state.isvisible){
-			this.$control.stop().animate({opacity:0}, this.setting.fadeduration[1])
+			//this.$control.stop().animate({opacity:0}, this.setting.fadeduration[1])
+			this.$control.stop().fadeOut();
 			this.state.isvisible=false
 		}
 	},
@@ -55,7 +57,7 @@ var scrolltotop={
 			mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest //not IE or IE7+ browsers in standards mode
 			mainobj.$body=(window.opera)? (document.compatMode=="CSS1Compat"? $('html') : $('body')) : $('html,body')
 			mainobj.$control=$('<div id="topcontrol">'+mainobj.controlHTML+'</div>')
-				.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer'})
+				.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:1, cursor:'pointer'})
 				.attr({title:'Scroll Back to Top'})
 				.click(function(){mainobj.scrollup(); return false})
 				.appendTo('body')
@@ -69,6 +71,7 @@ var scrolltotop={
 			$(window).bind('scroll resize', function(e){
 				mainobj.togglecontrol()
 			})
+            mainobj.$control.hide();
 		})
 	}
 }
