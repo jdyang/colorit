@@ -97,7 +97,7 @@ $(function(){
         $('#error_tip').hide();
         $('#black_code_box').val('').show();
         $('#color_code_box').html('').hide();
-        $('#code_box').height($('#black_code_box').height()+40);
+        $('#code_box').height($('#black_code_box').height());
         $('#color_it').html('color it!');
         if($.browser.msie) $('#color_it').corner('5px'); // ie hack
         IS_SHOW_COLOR_CODE = false;
