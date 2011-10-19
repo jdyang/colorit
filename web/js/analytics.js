@@ -12,9 +12,3 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-//==============google adsense===========
-google_ad_client = "ca-pub-3733795682230399";
-google_ad_slot = "4237546774";
-google_ad_width = 125;
-google_ad_height = 125;
-
