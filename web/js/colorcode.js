@@ -246,7 +246,9 @@ $(function(){
         $('#color_code_box > div > code').css('font-size', FONT_SIZE+'px');
         $('#show_font_size').html(FONT_SIZE+'px');
         $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
+        $('#color_code_box > div').css('background-color','#000'); // ie hack
         CLIPBOARD.setText( $('#color_code_box').html() );
+        $('#color_code_box > div').css('background-color',''); // ie hack
     });
 
     //==============layout===============
