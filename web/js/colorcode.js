@@ -66,7 +66,7 @@ $(function(){
                 $('#black_code_box').hide();
                 $('#color_code_box').html(cc).show();
                 $('#color_code_box > div > code').css('font-size', FONT_SIZE+'px');
-                $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
+                $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height()));
                 //set copy code button ready
                 $('#copy_code_button').addClass('copy_code_ready');
                 $('#copy_code_container embed').show();
