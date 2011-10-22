@@ -245,7 +245,7 @@ $(function(){
         FONT_SIZE  = new_size;
         $('#color_code_box > div > code').css('font-size', FONT_SIZE+'px');
         $('#show_font_size').html(FONT_SIZE+'px');
-        $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height())+40);
+        $('#code_box').height(Math.max($('#black_code_box').height(), $('#color_code_box').height()));
         $('#color_code_box > div').css('background-color','#000'); // ie hack
         CLIPBOARD.setText( $('#color_code_box').html() );
         $('#color_code_box > div').css('background-color',''); // ie hack
@@ -261,7 +261,7 @@ $(function(){
     $('#black_code_box').width(code_box_width-20).animate({opacity:1});
     $('#color_code_box').width(code_box_width).animate({opacity:1});
     $('#choose_lang_box').animate({opacity:0.8});
-    $('#color_code_loading_overlay').width($('#black_code_box').width()+40).height($('#black_code_box').height()+40);
+    $('#color_code_loading_overlay').width($('#black_code_box').width()+20).height($('#black_code_box').height());
     $('#tool_box, #cc_sub_logo').animate({opacity:0.85});
     //$('body > ins').appendTo($('#ad_sense'));
 
