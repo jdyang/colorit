@@ -1,5 +1,5 @@
 #!/bin/bash
-# replace for colorcode
+# replace for colorit
 
 if [ "x$(whoami)" != "xroot" ]; then
     echo "Only root can run this script."
@@ -13,8 +13,8 @@ if [ "x${rev}" == "x" ]; then
     exit 1
 fi
 
-cd /opt/colorcode.git
-git archive "${rev}" -o /tmp/colorcode.tgz
+cd /opt/colorit.git
+git archive "${rev}" -o /tmp/colorit.tgz
 ret=$?
 
 if [ "x${ret}" != "x0" ]; then
@@ -22,13 +22,13 @@ if [ "x${ret}" != "x0" ]; then
     exit 1
 fi
 
-cd /opt/colorcode
-tar xf /tmp/colorcode.tgz
+cd /opt/colorit
+tar xf /tmp/colorit.tgz
 
-cat /opt/colorcode/conf/colorcode.nginx.conf > /etc/nginx/sites-enabled/colorcode.nginx.conf
+cat /opt/colorit/conf/colorit.nginx.conf > /etc/nginx/sites-enabled/colorit.nginx.conf
 
-chown www-data:www-data -R /opt/colorcode
+chown www-data:www-data -R /opt/colorit
 
-/opt/colorcode/tool/spawn-fcgi.sh stop
-/opt/colorcode/tool/spawn-fcgi.sh start
+/opt/colorit/tool/spawn-fcgi.sh stop
+/opt/colorit/tool/spawn-fcgi.sh start
 /etc/init.d/nginx restart

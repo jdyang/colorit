@@ -5,8 +5,8 @@ if [ "x$(whoami)" != "xroot" ]; then
     exit 1
 fi
 
-PWD="/opt/colorcode/web/cgi"
-PIDFILE="/var/run/colorcode-spawn-fcgi.pid"
+PWD="/opt/colorit/web/cgi"
+PIDFILE="/var/run/colorit-spawn-fcgi.pid"
 
 case $1 in
     "start")
