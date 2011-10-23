@@ -32,3 +32,6 @@ if [ "x${ret}" != "x0" ]; then
 fi
 
 echo "success"
+
+cp ${ret}/web/vimfiles/vimsyntax/* /usr/share/vim/vim73/syntax/
+echo "cp ${ret}/web/vimfiles/vimsyntax/* /usr/share/vim/vim73/syntax/"
